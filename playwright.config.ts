@@ -4,7 +4,7 @@ export default defineConfig({
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
-  workers: 2,
+  workers: 1,
   reporter: 'list',
   timeout: 60000,
 
@@ -14,7 +14,8 @@ export default defineConfig({
     timezoneId: 'Asia/Yekaterinburg',
     video: 'on-first-retry',
     viewport: { width: 1920, height: 1080 },
-    launchOptions: { slowMo: 0, args: ['--ignore-certificate-errors'] },
+    launchOptions: { slowMo: 0 },
+    baseURL: 'https://scripture.api.bible',
   },
 
   projects: [
