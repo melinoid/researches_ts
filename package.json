@@ -2,13 +2,21 @@
   "name": "researches",
   "version": "1.0.0",
   "description": "TS playwright playgrount",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
+  "scripts": {
+    "prepare": "husky install"
+  },
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "@playwright/test": "^1.47.2",
-    "@types/node": "^22.7.4"
+    "@types/node": "^22.7.4",
+    "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,jsx,md}": "prettier --check --write"
   }
 }
