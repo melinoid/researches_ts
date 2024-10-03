@@ -20,9 +20,16 @@ export default defineConfig({
   },
 
   projects: [
+    // Global authorisation
+    { name: 'login', testMatch: '**/setup/setup.login.ts' },
+    // Authorized tests
     {
-      name: 'smoke',
-      testMatch: '**/smoke/*.@(spec|test).?(c|m)[jt]s?(x)',
+      name: 'authorized',
+      testMatch: '**/e2e/authorized/@(spec|test).*.?(c|m)[jt]s?(x)',
+      dependencies: ['login'],
+      use: {
+        storageState: '.temp/session.json',
+      },
     },
   ],
 });
