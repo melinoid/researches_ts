@@ -18,7 +18,10 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps chromium
       - name: Run Playwright tests
+        env:
+          USERNAME: ${{ secrets.USERNAME }}
+          PASSWORD: ${{ secrets.PASSWORD }}
         run: |
-          AT_PASSWORD="${{ secrets.PASSWORD }}" \
-          AT_USERNAME="${{ secrets.USERNAME }}" \
+          AT_USERNAME=$USERNAME \
+          AT_PASSWORD=$PASSWORD \
           npx playwright test
