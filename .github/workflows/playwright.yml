@@ -19,10 +19,6 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: Run Playwright tests
         env:
-          USERNAME: ${{ secrets.USERNAME }}
-          PASSWORD: ${{ secrets.PASSWORD }}
-        run: |
-          echo $USERNAME; \
-          AT_USERNAME=$USERNAME \
-          AT_PASSWORD=$PASSWORD \
-          npx playwright test
+          AT_USERNAME: ${{ secrets.USER }}
+          AT_PASSWORD: ${{ secrets.PASS }}
+        run: npx playwright test
