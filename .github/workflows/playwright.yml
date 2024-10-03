@@ -22,6 +22,7 @@ jobs:
           USERNAME: ${{ secrets.USERNAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
         run: |
+          echo $USERNAME; \
           AT_USERNAME=$USERNAME \
           AT_PASSWORD=$PASSWORD \
           npx playwright test
