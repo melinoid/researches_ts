@@ -11,6 +11,7 @@ jobs:
     env:
       AT_USERNAME: ${{ secrets.USER }}
       AT_PASSWORD: ${{ secrets.PASS }}
+      AT_API_KEY: ${{ secrets.API_KEY }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
