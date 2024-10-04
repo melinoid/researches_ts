@@ -1,9 +1,9 @@
-import { test } from '../../utils/fixtures';
+import { test as setup } from '../../utils/fixtures';
 
-test('Login', async ({ page, loginPage }) => {
+setup('Login', async ({ page, loginPage }) => {
   await page.goto('/login');
 
   await loginPage.fillOutForm();
 
-  await page.context().storageState({ path: '.temp/session.json' }); // Save storage state for other tests (1y lifetime)
+  await page.context().storageState({ path: '.temp/session.json' }); // Save storage state for other tests (24m lifetime)
 });

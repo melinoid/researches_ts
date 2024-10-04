@@ -4,8 +4,8 @@ import 'dotenv/config';
 export default defineConfig({
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 2 : 0,
-  workers: 1,
+  retries: process.env.CI ? 1 : 0,
+  workers: 2,
   reporter: 'list',
   timeout: 60000,
 
@@ -29,6 +29,19 @@ export default defineConfig({
       dependencies: ['login'],
       use: {
         storageState: '.temp/session.json',
+      },
+    },
+    // API tests
+    {
+      name: 'api',
+      timeout: 10000,
+      testMatch: '**/api/@(spec|test).*.?(c|m)[jt]s?(x)',
+      use: {
+        baseURL: 'https://api.scripture.api.bible',
+        extraHTTPHeaders: {
+          accept: 'application/json',
+          'api-key': `${process.env.AT_API_KEY}`,
+        },
       },
     },
   ],
