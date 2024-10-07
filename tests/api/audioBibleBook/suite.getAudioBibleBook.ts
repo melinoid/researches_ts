@@ -5,21 +5,46 @@ import * as expBody from './responses.json';
 
 // interface params {
 //   'include-chapters'?: boolean;
-//   'include-chapters-and-sections'?: boolean
 // }
 
 const apiPath = `/v1/audio-bibles/${audioBibleId}/books/`;
 let response: APIResponse;
 
 test.describe('/v1/audio-bibles/audioBibleId/books/bookId', async () => {
-  test(`200 code`, async ({ request, helper }) => {
+  test(`200 code w/o params`, async ({ request, helper }) => {
     await test.step('Send request', async () => {
       response = await request.get(apiPath + audioBibleBookId, {});
     });
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
-    //TODO: need step
+    await test.step('Compare response text', async () => {
+      helper.compareResponseText(await response.json(), expBody['200wop']);
+    });
+  });
+
+  test(`200 code w/o chapters`, async ({ request, helper }) => {
+    await test.step('Send request', async () => {
+      response = await request.get(apiPath + audioBibleBookId, { params: { 'include-chapters': false } });
+    });
+    await test.step('Compare status code', async () => {
+      helper.compareStatusCode(response.status(), 200);
+    });
+    await test.step('Compare response text', async () => {
+      helper.compareResponseText(await response.json(), expBody['200wop']);
+    });
+  });
+
+  test(`200 code with chapters`, async ({ request, helper }) => {
+    await test.step('Send request', async () => {
+      response = await request.get(apiPath + audioBibleBookId, { params: { 'include-chapters': true } });
+    });
+    await test.step('Compare status code', async () => {
+      helper.compareStatusCode(response.status(), 200);
+    });
+    await test.step('Compare response text', async () => {
+      helper.compareResponseText(await response.json(), expBody['200wc']);
+    });
   });
 
   test('400 code', async ({ request, helper }) => {
@@ -30,7 +55,7 @@ test.describe('/v1/audio-bibles/audioBibleId/books/bookId', async () => {
       helper.compareStatusCode(response.status(), 400);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(await response.text(), expBody['400']);
+      helper.compareResponseText(await response.json(), expBody['400']);
     });
   });
 
@@ -44,7 +69,7 @@ test.describe('/v1/audio-bibles/audioBibleId/books/bookId', async () => {
       helper.compareStatusCode(response.status(), 401);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(await response.text(), expBody['401']);
+      helper.compareResponseText(await response.json(), expBody['401']);
     });
   });
 
@@ -56,7 +81,7 @@ test.describe('/v1/audio-bibles/audioBibleId/books/bookId', async () => {
       helper.compareStatusCode(response.status(), 403);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(await response.text(), expBody['403']);
+      helper.compareResponseText(await response.json(), expBody['403']);
     });
   });
 
@@ -68,7 +93,7 @@ test.describe('/v1/audio-bibles/audioBibleId/books/bookId', async () => {
       helper.compareStatusCode(response.status(), 404);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(await response.text(), expBody['404']);
+      helper.compareResponseText(await response.json(), expBody['404']);
     });
   });
 });

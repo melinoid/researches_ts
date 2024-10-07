@@ -5,9 +5,12 @@ export default class Helper {
     }
   }
 
-  async compareResponseText(response: string, expResponse: object) {
-    if (response !== JSON.stringify(expResponse)) {
-      throw Error(`Response text: ${expResponse} does not match with expected:\n${response}`);
+  async compareResponseText(response: object | string, expResponse: object | string) {
+    response = JSON.stringify(response);
+    expResponse = JSON.stringify(expResponse);
+
+    if (response !== expResponse) {
+      throw Error(`Response text:\n${response}\ndoes not match with expected:\n${expResponse}`);
     }
   }
 }

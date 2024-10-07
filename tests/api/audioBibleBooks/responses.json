@@ -1,8 +1,27 @@
 {
-    "400": {
+    "200wop": {
+        "id": "1TH",
+        "bibleId": "105a06b6146d11e7-01",
+        "abbreviation": "1 Thessalonians",
+        "name": "1 Thessalonians",
+        "nameLong": "Paul’s First Letter to the Thessalonians"
+    },
+    "200wch": {
+        "id": "1TH.4",
+        "bibleId": "105a06b6146d11e7-01",
+        "bookId": "1TH",
+        "number": "4",
+        "position": 29
+    },
+    "400bp": {
         "statusCode": 400,
         "error": "Bad Request",
         "message": "Invalid request params input"
+    },
+    "400bq": {
+        "statusCode": 400,
+        "error": "Bad Request",
+        "message": "Invalid request query input"
     },
     "401": {
         "statusCode": 401,

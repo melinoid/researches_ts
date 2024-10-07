@@ -36,7 +36,7 @@ test.describe('/v1/bibles', async () => {
       helper.compareStatusCode(response.status(), 400);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(await response.text(), expBody['400']);
+      helper.compareResponseText(await response.json(), expBody['400']);
     });
   });
 
@@ -50,7 +50,7 @@ test.describe('/v1/bibles', async () => {
       helper.compareStatusCode(response.status(), 401);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(await response.text(), expBody['401']);
+      helper.compareResponseText(await response.json(), expBody['401']);
     });
   });
 });

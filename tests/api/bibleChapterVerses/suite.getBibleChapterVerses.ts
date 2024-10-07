@@ -25,7 +25,7 @@ test.describe('/v1/bibles/bibleId/chapters/chapterId/verses', async () => {
       helper.compareStatusCode(response.status(), 400);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(await response.text(), expBody['400']);
+      helper.compareResponseText(await response.json(), expBody['400']);
     });
   });
 
@@ -39,7 +39,7 @@ test.describe('/v1/bibles/bibleId/chapters/chapterId/verses', async () => {
       helper.compareStatusCode(response.status(), 401);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(await response.text(), expBody['401']);
+      helper.compareResponseText(await response.json(), expBody['401']);
     });
   });
 
@@ -51,7 +51,7 @@ test.describe('/v1/bibles/bibleId/chapters/chapterId/verses', async () => {
       helper.compareStatusCode(response.status(), 403);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(await response.text(), expBody['403']);
+      helper.compareResponseText(await response.json(), expBody['403']);
     });
   });
 
@@ -63,7 +63,7 @@ test.describe('/v1/bibles/bibleId/chapters/chapterId/verses', async () => {
       helper.compareStatusCode(response.status(), 404);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(await response.text(), expBody['404']);
+      helper.compareResponseText(await response.json(), expBody['404']);
     });
   });
 });

@@ -1,4 +1,120 @@
 {
+    "200": {
+        "data": [
+            {
+                "id": "1CO.1",
+                "bibleId": "105a06b6146d11e7-01",
+                "bookId": "1CO",
+                "number": "1",
+                "reference": "1 Corinthians 1"
+            },
+            {
+                "id": "1CO.2",
+                "bibleId": "105a06b6146d11e7-01",
+                "bookId": "1CO",
+                "number": "2",
+                "reference": "1 Corinthians 2"
+            },
+            {
+                "id": "1CO.3",
+                "bibleId": "105a06b6146d11e7-01",
+                "bookId": "1CO",
+                "number": "3",
+                "reference": "1 Corinthians 3"
+            },
+            {
+                "id": "1CO.4",
+                "bibleId": "105a06b6146d11e7-01",
+                "bookId": "1CO",
+                "number": "4",
+                "reference": "1 Corinthians 4"
+            },
+            {
+                "id": "1CO.5",
+                "bibleId": "105a06b6146d11e7-01",
+                "bookId": "1CO",
+                "number": "5",
+                "reference": "1 Corinthians 5"
+            },
+            {
+                "id": "1CO.6",
+                "bibleId": "105a06b6146d11e7-01",
+                "bookId": "1CO",
+                "number": "6",
+                "reference": "1 Corinthians 6"
+            },
+            {
+                "id": "1CO.7",
+                "bibleId": "105a06b6146d11e7-01",
+                "bookId": "1CO",
+                "number": "7",
+                "reference": "1 Corinthians 7"
+            },
+            {
+                "id": "1CO.8",
+                "bibleId": "105a06b6146d11e7-01",
+                "bookId": "1CO",
+                "number": "8",
+                "reference": "1 Corinthians 8"
+            },
+            {
+                "id": "1CO.9",
+                "bibleId": "105a06b6146d11e7-01",
+                "bookId": "1CO",
+                "number": "9",
+                "reference": "1 Corinthians 9"
+            },
+            {
+                "id": "1CO.10",
+                "bibleId": "105a06b6146d11e7-01",
+                "bookId": "1CO",
+                "number": "10",
+                "reference": "1 Corinthians 10"
+            },
+            {
+                "id": "1CO.11",
+                "bibleId": "105a06b6146d11e7-01",
+                "bookId": "1CO",
+                "number": "11",
+                "reference": "1 Corinthians 11"
+            },
+            {
+                "id": "1CO.12",
+                "bibleId": "105a06b6146d11e7-01",
+                "bookId": "1CO",
+                "number": "12",
+                "reference": "1 Corinthians 12"
+            },
+            {
+                "id": "1CO.13",
+                "bibleId": "105a06b6146d11e7-01",
+                "bookId": "1CO",
+                "number": "13",
+                "reference": "1 Corinthians 13"
+            },
+            {
+                "id": "1CO.14",
+                "bibleId": "105a06b6146d11e7-01",
+                "bookId": "1CO",
+                "number": "14",
+                "reference": "1 Corinthians 14"
+            },
+            {
+                "id": "1CO.15",
+                "bibleId": "105a06b6146d11e7-01",
+                "bookId": "1CO",
+                "number": "15",
+                "reference": "1 Corinthians 15"
+            },
+            {
+                "id": "1CO.16",
+                "bibleId": "105a06b6146d11e7-01",
+                "bookId": "1CO",
+                "number": "16",
+                "reference": "1 Corinthians 16"
+            }
+        ]
+    },
     "400": {
         "statusCode": 400,
         "error": "Bad Request",

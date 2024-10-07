@@ -1,4 +1,28 @@
 {
+    "200": {
+        "data": {
+            "expiresAt": "",
+            "resourceUrl": "",
+            "id": "1CO.1",
+            "bibleId": "105a06b6146d11e7-01",
+            "number": "1",
+            "bookId": "1CO",
+            "reference": "1 Corinthians 1",
+            "copyright": "℗ 2013 Hosanna",
+            "next": {
+                "id": "1CO.2",
+                "number": "2",
+                "bookId": "1CO"
+            }
+        },
+        "meta": {
+            "fums": "",
+            "fumsId": "",
+            "fumsJsInclude": "",
+            "fumsJs": "",
+            "fumsNoScript": ""
+        }
+    },
     "400": {
         "statusCode": 400,
         "error": "Bad Request",
