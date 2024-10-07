@@ -1,0 +1,18 @@
+{
+    "400": {
+        "statusCode": 400,
+        "error": "Bad Request",
+        "message": "You must include a query param"
+    },
+    "401": {
+        "statusCode": 401,
+        "error": "Unauthorized",
+        "message": "missing key"
+    },
+    "403": {
+        "statusCode": 403,
+        "error": "Forbidden",
+        "message": "You are not authorized to access that bible"
+    },
+    "404": {}
+}

@@ -25,7 +25,7 @@ export default defineConfig({
     // Authorized tests
     {
       name: 'authorized',
-      testMatch: '**/e2e/authorized/@(spec|test).*.?(c|m)[jt]s?(x)',
+      testMatch: '**/e2e/authorized/@(suite|test).*.?(c|m)[jt]s?(x)',
       dependencies: ['login'],
       use: {
         storageState: '.temp/session.json',
@@ -35,7 +35,7 @@ export default defineConfig({
     {
       name: 'api',
       timeout: 3000,
-      testMatch: '**/api/@(spec|test).*.?(c|m)[jt]s?(x)',
+      testMatch: '**/api/**/@(suite|test).*.?(c|m)[jt]s?(x)',
       use: {
         baseURL: 'https://api.scripture.api.bible',
         extraHTTPHeaders: {
