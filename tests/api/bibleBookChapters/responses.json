@@ -1,4 +1,11 @@
 {
+    "200": {
+        "id": "ROM.4",
+        "bibleId": "bba9f40183526463-01",
+        "bookId": "ROM",
+        "number": "4",
+        "reference": "Romans 4"
+      },
     "400": {
         "statusCode": 400,
         "error": "Bad Request",

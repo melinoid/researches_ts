@@ -14,7 +14,9 @@ test.describe('/v1/bibles/bibleId/chapters/chapterId/sections', async () => {
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
-    //TODO: need step
+    await test.step('Compare response text', async () => {
+      helper.compareResponseText((await response.json())['data'][2], expBody['200']);
+    });
   });
 
   test('400 code', async ({ request, helper }) => {

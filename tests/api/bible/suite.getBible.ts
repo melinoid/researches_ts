@@ -14,7 +14,15 @@ test.describe('/v1/bibles/bibleId', async () => {
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
-    //TODO: need step
+
+    await test.step('Compare response text', async () => {
+      // Attention, kludge. Come up with something normal here.
+      // Let's agree that we only need static data, rewriting dynamic data and discard meta.
+      response = await response.json();
+      response['data']['updatedAt'] = '';
+
+      helper.compareResponseText(response, expBody['200']);
+    });
   });
 
   test('400 code', async ({ request, helper }) => {

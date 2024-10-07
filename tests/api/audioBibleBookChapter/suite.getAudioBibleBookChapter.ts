@@ -15,7 +15,7 @@ test.describe('/v1/audio-bibles/audioBibleId/chapters/chapterId', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
-      // TODO: attention, kludge. Come up with something normal here.
+      // Attention, kludge. Come up with something normal here.
       // Let's agree that we only need static data, rewriting dynamic data and discard meta.
       response = await response.json();
       response['data']['expiresAt'] = '';

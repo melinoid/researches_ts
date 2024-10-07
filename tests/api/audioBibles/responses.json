@@ -1,4 +1,60 @@
 {
+    "200wod": {
+        "id": "105a06b6146d11e7-01",
+        "dblId": "105a06b6146d11e7",
+        "relatedDbl": "9879dbb7cfe39e4d",
+        "name": "English - World English Bible 2013 (Drama NT)",
+        "nameLocal": "English - World English Bible 2013 (Drama NT)",
+        "abbreviation": "WEB13",
+        "abbreviationLocal": "WEB13",
+        "description": null,
+        "descriptionLocal": null,
+        "language": {
+            "id": "eng",
+            "name": "English",
+            "nameLocal": "English",
+            "script": "Latin",
+            "scriptDirection": "LTR"
+        },
+        "countries": [
+            {
+                "id": "US",
+                "name": "United States",
+                "nameLocal": "United States"
+            }
+        ],
+        "type": "audio",
+        "updatedAt": ""
+    },
+    "200wd": {
+        "id": "105a06b6146d11e7-01",
+        "dblId": "105a06b6146d11e7",
+        "relatedDbl": "9879dbb7cfe39e4d",
+        "name": "English - World English Bible 2013 (Drama NT)",
+        "nameLocal": "English - World English Bible 2013 (Drama NT)",
+        "abbreviation": "WEB13",
+        "abbreviationLocal": "WEB13",
+        "description": null,
+        "descriptionLocal": null,
+        "language": {
+            "id": "eng",
+            "name": "English",
+            "nameLocal": "English",
+            "script": "Latin",
+            "scriptDirection": "LTR"
+        },
+        "countries": [
+            {
+                "id": "US",
+                "name": "United States",
+                "nameLocal": "United States"
+            }
+        ],
+        "type": "audio",
+        "updatedAt": "",
+        "copyright": "℗ 2013 Hosanna",
+        "info": null
+    },
     "400": {
         "statusCode": 400,
         "error": "Bad Request",

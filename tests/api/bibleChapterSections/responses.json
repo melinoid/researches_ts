@@ -1,4 +1,14 @@
 {
+    "200": {
+        "id": "ROM.S3",
+        "bibleId": "bba9f40183526463-01",
+        "bookId": "ROM",
+        "title": "God’s Wrath against Sin",
+        "firstVerseId": "ROM.1.18",
+        "lastVerseId": "ROM.1.32",
+        "firstVerseOrgId": "ROM.1.18",
+        "lastVerseOrgId": "ROM.1.32"
+    },
     "400": {
         "statusCode": 400,
         "error": "Bad Request",

@@ -1,4 +1,14 @@
 {
+    "200": {
+        "id": "ROM.S34",
+        "bibleId": "bba9f40183526463-01",
+        "bookId": "ROM",
+        "title": "Forgiveness",
+        "firstVerseId": "ROM.12.14",
+        "lastVerseId": "ROM.12.21",
+        "firstVerseOrgId": "ROM.12.14",
+        "lastVerseOrgId": "ROM.12.21"
+    },
     "400": {
         "statusCode": 400,
         "error": "Bad Request",
