@@ -66,15 +66,15 @@ test.describe('/v1/bibles/bibleId/verses/verseId', async () => {
     });
   });
 
-  test('403 code', async ({ request, helper }) => {
+  test('404 code', async ({ request, helper }) => {
     await test.step('Send request', async () => {
       response = await request.get(apiPath + 'GE1.1.1', {});
     });
     await test.step('Compare status code', async () => {
-      helper.compareStatusCode(response.status(), 403);
+      helper.compareStatusCode(response.status(), 404);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(await response.text(), expBody['403']);
+      helper.compareResponseText(await response.text(), expBody['404']);
     });
   });
 });

@@ -35,7 +35,7 @@ test.describe('/v1/bibles/bibleId/books/bookId', async () => {
 
   test('401 code', async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      const response = await request.get(apiPath + bibleBookId, {
+      response = await request.get(apiPath + bibleBookId, {
         headers: { 'api-key': '' },
       });
     });

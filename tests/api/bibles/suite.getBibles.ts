@@ -40,13 +40,12 @@ test.describe('/v1/bibles', async () => {
     });
   });
 
-  test.only('401 code', async ({ request, helper }) => {
+  test('401 code', async ({ request, helper }) => {
     await test.step('Send request', async () => {
       response = await request.get(apiPath, {
         headers: { 'api-key': '' },
       });
     });
-    console.log(await response.json());
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 401);
     });

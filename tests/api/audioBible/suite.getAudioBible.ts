@@ -6,7 +6,7 @@ import * as expBody from './responses.json';
 const apiPath = '/v1/audio-bibles/';
 let response: APIResponse;
 
-test.describe('$/v1/audio-bibles/audioBibleId', async () => {
+test.describe('/v1/audio-bibles/audioBibleId', async () => {
   test(`200 code`, async ({ request, helper }) => {
     await test.step('Send request', async () => {
       response = await request.get(apiPath + audioBibleId, {});
