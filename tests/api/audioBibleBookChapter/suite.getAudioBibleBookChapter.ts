@@ -1,15 +1,15 @@
 import { APIResponse } from '@playwright/test';
-import { audioBibleId, audioBibleBookChapterId } from '../../../utils/config';
+import { audioBible } from '../../../utils/config';
 import { test } from '../../../utils/fixtures';
 import * as expBody from './responses.json';
 
-const apiPath = `/v1/audio-bibles/${audioBibleId}/chapters/`;
+const apiPath = `/v1/audio-bibles/${audioBible.id}/chapters/`;
 let response: APIResponse;
 
 test.describe('/v1/audio-bibles/audioBibleId/chapters/chapterId', async () => {
   test(`200 code`, async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + audioBibleBookChapterId, {});
+      response = await request.get(apiPath + audioBible.book.chapterId, {});
     });
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);
@@ -39,7 +39,7 @@ test.describe('/v1/audio-bibles/audioBibleId/chapters/chapterId', async () => {
 
   test('401 code', async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + audioBibleBookChapterId, {
+      response = await request.get(apiPath + audioBible.book.chapterId, {
         headers: { 'api-key': '' },
       });
     });

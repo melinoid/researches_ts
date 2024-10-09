@@ -1,5 +1,5 @@
 import { APIResponse } from '@playwright/test';
-import { bibleBookChapterId, bibleId } from '../../../utils/config';
+import { bible } from '../../../utils/config';
 import { test } from '../../../utils/fixtures';
 import * as expBody from './responses.json';
 
@@ -14,18 +14,95 @@ import * as expBody from './responses.json';
 //   'use-org-id'?: boolean;
 // }
 
-const apiPath = `/v1/bibles/${bibleId}/passages/`;
+const apiPath = `/v1/bibles/${bible.id}/passages/`;
 let response: APIResponse;
 
 test.describe('/v1/bibles/bibleId/passages/passageId', async () => {
-  test(`200 code`, async ({ request, helper }) => {
+  test('200 code w/o params', async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + bibleBookChapterId, {});
+      response = await request.get(apiPath + bible.book.chapterId, {});
     });
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
-    //TODO: need step
+    await test.step('Compare response text', async () => {
+      // Attention, kludge. Come up with something normal here.
+      // Let's agree that we only need static data, rewriting dynamic data and discard meta.
+      helper.compareResponseText((await response.json())['data'], expBody['200wop']);
+    });
+  });
+
+  test('200 code with html & alternate params', async ({ request, helper }) => {
+    await test.step('Send request', async () => {
+      response = await request.get(apiPath + bible.book.chapterId, {
+        params: {
+          'content-type': 'html',
+          'include-notes': true,
+          'include-titles': false,
+          'include-chapter-numbers': true,
+          'include-verse-numbers': false,
+          'include-verse-spans': true,
+          'use-org-id': false,
+        },
+      });
+    });
+    await test.step('Compare status code', async () => {
+      helper.compareStatusCode(response.status(), 200);
+      await test.step('Compare response text', async () => {
+        // Attention, kludge. Come up with something normal here.
+        // Let's agree that we only need static data, rewriting dynamic data and discard meta.
+        helper.compareResponseText((await response.json())['data'], expBody['200html']);
+      });
+    });
+  });
+
+  test('200 code with json & reverse alternate params', async ({ request, helper }) => {
+    await test.step('Send request', async () => {
+      response = await request.get(apiPath + bible.book.chapterId, {
+        params: {
+          'content-type': 'json',
+          'include-notes': false,
+          'include-titles': true,
+          'include-chapter-numbers': false,
+          'include-verse-numbers': true,
+          'include-verse-spans': false,
+          'use-org-id': true,
+        },
+      });
+    });
+    await test.step('Compare status code', async () => {
+      helper.compareStatusCode(response.status(), 200);
+    });
+    await test.step('Compare response text', async () => {
+      // Attention, kludge. Come up with something normal here.
+      // Let's agree that we only need static data, rewriting dynamic data and discard meta.
+      helper.compareResponseText((await response.json())['data'], expBody['200json']);
+    });
+  });
+
+  test('200 code with text & all params', async ({ request, helper }) => {
+    await test.step('Send request', async () => {
+      response = await request.get(apiPath + bible.book.chapterId, {
+        params: {
+          'content-type': 'text',
+          'include-notes': true,
+          'include-titles': true,
+          'include-chapter-numbers': true,
+          'include-verse-numbers': true,
+          'include-verse-spans': true,
+          'use-org-id': true,
+          parallels: bible.id,
+        },
+      });
+    });
+    await test.step('Compare status code', async () => {
+      helper.compareStatusCode(response.status(), 200);
+    });
+    await test.step('Compare response text', async () => {
+      // Attention, kludge. Come up with something normal here.
+      // Let's agree that we only need static data, rewriting dynamic data and discard meta.
+      helper.compareResponseText((await response.json())['data'], expBody['200text']);
+    });
   });
 
   test('400 code', async ({ request, helper }) => {

@@ -1,5 +1,5 @@
 import { APIResponse } from '@playwright/test';
-import { audioBibleId, audioBibleBookId } from '../../../utils/config';
+import { audioBible } from '../../../utils/config';
 import { test } from '../../../utils/fixtures';
 import * as expBody from './responses.json';
 
@@ -7,13 +7,13 @@ import * as expBody from './responses.json';
 //   'include-chapters'?: boolean;
 // }
 
-const apiPath = `/v1/audio-bibles/${audioBibleId}/books/`;
+const apiPath = `/v1/audio-bibles/${audioBible.id}/books/`;
 let response: APIResponse;
 
 test.describe('/v1/audio-bibles/audioBibleId/books/bookId', async () => {
   test(`200 code w/o params`, async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + audioBibleBookId, {});
+      response = await request.get(apiPath + audioBible.book.id, {});
     });
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);
@@ -25,7 +25,7 @@ test.describe('/v1/audio-bibles/audioBibleId/books/bookId', async () => {
 
   test(`200 code w/o chapters`, async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + audioBibleBookId, { params: { 'include-chapters': false } });
+      response = await request.get(apiPath + audioBible.book.id, { params: { 'include-chapters': false } });
     });
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);
@@ -37,7 +37,7 @@ test.describe('/v1/audio-bibles/audioBibleId/books/bookId', async () => {
 
   test(`200 code with chapters`, async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + audioBibleBookId, { params: { 'include-chapters': true } });
+      response = await request.get(apiPath + audioBible.book.id, { params: { 'include-chapters': true } });
     });
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);
@@ -61,7 +61,7 @@ test.describe('/v1/audio-bibles/audioBibleId/books/bookId', async () => {
 
   test('401 code', async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + audioBibleBookId, {
+      response = await request.get(apiPath + audioBible.book.id, {
         headers: { 'api-key': '' },
       });
     });

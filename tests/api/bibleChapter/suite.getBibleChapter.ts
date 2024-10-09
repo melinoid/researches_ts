@@ -1,5 +1,5 @@
 import { APIResponse } from '@playwright/test';
-import { bibleId, bibleBookChapterId } from '../../../utils/config';
+import { bible } from '../../../utils/config';
 import { test } from '../../../utils/fixtures';
 import * as expBody from './responses.json';
 
@@ -13,13 +13,13 @@ import * as expBody from './responses.json';
 //   parallels?: string;
 // }
 
-const apiPath = `/v1/bibles/${bibleId}/chapters/`;
+const apiPath = `/v1/bibles/${bible.id}/chapters/`;
 let response: APIResponse;
 
 test.describe('/v1/bibles/bibleId/chapters/chapterId', async () => {
-  test.only('200 code w/o params', async ({ request, helper }) => {
+  test('200 code w/o params', async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + bibleBookChapterId, {});
+      response = await request.get(apiPath + bible.book.chapterId, {});
     });
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);
@@ -33,7 +33,7 @@ test.describe('/v1/bibles/bibleId/chapters/chapterId', async () => {
 
   test('200 code with html & alternate params', async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + bibleBookChapterId, {
+      response = await request.get(apiPath + bible.book.chapterId, {
         params: {
           'content-type': 'html',
           'include-notes': true,
@@ -41,7 +41,6 @@ test.describe('/v1/bibles/bibleId/chapters/chapterId', async () => {
           'include-chapter-numbers': true,
           'include-verse-numbers': false,
           'include-verse-spans': true,
-          parallels: bibleId,
         },
       });
     });
@@ -57,7 +56,7 @@ test.describe('/v1/bibles/bibleId/chapters/chapterId', async () => {
 
   test('200 code with json & reverse alternate params', async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + bibleBookChapterId, {
+      response = await request.get(apiPath + bible.book.chapterId, {
         params: {
           'content-type': 'json',
           'include-notes': false,
@@ -80,7 +79,7 @@ test.describe('/v1/bibles/bibleId/chapters/chapterId', async () => {
 
   test('200 code with text & all params', async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + bibleBookChapterId, {
+      response = await request.get(apiPath + bible.book.chapterId, {
         params: {
           'content-type': 'text',
           'include-notes': true,
@@ -88,6 +87,7 @@ test.describe('/v1/bibles/bibleId/chapters/chapterId', async () => {
           'include-chapter-numbers': true,
           'include-verse-numbers': true,
           'include-verse-spans': true,
+          parallels: bible.id,
         },
       });
     });
@@ -115,7 +115,7 @@ test.describe('/v1/bibles/bibleId/chapters/chapterId', async () => {
 
   test('401 code', async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + bibleBookChapterId, {
+      response = await request.get(apiPath + bible.book.chapterId, {
         headers: { 'api-key': '' },
       });
     });
@@ -141,7 +141,7 @@ test.describe('/v1/bibles/bibleId/chapters/chapterId', async () => {
 
   test('403 code with parallels', async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + bibleBookChapterId, { params: { parallels: 1 } });
+      response = await request.get(apiPath + bible.book.chapterId, { params: { parallels: 1 } });
     });
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 403);

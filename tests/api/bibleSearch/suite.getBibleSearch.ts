@@ -1,5 +1,5 @@
 import { APIResponse } from '@playwright/test';
-import { bibleId } from '../../../utils/config';
+import { bible } from '../../../utils/config';
 import { test } from '../../../utils/fixtures';
 import * as expBody from './responses.json';
 
@@ -12,20 +12,45 @@ import * as expBody from './responses.json';
 //   fuzziness?: string; // AUTO, 0, 1, 2
 // }
 
-const apiPath = `/v1/bibles/${bibleId}/search`;
+const apiPath = `/v1/bibles/${bible.id}/search`;
 let response: APIResponse;
 
 test.describe('/v1/bibles/bibleId/search', async () => {
-  test(`200 code`, async ({ request, helper }) => {
+  test.only('200 code with only query', async ({ request, helper }) => {
     await test.step('Send request', async () => {
       response = await request.get(apiPath, {
-        params: { query: 'Hebrews' },
+        params: {
+          query: 'bible',
+        },
       });
     });
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
-    //TODO: need step
+    await test.step('Compare response object', async () => {
+      helper.compareResponseText((await response.json())['data'], expBody['200woq']);
+    });
+  });
+
+  test('200 code with all params', async ({ request, helper }) => {
+    await test.step('Send request', async () => {
+      response = await request.get(apiPath, {
+        params: {
+          query: 'bible',
+          limit: 1,
+          offset: 1,
+          sort: 'canonical',
+          range: 'GEN.1',
+          fuzziness: 2,
+        },
+      });
+    });
+    await test.step('Compare status code', async () => {
+      helper.compareStatusCode(response.status(), 200);
+    });
+    await test.step('Compare response text', async () => {
+      helper.compareResponseText((await response.json())['data'], expBody['200wap']);
+    });
   });
 
   test('400 code', async ({ request, helper }) => {

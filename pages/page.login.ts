@@ -1,4 +1,5 @@
 import { type Page, type Locator, expect } from '@playwright/test';
+import { getMainUser } from '../utils/config';
 
 export default class LoginPage {
   readonly page: Page;
@@ -29,8 +30,9 @@ export default class LoginPage {
 
   /** Fill out an `Bible.Api` auth form and sign in */
   async fillOutForm() {
-    await this.login.field.fill(process.env.AT_USERNAME + '');
-    await this.password.field.fill(process.env.AT_PASSWORD + '');
+    const mainUser = getMainUser();
+    await this.login.field.fill(mainUser.username + '');
+    await this.password.field.fill(mainUser.password + '');
     await this.signInBtn.click();
 
     await this.page.waitForLoadState('load');

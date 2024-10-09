@@ -1,15 +1,15 @@
 import { APIResponse } from '@playwright/test';
-import { audioBibleBookId, audioBibleId } from '../../../utils/config';
+import { audioBible } from '../../../utils/config';
 import { test } from '../../../utils/fixtures';
 import * as expBody from './responses.json';
 
-const apiPath = `/v1/audio-bibles/${audioBibleId}/books/`;
+const apiPath = `/v1/audio-bibles/${audioBible.id}/books/`;
 let response: APIResponse;
 
 test.describe('/v1/audio-bibles/audioBibleId/books/bookId/chapters', async () => {
   test(`200 code`, async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + audioBibleBookId + '/chapters', {});
+      response = await request.get(apiPath + audioBible.book.id + '/chapters', {});
     });
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);

@@ -1,15 +1,15 @@
 import { APIResponse } from '@playwright/test';
-import { bibleBookChapterId, bibleId } from '../../../utils/config';
+import { bible } from '../../../utils/config';
 import { test } from '../../../utils/fixtures';
 import * as expBody from './responses.json';
 
-const apiPath = `/v1/bibles/${bibleId}/chapters/`;
+const apiPath = `/v1/bibles/${bible.id}/chapters/`;
 let response: APIResponse;
 
 test.describe('/v1/bibles/bibleId/chapters/chapterId/verses', async () => {
   test(`200 code`, async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + bibleBookChapterId + '/verses', {});
+      response = await request.get(apiPath + bible.book.chapterId + '/verses', {});
     });
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);

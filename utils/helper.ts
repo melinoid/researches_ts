@@ -10,7 +10,12 @@ export default class Helper {
     expResponse = JSON.stringify(expResponse);
 
     if (response !== expResponse) {
-      throw Error(`Response text:\n${response}\ndoes not match with expected:\n${expResponse}`);
+      throw Error(
+        `\x1b[41m Response text: \x1b[0m\n
+        ${response}\n
+        \x1b[41m does not match with expected: \x1b[0m\n
+        ${expResponse}`
+      );
     }
   }
 }

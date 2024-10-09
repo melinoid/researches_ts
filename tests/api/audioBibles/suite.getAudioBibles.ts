@@ -24,7 +24,7 @@ test.describe('/v1/audio-bibles', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response object', async () => {
-      const array1 = Object.keys((await response.json())['data'][0]);
+      const array1 = Object.keys((await response.json())['data'][2]);
       const array2 = Object.keys(expBody['200wod']);
 
       if (!(array1.length === array2.length && array1.every((value, index) => value === array2[index]))) {

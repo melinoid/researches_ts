@@ -1,5 +1,5 @@
 import { APIResponse } from '@playwright/test';
-import { audioBibleId } from '../../../utils/config';
+import { audioBible } from '../../../utils/config';
 import { test } from '../../../utils/fixtures';
 import * as expBody from './responses.json';
 
@@ -14,7 +14,7 @@ let response: APIResponse;
 test.describe('/v1/audio-bibles/audioBibleId/books', async () => {
   test(`200 code w/o params`, async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + audioBibleId + '/books', {});
+      response = await request.get(apiPath + audioBible.id + '/books', {});
     });
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);
@@ -28,7 +28,7 @@ test.describe('/v1/audio-bibles/audioBibleId/books', async () => {
 
   test(`200 code w/o chapters`, async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + audioBibleId + '/books', {
+      response = await request.get(apiPath + audioBible.id + '/books', {
         params: {
           'include-chapters': false,
         },
@@ -46,7 +46,7 @@ test.describe('/v1/audio-bibles/audioBibleId/books', async () => {
 
   test(`200 code with chapters`, async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + audioBibleId + '/books', {
+      response = await request.get(apiPath + audioBible.id + '/books', {
         params: {
           'include-chapters': true,
         },
@@ -65,7 +65,7 @@ test.describe('/v1/audio-bibles/audioBibleId/books', async () => {
   // Parameter works unstable
   test.fixme(`200 code with sections`, async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + audioBibleId + '/books', {
+      response = await request.get(apiPath + audioBible.id + '/books', {
         params: {
           'include-chapters-and-sections': false,
         },
@@ -96,7 +96,7 @@ test.describe('/v1/audio-bibles/audioBibleId/books', async () => {
   // Params pair doesn`t works
   test('400 code with params pair', async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + audioBibleId + '/books', {
+      response = await request.get(apiPath + audioBible.id + '/books', {
         params: {
           'include-chapters': false,
           'include-chapters-and-sections': false,
@@ -113,7 +113,7 @@ test.describe('/v1/audio-bibles/audioBibleId/books', async () => {
 
   test('401 code', async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + audioBibleId + '/books', {
+      response = await request.get(apiPath + audioBible.id + '/books', {
         headers: { 'api-key': '' },
       });
     });

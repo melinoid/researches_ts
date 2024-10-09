@@ -1,5 +1,5 @@
 import { APIResponse } from '@playwright/test';
-import { audioBibleId } from '../../../utils/config';
+import { audioBible } from '../../../utils/config';
 import { test } from '../../../utils/fixtures';
 import * as expBody from './responses.json';
 
@@ -7,15 +7,27 @@ const apiPath = '/v1/audio-bibles/';
 let response: APIResponse;
 
 test.describe('/v1/audio-bibles/audioBibleId', async () => {
-  test(`200 code`, async ({ request, helper }) => {
+  test('Normal 200 code', async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + audioBibleId, {});
+      response = await request.get(apiPath + audioBible.id, {});
     });
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
       helper.compareResponseText(await response.json(), expBody['200']);
+    });
+  });
+
+  test('200 code with empty body', async ({ request, helper }) => {
+    await test.step('Send request', async () => {
+      response = await request.get(apiPath + audioBible.id.substring(0, audioBible.id.length - 1) + '9', {});
+    });
+    await test.step('Compare status code', async () => {
+      helper.compareStatusCode(response.status(), 200);
+    });
+    await test.step('Compare response text', async () => {
+      helper.compareResponseText(await response.json(), expBody['200e']);
     });
   });
 

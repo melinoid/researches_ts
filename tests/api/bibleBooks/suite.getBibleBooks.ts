@@ -1,5 +1,5 @@
 import { APIResponse } from '@playwright/test';
-import { bibleId } from '../../../utils/config';
+import { bible } from '../../../utils/config';
 import { test } from '../../../utils/fixtures';
 import * as expBody from './responses.json';
 
@@ -14,7 +14,7 @@ let response: APIResponse;
 test.describe('/v1/bibles/bibleId/books', async () => {
   test(`200 code w/o params`, async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + bibleId + '/books', {});
+      response = await request.get(apiPath + bible.id + '/books', {});
     });
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);
@@ -28,7 +28,7 @@ test.describe('/v1/bibles/bibleId/books', async () => {
 
   test(`200 code w/o chapters`, async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + bibleId + '/books', {
+      response = await request.get(apiPath + bible.id + '/books', {
         params: {
           'include-chapters': false,
         },
@@ -46,7 +46,7 @@ test.describe('/v1/bibles/bibleId/books', async () => {
 
   test(`200 code with chapters`, async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + bibleId + '/books', {
+      response = await request.get(apiPath + bible.id + '/books', {
         params: {
           'include-chapters': true,
         },
@@ -65,7 +65,7 @@ test.describe('/v1/bibles/bibleId/books', async () => {
   test(`200 code with sections`, async ({ request, helper }) => {
     test.slow();
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + bibleId + '/books', {
+      response = await request.get(apiPath + bible.id + '/books', {
         params: {
           'include-chapters-and-sections': true,
         },
@@ -84,7 +84,7 @@ test.describe('/v1/bibles/bibleId/books', async () => {
   test('200 code with params pair', async ({ request, helper }) => {
     test.slow();
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + bibleId + '/books', {
+      response = await request.get(apiPath + bible.id + '/books', {
         params: {
           'include-chapters': true,
           'include-chapters-and-sections': true,

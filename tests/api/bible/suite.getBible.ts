@@ -1,5 +1,5 @@
 import { APIResponse } from '@playwright/test';
-import { bibleId } from '../../../utils/config';
+import { bible } from '../../../utils/config';
 import { test } from '../../../utils/fixtures';
 import * as expBody from './responses.json';
 
@@ -9,7 +9,7 @@ let response: APIResponse;
 test.describe('/v1/bibles/bibleId', async () => {
   test(`200 code`, async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + bibleId, {});
+      response = await request.get(apiPath + bible.id, {});
     });
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);

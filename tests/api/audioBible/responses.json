@@ -30,6 +30,7 @@
             "info": null
         }
     },
+    "200e": {},
     "400": {
         "statusCode": 400,
         "error": "Bad Request",
