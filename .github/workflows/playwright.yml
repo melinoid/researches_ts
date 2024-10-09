@@ -8,14 +8,20 @@ jobs:
   test:
     timeout-minutes: 10
     runs-on: ubuntu-latest
+    env:
+      AT_USERNAME: ${{ secrets.USER }}
+      AT_PASSWORD: ${{ secrets.PASS }}
+      AT_API_KEY: ${{ secrets.API_KEY }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: lts/*
       - name: Install dependencies
-        run: npm ci --ignore-scripts
-      - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
-      - name: Run Playwright tests
-        run: npx playwright test
+        run: npm ci --ignore-scripts && . utils/scripts/remove_reporter_dirs
+      - name: Install Browsers
+        run: npx playwright install --with-deps chromium
+      - name: Run API tests
+        run: npx playwright test -g api
+      - name: Run e2e tests
+        run: npx playwright test -g auth

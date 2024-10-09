@@ -1,0 +1,50 @@
+{
+    "200": {
+        "data": {
+            "id": "105a06b6146d11e7-01",
+            "dblId": "105a06b6146d11e7",
+            "relatedDbl": "9879dbb7cfe39e4d",
+            "name": "English - World English Bible 2013 (Drama NT)",
+            "nameLocal": "English - World English Bible 2013 (Drama NT)",
+            "abbreviation": "WEB13",
+            "abbreviationLocal": "WEB13",
+            "description": null,
+            "descriptionLocal": null,
+            "language": {
+                "id": "eng",
+                "name": "English",
+                "nameLocal": "English",
+                "script": "Latin",
+                "scriptDirection": "LTR"
+            },
+            "countries": [
+                {
+                    "id": "US",
+                    "name": "United States",
+                    "nameLocal": "United States"
+                }
+            ],
+            "type": "audio",
+            "updatedAt": "2024-07-01T22:16:16.000Z",
+            "copyright": "℗ 2013 Hosanna",
+            "info": null
+        }
+    },
+    "200e": {},
+    "400": {
+        "statusCode": 400,
+        "error": "Bad Request",
+        "message": "Invalid request params input"
+    },
+    "401": {
+        "statusCode": 401,
+        "error": "Unauthorized",
+        "message": "missing key"
+    },
+    "403": {
+        "statusCode": 403,
+        "error": "Forbidden",
+        "message": "You are not authorized to access that bible"
+    },
+    "404": {}
+}

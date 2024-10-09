@@ -1,0 +1,159 @@
+{
+    "200wop": {
+        "id": "ROM.1.1",
+        "orgId": "ROM.1.1",
+        "bookId": "ROM",
+        "chapterId": "ROM.1",
+        "bibleId": "bba9f40183526463-01",
+        "reference": "Romans 1:1",
+        "content": "<p class=\"s1\">Paul Greets the Saints in Rome</p><p class=\"m\"><span data-number=\"1\" data-sid=\"ROM 1:1\" class=\"v\">1</span>Paul, a servant of Christ Jesus, called to be an apostle, and set apart for the gospel of God— </p>",
+        "verseCount": 1,
+        "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
+        "next": {
+            "id": "ROM.1.2",
+            "number": "2"
+        },
+        "previous": {
+            "id": "ROM.intro.0",
+            "number": "0"
+        }
+    },
+    "200html": {
+        "id": "ROM.1.1",
+        "orgId": "ROM.1.1",
+        "bookId": "ROM",
+        "chapterId": "ROM.1",
+        "bibleId": "bba9f40183526463-01",
+        "reference": "Romans 1:1",
+        "content": "<h2 data-number=\"1\" data-sid=\"ROM 1\" class=\"c\">1</h2><p class=\"m\"><span class=\"verse-span\" data-verse-id=\"ROM.1.1\" data-verse-org-ids=\"ROM.1.1\">Paul, a servant of Christ Jesus, called to be an apostle, and set apart for the gospel of God— </span></p>",
+        "verseCount": 1,
+        "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
+        "next": {
+            "id": "ROM.1.2",
+            "number": "2"
+        },
+        "previous": {
+            "id": "ROM.intro.0",
+            "number": "0"
+        },
+        "parallels": [
+            {
+                "id": "ROM.1.1",
+                "orgId": "ROM.1.1",
+                "bookId": "ROM",
+                "chapterId": "ROM.1",
+                "bibleId": "bba9f40183526463-01",
+                "reference": "Romans 1:1",
+                "content": "<h2 data-number=\"1\" data-sid=\"ROM 1\" class=\"c\">1</h2><p class=\"m\"><span class=\"verse-span\" data-verse-id=\"ROM.1.1\" data-verse-org-ids=\"ROM.1.1\">Paul, a servant of Christ Jesus, called to be an apostle, and set apart for the gospel of God— </span></p>",
+                "verseCount": 1,
+                "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain"
+            }
+        ]
+    },
+    "200json": {
+        "id": "ROM.1.1",
+        "orgId": "ROM.1.1",
+        "bookId": "ROM",
+        "chapterId": "ROM.1",
+        "bibleId": "bba9f40183526463-01",
+        "reference": "Romans 1:1",
+        "content": [
+            {
+                "name": "para",
+                "type": "tag",
+                "attrs": {
+                    "style": "s1"
+                },
+                "items": [
+                    {
+                        "text": "Paul Greets the Saints in Rome",
+                        "type": "text"
+                    }
+                ]
+            },
+            {
+                "name": "para",
+                "type": "tag",
+                "attrs": {
+                    "style": "m"
+                },
+                "items": [
+                    {
+                        "name": "verse",
+                        "type": "tag",
+                        "attrs": {
+                            "number": "1",
+                            "style": "v",
+                            "sid": "ROM 1:1"
+                        },
+                        "items": [
+                            {
+                                "text": "1",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "text": "Paul, a servant of Christ Jesus, called to be an apostle, and set apart for the gospel of God— ",
+                        "type": "text",
+                        "attrs": {
+                            "verseId": "ROM.1.1",
+                            "verseOrgIds": [
+                                "ROM.1.1"
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "verseCount": 1,
+        "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
+        "next": {
+            "id": "ROM.1.2",
+            "number": "2"
+        },
+        "previous": {
+            "id": "ROM.intro.0",
+            "number": "0"
+        }
+    },
+    "200text": {
+        "id": "ROM.1.1",
+        "orgId": "ROM.1.1",
+        "bookId": "ROM",
+        "chapterId": "ROM.1",
+        "bibleId": "bba9f40183526463-01",
+        "reference": "Romans 1:1",
+        "content": "1\nPaul Greets the Saints in Rome\n [1] Paul, a servant of Christ Jesus, called to be an apostle, and set apart for the gospel of God— \n",
+        "verseCount": 1,
+        "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
+        "next": {
+            "id": "ROM.1.2",
+            "number": "2"
+        },
+        "previous": {
+            "id": "ROM.intro.0",
+            "number": "0"
+        }
+    },
+    "400": {
+        "statusCode": 400,
+        "error": "Bad Request",
+        "message": "Invalid request params input"
+    },
+    "401": {
+        "statusCode": 401,
+        "error": "Unauthorized",
+        "message": "missing key"
+    },
+    "403": {
+        "statusCode": 403,
+        "error": "Forbidden",
+        "message": "You are not authorized to access that bible"
+    },
+    "404": {
+        "statusCode": 404,
+        "error": "Not Found",
+        "message": "The requested verse does not exist"
+    }
+}

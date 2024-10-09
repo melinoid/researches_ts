@@ -1,0 +1,29 @@
+{
+    "200": {
+        "id": "ROM.4",
+        "bibleId": "bba9f40183526463-01",
+        "bookId": "ROM",
+        "number": "4",
+        "reference": "Romans 4"
+      },
+    "400": {
+        "statusCode": 400,
+        "error": "Bad Request",
+        "message": "Invalid request params input"
+    },
+    "401": {
+        "statusCode": 401,
+        "error": "Unauthorized",
+        "message": "missing key"
+    },
+    "403": {
+        "statusCode": 403,
+        "error": "Forbidden",
+        "message": "You are not authorized to access that bible"
+    },
+    "404": {
+        "statusCode": 404,
+        "error": "Not Found",
+        "message": "Sorry we couldn't find any chapters for that bibleId and bookId"
+    }
+}

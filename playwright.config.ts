@@ -1,9 +1,10 @@
 import { defineConfig, devices } from '@playwright/test';
+import 'dotenv/config';
 
 export default defineConfig({
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 2 : 0,
+  retries: process.env.CI ? 1 : 0,
   workers: 2,
   reporter: 'list',
   timeout: 60000,
@@ -14,13 +15,34 @@ export default defineConfig({
     timezoneId: 'Asia/Yekaterinburg',
     video: 'on-first-retry',
     viewport: { width: 1920, height: 1080 },
-    launchOptions: { slowMo: 0, args: ['--ignore-certificate-errors'] },
+    launchOptions: { slowMo: 0 },
+    baseURL: 'https://scripture.api.bible',
   },
 
   projects: [
+    // Global authorisation
+    { name: 'login', testMatch: '**/setup/setup.login.ts' },
+    // Authorized tests
     {
-      name: 'smoke',
-      testMatch: '**/smoke/*.@(spec|test).?(c|m)[jt]s?(x)',
+      name: 'authorized',
+      testMatch: '**/e2e/authorized/@(suite|test).*.?(c|m)[jt]s?(x)',
+      dependencies: ['login'],
+      use: {
+        storageState: '.temp/session.json',
+      },
+    },
+    // API tests
+    {
+      name: 'api',
+      timeout: 3000,
+      testMatch: '**/api/**/@(suite|test).*.?(c|m)[jt]s?(x)',
+      use: {
+        baseURL: 'https://api.scripture.api.bible',
+        extraHTTPHeaders: {
+          accept: 'application/json',
+          'api-key': `${process.env.AT_API_KEY}`,
+        },
+      },
     },
   ],
 });

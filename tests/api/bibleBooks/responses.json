@@ -1,0 +1,49 @@
+{
+    "200wop": {
+        "id": "EXO",
+        "bibleId": "bba9f40183526463-01",
+        "abbreviation": "EXO",
+        "name": "Exodus",
+        "nameLong": "Exodus"
+    },
+    "200wch": {
+        "id": "GEN.1",
+        "bibleId": "bba9f40183526463-01",
+        "bookId": "GEN",
+        "number": "1",
+        "position": 1
+    },
+    "200pp": {
+        "id": "GEN.1",
+        "bibleId": "bba9f40183526463-01",
+        "bookId": "GEN",
+        "number": "1",
+        "position": 1,
+        "sections": [
+            {
+                "id": "GEN.S1",
+                "bibleId": "bba9f40183526463-01",
+                "title": "The Creation",
+                "firstVerseId": "GEN.1.1",
+                "lastVerseId": "GEN.1.31",
+                "firstVerseOrgId": "GEN.1.1",
+                "lastVerseOrgId": "GEN.1.31"
+            }
+        ]
+    },
+    "400": {
+        "statusCode": 400,
+        "error": "Bad Request",
+        "message": "Invalid request params input"
+    },
+    "401": {
+        "statusCode": 401,
+        "error": "Unauthorized",
+        "message": "missing key"
+    },
+    "403": {
+        "statusCode": 403,
+        "error": "Forbidden",
+        "message": "You are not authorized to access that bible"
+    }
+}

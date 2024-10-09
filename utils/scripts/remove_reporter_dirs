@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sed -i 's#${location} › ##g' node_modules/playwright/lib/reporters/base.js
+sed -i 's#\[${projectName}\]#${projectName}#g' node_modules/playwright/lib/reporters/base.js
+
