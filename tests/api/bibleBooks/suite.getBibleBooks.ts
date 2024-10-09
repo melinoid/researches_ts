@@ -12,14 +12,93 @@ const apiPath = '/v1/bibles/';
 let response: APIResponse;
 
 test.describe('/v1/bibles/bibleId/books', async () => {
-  test(`200 code`, async ({ request, helper }) => {
+  test(`200 code w/o params`, async ({ request, helper }) => {
     await test.step('Send request', async () => {
       response = await request.get(apiPath + bibleId + '/books', {});
     });
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
-    //TODO: need step
+    await test.step('Compare response text', async () => {
+      // Attention, kludge. Come up with something normal here.
+      // There is too much data in the answer, we will limit ourselves to a separate block.
+      helper.compareResponseText((await response.json())['data'][1], expBody['200wop']);
+    });
+  });
+
+  test(`200 code w/o chapters`, async ({ request, helper }) => {
+    await test.step('Send request', async () => {
+      response = await request.get(apiPath + bibleId + '/books', {
+        params: {
+          'include-chapters': false,
+        },
+      });
+    });
+    await test.step('Compare status code', async () => {
+      helper.compareStatusCode(response.status(), 200);
+    });
+    await test.step('Compare response text', async () => {
+      // Attention, kludge. Come up with something normal here.
+      // There is too much data in the answer, we will limit ourselves to a separate block.
+      helper.compareResponseText((await response.json())['data'][1], expBody['200wop']);
+    });
+  });
+
+  test(`200 code with chapters`, async ({ request, helper }) => {
+    await test.step('Send request', async () => {
+      response = await request.get(apiPath + bibleId + '/books', {
+        params: {
+          'include-chapters': true,
+        },
+      });
+    });
+    await test.step('Compare status code', async () => {
+      helper.compareStatusCode(response.status(), 200);
+    });
+    await test.step('Compare response text', async () => {
+      // Attention, kludge. Come up with something normal here.
+      // There is too much data in the answer, we will limit ourselves to a separate block.
+      helper.compareResponseText((await response.json())['data'][0]['chapters'][1], expBody['200wch']);
+    });
+  });
+
+  test(`200 code with sections`, async ({ request, helper }) => {
+    test.slow();
+    await test.step('Send request', async () => {
+      response = await request.get(apiPath + bibleId + '/books', {
+        params: {
+          'include-chapters-and-sections': true,
+        },
+      });
+    });
+    await test.step('Compare status code', async () => {
+      helper.compareStatusCode(response.status(), 200);
+    });
+    await test.step('Compare response text', async () => {
+      // Attention, kludge. Come up with something normal here.
+      // There is too much data in the answer, we will limit ourselves to a separate block.
+      helper.compareResponseText((await response.json())['data'][0]['chapters'][1], expBody['200pp']);
+    });
+  });
+
+  test('200 code with params pair', async ({ request, helper }) => {
+    test.slow();
+    await test.step('Send request', async () => {
+      response = await request.get(apiPath + bibleId + '/books', {
+        params: {
+          'include-chapters': true,
+          'include-chapters-and-sections': true,
+        },
+      });
+    });
+    await test.step('Compare status code', async () => {
+      helper.compareStatusCode(response.status(), 200);
+    });
+    await test.step('Compare response text', async () => {
+      // Attention, kludge. Come up with something normal here.
+      // There is too much data in the answer, we will limit ourselves to a separate block.
+      helper.compareResponseText((await response.json())['data'][0]['chapters'][1], expBody['200pp']);
+    });
   });
 
   test('400 code', async ({ request, helper }) => {

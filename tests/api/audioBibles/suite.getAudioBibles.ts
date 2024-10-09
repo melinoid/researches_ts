@@ -23,10 +23,10 @@ test.describe('/v1/audio-bibles', async () => {
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
-    await test.step('Compare response text', async () => {
-      console.log(Object.keys(expBody['200wod']));
+    await test.step('Compare response object', async () => {
       const array1 = Object.keys((await response.json())['data'][0]);
       const array2 = Object.keys(expBody['200wod']);
+
       if (!(array1.length === array2.length && array1.every((value, index) => value === array2[index]))) {
         throw Error('Something went wrong, check the request response.');
       }

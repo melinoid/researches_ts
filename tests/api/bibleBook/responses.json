@@ -1,4 +1,20 @@
 {
+    "200wop": {
+        "data": {
+            "id": "ROM",
+            "bibleId": "bba9f40183526463-01",
+            "abbreviation": "ROM",
+            "name": "Romans",
+            "nameLong": "Romans"
+        }
+    },
+    "200wc": {
+        "id": "ROM.2",
+        "bibleId": "bba9f40183526463-01",
+        "bookId": "ROM",
+        "number": "2",
+        "position": 1092
+    },
     "400": {
         "statusCode": 400,
         "error": "Bad Request",

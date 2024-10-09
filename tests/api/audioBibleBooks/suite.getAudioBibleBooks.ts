@@ -20,6 +20,8 @@ test.describe('/v1/audio-bibles/audioBibleId/books', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
+      // Attention, kludge. Come up with something normal here.
+      // There is too much data in the answer, we will limit ourselves to a separate block.
       helper.compareResponseText((await response.json())['data'][3], expBody['200wop']);
     });
   });
@@ -36,6 +38,8 @@ test.describe('/v1/audio-bibles/audioBibleId/books', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
+      // Attention, kludge. Come up with something normal here.
+      // There is too much data in the answer, we will limit ourselves to a separate block.
       helper.compareResponseText((await response.json())['data'][3], expBody['200wop']);
     });
   });
@@ -52,6 +56,8 @@ test.describe('/v1/audio-bibles/audioBibleId/books', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
+      // Attention, kludge. Come up with something normal here.
+      // There is too much data in the answer, we will limit ourselves to a separate block.
       helper.compareResponseText((await response.json())['data'][3]['chapters'][3], expBody['200wch']);
     });
   });
@@ -69,6 +75,8 @@ test.describe('/v1/audio-bibles/audioBibleId/books', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
+      // Attention, kludge. Come up with something normal here.
+      // There is too much data in the answer, we will limit ourselves to a separate block.
       helper.compareResponseText((await response.json())['data'][3]['sections'][3], expBody['200wch']);
     });
   });

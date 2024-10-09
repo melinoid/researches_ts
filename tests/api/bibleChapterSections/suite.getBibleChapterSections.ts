@@ -15,6 +15,8 @@ test.describe('/v1/bibles/bibleId/chapters/chapterId/sections', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
+      // Attention, kludge. Come up with something normal here.
+      // There is too much data in the answer, we will limit ourselves to a separate block.
       helper.compareResponseText((await response.json())['data'][2], expBody['200']);
     });
   });
