@@ -3,15 +3,15 @@ import { bible } from '../../../utils/config';
 import { test } from '../../../utils/fixtures';
 import * as expBody from './responses.json';
 
-// interface params {
-//   'content-type'?: string; // html, json, text
-//   'include-notes'?: boolean;
-//   'include-titles'?: boolean;
-//   'include-chapter-numbers'?: boolean;
-//   'include-verse-numbers'?: boolean;
-//   'include-verse-spans'?: boolean;
-//   parallels?: string;
-// }
+interface RequestParams {
+  'content-type'?: string; // html, json, text
+  'include-notes'?: boolean;
+  'include-titles'?: boolean;
+  'include-chapter-numbers'?: boolean;
+  'include-verse-numbers'?: boolean;
+  'include-verse-spans'?: boolean;
+  parallels?: string;
+}
 
 const apiPath = `/v1/bibles/${bible.id}/sections/`;
 let response: APIResponse;

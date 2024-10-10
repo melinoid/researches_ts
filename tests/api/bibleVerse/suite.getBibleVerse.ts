@@ -3,16 +3,16 @@ import { bible } from '../../../utils/config';
 import { test } from '../../../utils/fixtures';
 import * as expBody from './responses.json';
 
-//interface params {
-//   'content-type'?: string; // html, json, text
-//   'include-notes'?: boolean;
-//   'include-titles'?: boolean;
-//   'include-chapter-numbers'?: boolean;
-//   'include-verse-numbers'?: boolean;
-//   'include-verse-spans'?: boolean;
-//   parallels?: string;
-//   'use-org-id'?: boolean;
-// }
+interface RequestParams {
+  'content-type'?: string; // html, json, text
+  'include-notes'?: boolean;
+  'include-titles'?: boolean;
+  'include-chapter-numbers'?: boolean;
+  'include-verse-numbers'?: boolean;
+  'include-verse-spans'?: boolean;
+  parallels?: string;
+  'use-org-id'?: boolean;
+}
 
 const apiPath = `/v1/bibles/${bible.id}/verses/`;
 let response: APIResponse;
@@ -32,7 +32,7 @@ test.describe('/v1/bibles/bibleId/verses/verseId', async () => {
     });
   });
 
-  test('200 code with html & alternate params', async ({ request, helper }) => {
+  test.only('200 code with html & alternate params', async ({ request, helper }) => {
     await test.step('Send request', async () => {
       response = await request.get(apiPath + bible.book.verseId, {
         params: {

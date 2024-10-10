@@ -3,14 +3,14 @@ import { bible } from '../../../utils/config';
 import { test } from '../../../utils/fixtures';
 import * as expBody from './responses.json';
 
-// interface params {
-//   query?: string;
-//   limit?: number;
-//   offset?: number;
-//   sort?: string; // relevanse, canonical, reverse-canonical
-//   range?: string;
-//   fuzziness?: string; // AUTO, 0, 1, 2
-// }
+interface RequestParams {
+  query?: string;
+  limit?: number;
+  offset?: number;
+  sort?: string; // relevanse, canonical, reverse-canonical
+  range?: string;
+  fuzziness?: string; // AUTO, 0, 1, 2
+}
 
 const apiPath = `/v1/bibles/${bible.id}/search`;
 let response: APIResponse;

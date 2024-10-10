@@ -3,10 +3,10 @@ import { audioBible } from '../../../utils/config';
 import { test } from '../../../utils/fixtures';
 import * as expBody from './responses.json';
 
-// interface params {
-//   'include-chapters'?: boolean;
-//   'include-chapters-and-sections'?: boolean
-// }
+interface RequestParams {
+  'include-chapters'?: boolean;
+  'include-chapters-and-sections'?: boolean;
+}
 
 const apiPath = '/v1/audio-bibles/';
 let response: APIResponse;

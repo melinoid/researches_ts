@@ -2,14 +2,14 @@ import { APIResponse } from '@playwright/test';
 import { test } from '../../../utils/fixtures';
 import * as expBody from './responses.json';
 
-// interface params {
-//   language?: string;
-//   abbreviation?: string;
-//   name?: string;
-//   ids?: string;
-//   bibleId?: string;
-//   'include-full-details'?: boolean;
-// }
+interface RequestParams {
+  language?: string;
+  abbreviation?: string;
+  name?: string;
+  ids?: string;
+  bibleId?: string;
+  'include-full-details'?: boolean;
+}
 
 const apiPath = '/v1/audio-bibles';
 let response: APIResponse;
