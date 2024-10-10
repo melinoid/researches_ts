@@ -3,9 +3,9 @@ import { bible } from '../../../utils/config';
 import { test } from '../../../utils/fixtures';
 import * as expBody from './responses.json';
 
-// interface params {
-//   'include-chapters'?: boolean;
-// }
+interface RequestParams {
+  'include-chapters'?: boolean;
+}
 
 const apiPath = `/v1/bibles/${bible.id}/books/`;
 let response: APIResponse;

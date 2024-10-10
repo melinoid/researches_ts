@@ -3,9 +3,9 @@ import { audioBible } from '../../../utils/config';
 import { test } from '../../../utils/fixtures';
 import * as expBody from './responses.json';
 
-// interface params {
-//   'include-chapters'?: boolean;
-// }
+interface RequestParams {
+  'include-chapters'?: boolean;
+}
 
 const apiPath = `/v1/audio-bibles/${audioBible.id}/books/`;
 let response: APIResponse;
