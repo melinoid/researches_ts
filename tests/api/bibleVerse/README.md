@@ -1,3 +1,5 @@
+[< Go back to contents](../README.md)
+
 ## URL
 
 `/v1/bibles/{bibleId}/verses/{verseId}`

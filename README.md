@@ -9,7 +9,7 @@ As you may have noticed, **TS/Playwright** was chosen to automate testing of the
 > All tests and scripts are prepared according to the principle of black box testing, test data and user scripts were obtained empirically and may contain unexpected errors.
 > **Be careful, don't take everything seriously and have fun.**
 
-### Test suites
+### Test suites with documentation
 
 - [HTTP v1 API](tests/api/README.md) (Pre-ready)
 - [End2end](tests/e2e/README.md) (Early on)
