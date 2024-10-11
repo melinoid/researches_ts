@@ -3,11 +3,6 @@ import { bible } from '../../../utils/config';
 import { test } from '../../../utils/fixtures';
 import * as expBody from './responses.json';
 
-// interface params {
-//   'include-chapters'?: boolean;
-//   'include-chapters-and-sections'?: boolean;
-// }
-
 const apiPath = '/v1/bibles/';
 let response: APIResponse;
 
@@ -22,7 +17,7 @@ test.describe('/v1/bibles/bibleId/books', async () => {
     await test.step('Compare response text', async () => {
       // Attention, kludge. Come up with something normal here.
       // There is too much data in the answer, we will limit ourselves to a separate block.
-      helper.compareResponseText((await response.json())['data'][1], expBody['200wop']);
+      helper.compareResponseText(expBody['200wop'], (await response.json())['data'][1]);
     });
   });
 
@@ -40,7 +35,7 @@ test.describe('/v1/bibles/bibleId/books', async () => {
     await test.step('Compare response text', async () => {
       // Attention, kludge. Come up with something normal here.
       // There is too much data in the answer, we will limit ourselves to a separate block.
-      helper.compareResponseText((await response.json())['data'][1], expBody['200wop']);
+      helper.compareResponseText(expBody['200wop'], (await response.json())['data'][1]);
     });
   });
 
@@ -58,7 +53,7 @@ test.describe('/v1/bibles/bibleId/books', async () => {
     await test.step('Compare response text', async () => {
       // Attention, kludge. Come up with something normal here.
       // There is too much data in the answer, we will limit ourselves to a separate block.
-      helper.compareResponseText((await response.json())['data'][0]['chapters'][1], expBody['200wch']);
+      helper.compareResponseText(expBody['200wch'], (await response.json())['data'][0]['chapters'][1]);
     });
   });
 
@@ -77,7 +72,7 @@ test.describe('/v1/bibles/bibleId/books', async () => {
     await test.step('Compare response text', async () => {
       // Attention, kludge. Come up with something normal here.
       // There is too much data in the answer, we will limit ourselves to a separate block.
-      helper.compareResponseText((await response.json())['data'][0]['chapters'][1], expBody['200pp']);
+      helper.compareResponseText(expBody['200pp'], (await response.json())['data'][0]['chapters'][1]);
     });
   });
 
@@ -97,7 +92,7 @@ test.describe('/v1/bibles/bibleId/books', async () => {
     await test.step('Compare response text', async () => {
       // Attention, kludge. Come up with something normal here.
       // There is too much data in the answer, we will limit ourselves to a separate block.
-      helper.compareResponseText((await response.json())['data'][0]['chapters'][1], expBody['200pp']);
+      helper.compareResponseText(expBody['200pp'], (await response.json())['data'][0]['chapters'][1]);
     });
   });
 
@@ -109,7 +104,7 @@ test.describe('/v1/bibles/bibleId/books', async () => {
       helper.compareStatusCode(response.status(), 400);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(await response.json(), expBody['400']);
+      helper.compareResponseText(expBody['400'], await response.json());
     });
   });
 
@@ -123,7 +118,7 @@ test.describe('/v1/bibles/bibleId/books', async () => {
       helper.compareStatusCode(response.status(), 401);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(await response.json(), expBody['401']);
+      helper.compareResponseText(expBody['401'], await response.json());
     });
   });
 
@@ -135,7 +130,7 @@ test.describe('/v1/bibles/bibleId/books', async () => {
       helper.compareStatusCode(response.status(), 403);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(await response.json(), expBody['403']);
+      helper.compareResponseText(expBody['403'], await response.json());
     });
   });
 });

@@ -2,15 +2,6 @@ import { APIResponse } from '@playwright/test';
 import { test } from '../../../utils/fixtures';
 import * as expBody from './responses.json';
 
-// interface params {
-//   language?: string;
-//   abbreviation?: string;
-//   name?: string;
-//   ids?: string;
-//   bibleId?: string;
-//   'include-full-details'?: boolean;
-// }
-
 const apiPath = '/v1/audio-bibles';
 let response: APIResponse;
 
@@ -52,7 +43,7 @@ test.describe('/v1/audio-bibles', async () => {
       response = (await response.json())['data'][0];
       response['updatedAt'] = '';
 
-      helper.compareResponseText(response, expBody['200wod']);
+      helper.compareResponseText(expBody['200wod'], response);
     });
   });
 
@@ -75,7 +66,7 @@ test.describe('/v1/audio-bibles', async () => {
       response = (await response.json())['data'][0];
       response['updatedAt'] = '';
 
-      helper.compareResponseText(response, expBody['200wd']);
+      helper.compareResponseText(expBody['200wd'], response);
     });
   });
 
@@ -89,7 +80,7 @@ test.describe('/v1/audio-bibles', async () => {
       helper.compareStatusCode(response.status(), 400);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(await response.json(), expBody['400']);
+      helper.compareResponseText(expBody['400'], await response.json());
     });
   });
 
@@ -103,7 +94,7 @@ test.describe('/v1/audio-bibles', async () => {
       helper.compareStatusCode(response.status(), 401);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(await response.json(), expBody['401']);
+      helper.compareResponseText(expBody['401'], await response.json());
     });
   });
 });
