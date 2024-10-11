@@ -10,7 +10,7 @@ Gets a single `Book` object for a given **bibleId** and **bookId**.
 
 <details><summary>Show params</summary>
 
-```ts
+```TypeScript
 {
   'include-chapters'?: boolean;
 }
@@ -22,7 +22,7 @@ Gets a single `Book` object for a given **bibleId** and **bookId**.
 
 <details><summary>Show model</summary>
 
-```ts
+```TypeScript
 {
   data: {
     id: string;

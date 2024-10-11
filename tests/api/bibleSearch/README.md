@@ -22,7 +22,7 @@ contain footnote references. However, those can be queried directly using the
 
 <details><summary>Show params</summary>
 
-```ts
+```TypeScript
 {
   query?: string;
   limit?: number;
@@ -39,7 +39,7 @@ contain footnote references. However, those can be queried directly using the
 
 <details><summary>Show model</summary>
 
-```ts
+```TypeScript
 {
   query: string;
   data: {

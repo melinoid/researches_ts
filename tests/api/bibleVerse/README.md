@@ -12,7 +12,7 @@ corresponding to the `verseId`.
 
 <details><summary>Show params</summary>
 
-```ts
+```TypeScript
 {
   'content-type'?: string; // html, json, text
   'include-notes'?: boolean;
@@ -31,7 +31,7 @@ corresponding to the `verseId`.
 
 <details><summary>Show model</summary>
 
-```ts
+```TypeScript
 {
   data: {
     id: string;

@@ -10,7 +10,7 @@ Gets an array of `Book` objects for a given **bibleId**.
 
 <details><summary>Show params</summary>
 
-```ts
+```TypeScript
 {
   'include-chapters'?: boolean;
   'include-chapters-and-sections'?: boolean;
@@ -23,7 +23,7 @@ Gets an array of `Book` objects for a given **bibleId**.
 
 <details><summary>Show model</summary>
 
-```ts
+```TypeScript
 {
   data: [
     {

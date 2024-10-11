@@ -18,7 +18,7 @@ None
 
 <details><summary>Show model</summary>
 
-```ts
+```TypeScript
 {
   data: {
     id: string;

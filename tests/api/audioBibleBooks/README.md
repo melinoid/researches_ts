@@ -10,7 +10,7 @@ Gets an array of `Book` objects for a given **audioBibleId**.
 
 <details><summary>Show params</summary>
 
-```ts
+```TypeScript
 {
   'include-chapters'?: boolean;
   'include-chapters-and-sections'?: boolean; // Doesn't work
@@ -23,7 +23,7 @@ Gets an array of `Book` objects for a given **audioBibleId**.
 
 <details><summary>Show model</summary>
 
-```ts
+```TypeScript
 {
   data: [
     {

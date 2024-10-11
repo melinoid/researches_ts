@@ -11,7 +11,7 @@ This `Chapter` object also includes an content property with all verses for the 
 
 <details><summary>Show params</summary>
 
-```ts
+```TypeScript
 {
   'content-type'?: string; // html, json, text
   'include-notes'?: boolean;
@@ -29,7 +29,7 @@ This `Chapter` object also includes an content property with all verses for the 
 
 <details><summary>Show model</summary>
 
-```ts
+```TypeScript
 {
   data: {
     id: string;

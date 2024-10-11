@@ -13,7 +13,7 @@ The `passageId` parameter can represent a chapter, verse, or range of verses.
 
 <details><summary>Show model</summary>
 
-```ts
+```TypeScript
 {
   'content-type'?: string; // html, json, text
   'include-notes'?: boolean;
@@ -32,7 +32,7 @@ The `passageId` parameter can represent a chapter, verse, or range of verses.
 
 <details><summary>Show model</summary>
 
-```ts
+```TypeScript
 {
   data: {
     id: string;

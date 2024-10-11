@@ -10,7 +10,7 @@ Gets an array of `audio Bible` objects.
 
 <details><summary>Show params</summary>
 
-```ts
+```TypeScript
 {
   language?: string;
   abbreviation?: string;
@@ -27,7 +27,7 @@ Gets an array of `audio Bible` objects.
 
 <details><summary>Show model</summary>
 
-```ts
+```TypeScript
 {
   data: [
     {
