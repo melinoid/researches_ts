@@ -14,6 +14,51 @@ and expires in XX minutes. The `expiresAt` property provides the Unix time value
 
 None
 
+## Response model
+
+<details><summary>Show model</summary>
+
+```ts
+{
+  data: {
+    id: string;
+    bibleId: string;
+    number: string;
+    bookId: string;
+    resourceUrl: string;
+    timecodes?: [
+      {
+        end: string;
+        start: string;
+        verseId: string;
+      },
+    ];
+    expiresAt: string | number;
+    reference: string;
+    next?: {
+      id: string;
+      bookId: string;
+      number: string;
+    };
+    previous?: {
+      id: string;
+      bookId: string;
+      number: string;
+    };
+    copyright: string;
+  };
+  meta: {
+    fums: string;
+    fumsId: string;
+    fumsJsInclude: string;
+    fumsJs: string;
+    fumsNoScript: string;
+  };
+}
+```
+
+</details>
+
 ## Test Suite
 
 Coming soon

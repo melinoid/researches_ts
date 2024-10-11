@@ -8,6 +8,8 @@ Gets an array of `audio Bible` objects.
 
 ## Request params
 
+<details><summary>Show params</summary>
+
 ```ts
 {
   language?: string;
@@ -18,6 +20,57 @@ Gets an array of `audio Bible` objects.
   'include-full-details'?: boolean;
 }
 ```
+
+</details>
+
+## Response model
+
+<details><summary>Show model</summary>
+
+```ts
+{
+  data: [
+    {
+      id: string;
+      dblId: string;
+      abbreviation: string;
+      abbreviationLocal: string;
+      language: {
+        id: string;
+        name: string;
+        nameLocal: string;
+        script: string;
+        scriptDirection: string;
+      };
+      countries: [
+        {
+          id: string;
+          name: string;
+          nameLocal: string;
+        },
+      ];
+      name: string;
+      nameLocal: string;
+      description: string;
+      descriptionLocal: string;
+      relatedDbl: string;
+      type: string;
+      updatedAt: string | Date;
+      audioBibles: [
+        {
+          id: string;
+          name: string;
+          nameLocal: string;
+          description: string;
+          descriptionLocal: string;
+        },
+      ];
+    },
+  ];
+}
+```
+
+</details>
 
 ## Test Suite
 

@@ -8,12 +8,45 @@ Gets an array of `Book` objects for a given **audioBibleId**.
 
 ## Request params
 
+<details><summary>Show params</summary>
+
 ```ts
 {
   'include-chapters'?: boolean;
   'include-chapters-and-sections'?: boolean; // Doesn't work
 }
 ```
+
+</details>
+
+## Response model
+
+<details><summary>Show model</summary>
+
+```ts
+{
+  data: [
+    {
+      id: string;
+      bibleId: string;
+      abbreviation: string;
+      name: string;
+      nameLong: string;
+      chapters?: [
+        {
+          id: string;
+          bibleId: string;
+          number: string;
+          bookId: string;
+          reference: string;
+        },
+      ];
+    },
+  ];
+}
+```
+
+</details>
 
 ## Test Suite
 

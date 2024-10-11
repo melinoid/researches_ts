@@ -11,6 +11,8 @@ The `passageId` parameter can represent a chapter, verse, or range of verses.
 
 ## Request params
 
+<details><summary>Show model</summary>
+
 ```ts
 {
   'content-type'?: string; // html, json, text
@@ -23,6 +25,50 @@ The `passageId` parameter can represent a chapter, verse, or range of verses.
   parallels?: string; // bibleIds, comma delimited
 }
 ```
+
+</details>
+
+## Response model
+
+<details><summary>Show model</summary>
+
+```ts
+{
+  data: {
+    id: string;
+    bibleId: string;
+    orgId: string;
+    bookId: string;
+    chapterIds: string[];
+    content: string;
+    reference: string;
+    verseCount: string | number;
+    copyright: string;
+    parallels?: [
+      {
+        id: string;
+        bibleId: string;
+        orgId: string;
+        bookId: string;
+        chapterIds: string[];
+        content: string;
+        reference: string;
+        verseCount: string | number;
+        copyright: string;
+      },
+    ];
+  };
+  meta: {
+    fums: string;
+    fumsId: string;
+    fumsJsInclude: string;
+    fumsJs: string;
+    fumsNoScript: string;
+  };
+}
+```
+
+</details>
 
 ## Test Suite
 

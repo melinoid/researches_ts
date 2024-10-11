@@ -20,6 +20,8 @@ contain footnote references. However, those can be queried directly using the
 
 ## Request params
 
+<details><summary>Show params</summary>
+
 ```ts
 {
   query?: string;
@@ -30,6 +32,45 @@ contain footnote references. However, those can be queried directly using the
   fuzziness?: string; // AUTO, 0, 1, 2
 }
 ```
+
+</details>
+
+## Response model
+
+<details><summary>Show model</summary>
+
+```ts
+{
+  query: string;
+  data: {
+    query: string;
+    limit: number;
+    offset: number;
+    total: number;
+    verseCount: number;
+    verses: [
+      {
+        id: string;
+        orgId: string;
+        bibleId: string;
+        bookId: string;
+        chapterId: string;
+        text: string;
+        reference: string;
+      },
+    ];
+  };
+  meta: {
+    fums: string;
+    fumsId: string;
+    fumsJsInclude: string;
+    fumsJs: string;
+    fumsNoScript: string;
+  };
+}
+```
+
+</details>
 
 ## Test Suite
 

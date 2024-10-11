@@ -10,6 +10,29 @@ Gets an array of `Section` objects for a given **bibleId** and **chapterId**.
 
 None
 
+## Response model
+
+<details><summary>Show model</summary>
+
+```ts
+{
+  data: [
+    {
+      id: string;
+      bibleId: string;
+      bookId: string;
+      title: string;
+      firstVerseId: string;
+      lastVerseId: string;
+      firstVerseOrgId: string;
+      lastVerseOrgId: string;
+    },
+  ];
+}
+```
+
+</details>
+
 ## Test Suite
 
 Coming soon

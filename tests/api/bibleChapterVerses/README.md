@@ -10,6 +10,27 @@ Gets an array of `Verse` objects for a given **bibleId** and **chapterId**.
 
 None
 
+## Response model
+
+<details><summary>Show model</summary>
+
+```ts
+{
+  data: [
+    {
+      id: string;
+      orgId: string;
+      bibleId: string;
+      bookId: string;
+      chapterId: string;
+      reference: string;
+    },
+  ];
+}
+```
+
+</details>
+
 ## Test Suite
 
 Coming soon

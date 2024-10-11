@@ -10,6 +10,8 @@ corresponding to the `verseId`.
 
 ## Request params
 
+<details><summary>Show params</summary>
+
 ```ts
 {
   'content-type'?: string; // html, json, text
@@ -22,6 +24,45 @@ corresponding to the `verseId`.
   parallels?: string; // bibleIds, comma delimited
 }
 ```
+
+</details>
+
+## Response model
+
+<details><summary>Show model</summary>
+
+```ts
+{
+  data: {
+    id: string;
+    orgId: string;
+    bibleId: string;
+    bookId: string;
+    chapterId: string;
+    content: string;
+    reference: string;
+    verseCount: number;
+    copyright: string;
+    next: {
+      id: string;
+      bookId: string;
+    }
+    previous: {
+      id: string;
+      bookId: string;
+    }
+  }
+  meta: {
+    fums: string;
+    fumsId: string;
+    fumsJsInclude: string;
+    fumsJs: string;
+    fumsNoScript: string;
+  }
+}
+```
+
+</details>
 
 ## Test Suite
 

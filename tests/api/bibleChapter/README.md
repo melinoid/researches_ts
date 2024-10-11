@@ -9,6 +9,8 @@ This `Chapter` object also includes an content property with all verses for the 
 
 ## Request params
 
+<details><summary>Show params</summary>
+
 ```ts
 {
   'content-type'?: string; // html, json, text
@@ -20,6 +22,46 @@ This `Chapter` object also includes an content property with all verses for the 
   parallels?: string; // bibleIds, comma delimited
 }
 ```
+
+</details>
+
+## Response model
+
+<details><summary>Show model</summary>
+
+```ts
+{
+  data: {
+    id: string;
+    bibleId: string;
+    number: string;
+    bookId: string;
+    content: string;
+    reference: string;
+    verseCount: string | number;
+    next?: {
+      id: string;
+      bookId: string;
+      number: string;
+    };
+    previous?: {
+      id: string;
+      bookId: string;
+      number: string;
+    };
+    copyright: string;
+  };
+  meta: {
+    fums: string;
+    fumsId: string;
+    fumsJsInclude: string;
+    fumsJs: string;
+    fumsNoScript: string;
+  };
+}
+```
+
+</details>
 
 ## Test Suite
 

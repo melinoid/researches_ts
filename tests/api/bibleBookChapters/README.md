@@ -10,6 +10,26 @@ Gets an array of `Chapter` objects for a given **bibleId** and **bookId**.
 
 None
 
+## Response model
+
+<details><summary>Show model</summary>
+
+```ts
+{
+  data: [
+    {
+      id: string;
+      bibleId: string;
+      number: string;
+      bookId: string;
+      reference: string;
+    },
+  ];
+}
+```
+
+</details>
+
 ## Test Suite
 
 Coming soon

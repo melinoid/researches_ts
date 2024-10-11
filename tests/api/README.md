@@ -8,10 +8,9 @@ Documentation on api routs and methods is in [API.Bible Swagger](https://scriptu
 
 The file structure follows the standard:
 
-- **"Readme" file** – for documentation.
-- **response.i.ts** – to describe the response model.
-- **responses.json** – for reference responses.
-- **suite.request.ts** – for test logic.
+- **"Readme" file** – documentation.
+- **responses.json** – reference responses.
+- **suite.request.ts** – test logic.
 
 ## List of routs
 
