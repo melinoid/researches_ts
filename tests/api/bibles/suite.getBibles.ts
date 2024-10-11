@@ -2,14 +2,6 @@ import { APIResponse } from '@playwright/test';
 import { test } from '../../../utils/fixtures';
 import * as expBody from './responses.json';
 
-interface RequestParams {
-  language?: string;
-  abbreviation?: string;
-  name?: string;
-  ids?: string;
-  'include-full-details'?: boolean;
-}
-
 const apiPath = '/v1/bibles';
 let response: APIResponse;
 
@@ -50,7 +42,7 @@ test.describe('/v1/bibles', async () => {
       response = await response.json();
       response['data'][0]['updatedAt'] = '';
 
-      helper.compareResponseText(response, expBody['200wap']);
+      helper.compareResponseText(expBody['200wap'], response);
     });
   });
 
@@ -64,7 +56,7 @@ test.describe('/v1/bibles', async () => {
       helper.compareStatusCode(response.status(), 400);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(await response.json(), expBody['400']);
+      helper.compareResponseText(expBody['400'], await response.json());
     });
   });
 
@@ -78,7 +70,7 @@ test.describe('/v1/bibles', async () => {
       helper.compareStatusCode(response.status(), 401);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(await response.json(), expBody['401']);
+      helper.compareResponseText(expBody['401'], await response.json());
     });
   });
 });

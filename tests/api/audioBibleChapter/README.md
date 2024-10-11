@@ -1,0 +1,31 @@
+## URL
+
+`/v1/audio-bibles/{audioBibleId}/chapters/{chapterId}`
+
+## What is this for
+
+Gets a single `Chapter` object for a given **audioBibleId** and **chapterId**.
+This AudioChapter object also includes an `resourceUrl` property with a HTTP URL
+to the mp3 audio resource for the chapter. The `resourceUrl` is unique per request
+and expires in XX minutes. The `expiresAt` property provides the Unix time value of
+`resourceUrl` expiration.
+
+## Request params
+
+None
+
+## Test Suite
+
+Coming soon
+
+#### Test: 200 code
+
+| Action       | Expected result |
+| ------------ | --------------- |
+| Send request | get response    |
+
+#### Test: 400 code
+
+| Action       | Expected result |
+| ------------ | --------------- |
+| Send request | get response    |

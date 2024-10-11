@@ -3,10 +3,6 @@ import { bible } from '../../../utils/config';
 import { test } from '../../../utils/fixtures';
 import * as expBody from './responses.json';
 
-interface RequestParams {
-  'include-chapters'?: boolean;
-}
-
 const apiPath = `/v1/bibles/${bible.id}/books/`;
 let response: APIResponse;
 
@@ -19,7 +15,7 @@ test.describe('/v1/bibles/bibleId/books/bookId', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(await response.json(), expBody['200wop']);
+      helper.compareResponseText(expBody['200wop'], await response.json());
     });
   });
 
@@ -31,7 +27,7 @@ test.describe('/v1/bibles/bibleId/books/bookId', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(await response.json(), expBody['200wop']);
+      helper.compareResponseText(expBody['200wop'], await response.json());
     });
   });
 
@@ -45,7 +41,7 @@ test.describe('/v1/bibles/bibleId/books/bookId', async () => {
     await test.step('Compare response text', async () => {
       // Attention, kludge. Come up with something normal here.
       // There is too much data in the answer, we will limit ourselves to a separate block.
-      helper.compareResponseText((await response.json())['data']['chapters'][2], expBody['200wc']);
+      helper.compareResponseText(expBody['200wc'], (await response.json())['data']['chapters'][2]);
     });
   });
 
@@ -57,7 +53,7 @@ test.describe('/v1/bibles/bibleId/books/bookId', async () => {
       helper.compareStatusCode(response.status(), 400);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(await response.json(), expBody['400']);
+      helper.compareResponseText(expBody['400'], await response.json());
     });
   });
 
@@ -71,7 +67,7 @@ test.describe('/v1/bibles/bibleId/books/bookId', async () => {
       helper.compareStatusCode(response.status(), 401);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(await response.json(), expBody['401']);
+      helper.compareResponseText(expBody['401'], await response.json());
     });
   });
 
@@ -83,7 +79,7 @@ test.describe('/v1/bibles/bibleId/books/bookId', async () => {
       helper.compareStatusCode(response.status(), 403);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(await response.json(), expBody['403']);
+      helper.compareResponseText(expBody['403'], await response.json());
     });
   });
 
@@ -95,7 +91,7 @@ test.describe('/v1/bibles/bibleId/books/bookId', async () => {
       helper.compareStatusCode(response.status(), 404);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(await response.json(), expBody['404']);
+      helper.compareResponseText(expBody['404'], await response.json());
     });
   });
 });
