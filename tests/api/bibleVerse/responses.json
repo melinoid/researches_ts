@@ -1,76 +1,63 @@
 {
     "200wop": {
-        "id": "ROM.1.1",
-        "orgId": "ROM.1.1",
+        "id": "ROM.1.2",
+        "orgId": "ROM.1.2",
         "bookId": "ROM",
         "chapterId": "ROM.1",
         "bibleId": "bba9f40183526463-01",
-        "reference": "Romans 1:1",
-        "content": "<p class=\"s1\">Paul Greets the Saints in Rome</p><p class=\"m\"><span data-number=\"1\" data-sid=\"ROM 1:1\" class=\"v\">1</span>Paul, a servant of Christ Jesus, called to be an apostle, and set apart for the gospel of God— </p>",
+        "reference": "Romans 1:2",
+        "content": "<p class=\"m\"><span data-number=\"2\" data-sid=\"ROM 1:2\" class=\"v\">2</span>the gospel He promised beforehand through His prophets in the Holy Scriptures, </p>",
         "verseCount": 1,
         "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
         "next": {
-            "id": "ROM.1.2",
-            "number": "2"
+            "id": "ROM.1.3",
+            "number": "3"
         },
         "previous": {
-            "id": "ROM.intro.0",
-            "number": "0"
+            "id": "ROM.1.1",
+            "number": "1"
         }
     },
     "200html": {
-        "id": "ROM.1.1",
-        "orgId": "ROM.1.1",
+        "id": "ROM.1.2",
+        "orgId": "ROM.1.2",
         "bookId": "ROM",
         "chapterId": "ROM.1",
         "bibleId": "bba9f40183526463-01",
-        "reference": "Romans 1:1",
-        "content": "<h2 data-number=\"1\" data-sid=\"ROM 1\" class=\"c\">1</h2><p class=\"m\"><span class=\"verse-span\" data-verse-id=\"ROM.1.1\" data-verse-org-ids=\"ROM.1.1\">Paul, a servant of Christ Jesus, called to be an apostle, and set apart for the gospel of God— </span></p>",
+        "reference": "Romans 1:2",
+        "content": "<p class=\"m\"><span class=\"verse-span\" data-verse-id=\"ROM.1.2\" data-verse-org-ids=\"ROM.1.2\"><span data-number=\"2\" data-sid=\"ROM 1:2\" class=\"v\">2</span></span><span class=\"verse-span\" data-verse-id=\"ROM.1.2\" data-verse-org-ids=\"ROM.1.2\">the gospel He promised beforehand through His prophets in the Holy Scriptures, </span></p>",
         "verseCount": 1,
         "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
         "next": {
-            "id": "ROM.1.2",
-            "number": "2"
+            "id": "ROM.1.3",
+            "number": "3"
         },
         "previous": {
-            "id": "ROM.intro.0",
-            "number": "0"
+            "id": "ROM.1.1",
+            "number": "1"
         },
         "parallels": [
             {
-                "id": "ROM.1.1",
-                "orgId": "ROM.1.1",
+                "id": "ROM.1.2",
+                "orgId": "ROM.1.2",
                 "bookId": "ROM",
                 "chapterId": "ROM.1",
-                "bibleId": "bba9f40183526463-01",
-                "reference": "Romans 1:1",
-                "content": "<h2 data-number=\"1\" data-sid=\"ROM 1\" class=\"c\">1</h2><p class=\"m\"><span class=\"verse-span\" data-verse-id=\"ROM.1.1\" data-verse-org-ids=\"ROM.1.1\">Paul, a servant of Christ Jesus, called to be an apostle, and set apart for the gospel of God— </span></p>",
+                "bibleId": "9879dbb7cfe39e4d-01",
+                "reference": "Romans 1:2",
+                "content": "<p class=\"p\"><span class=\"verse-span\" data-verse-id=\"ROM.1.2\" data-verse-org-ids=\"ROM.1.2\"><span data-number=\"2\" data-sid=\"ROM 1:2\" class=\"v\">2</span></span><span class=\"verse-span\" data-verse-id=\"ROM.1.2\" data-verse-org-ids=\"ROM.1.2\">which he promised before through his prophets in the holy Scriptures, </span></p>",
                 "verseCount": 1,
-                "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain"
+                "copyright": "\n          PUBLIC DOMAIN\n        "
             }
         ]
     },
     "200json": {
-        "id": "ROM.1.1",
-        "orgId": "ROM.1.1",
+        "id": "ROM.1.2",
+        "orgId": "ROM.1.2",
         "bookId": "ROM",
         "chapterId": "ROM.1",
         "bibleId": "bba9f40183526463-01",
-        "reference": "Romans 1:1",
+        "reference": "Romans 1:2",
         "content": [
-            {
-                "name": "para",
-                "type": "tag",
-                "attrs": {
-                    "style": "s1"
-                },
-                "items": [
-                    {
-                        "text": "Paul Greets the Saints in Rome",
-                        "type": "text"
-                    }
-                ]
-            },
             {
                 "name": "para",
                 "type": "tag",
@@ -82,24 +69,24 @@
                         "name": "verse",
                         "type": "tag",
                         "attrs": {
-                            "number": "1",
+                            "number": "2",
                             "style": "v",
-                            "sid": "ROM 1:1"
+                            "sid": "ROM 1:2"
                         },
                         "items": [
                             {
-                                "text": "1",
+                                "text": "2",
                                 "type": "text"
                             }
                         ]
                     },
                     {
-                        "text": "Paul, a servant of Christ Jesus, called to be an apostle, and set apart for the gospel of God— ",
+                        "text": "the gospel He promised beforehand through His prophets in the Holy Scriptures, ",
                         "type": "text",
                         "attrs": {
-                            "verseId": "ROM.1.1",
+                            "verseId": "ROM.1.2",
                             "verseOrgIds": [
-                                "ROM.1.1"
+                                "ROM.1.2"
                             ]
                         }
                     }
@@ -109,32 +96,45 @@
         "verseCount": 1,
         "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
         "next": {
-            "id": "ROM.1.2",
-            "number": "2"
+            "id": "ROM.1.3",
+            "number": "3"
         },
         "previous": {
-            "id": "ROM.intro.0",
-            "number": "0"
+            "id": "ROM.1.1",
+            "number": "1"
         }
     },
     "200text": {
-        "id": "ROM.1.1",
-        "orgId": "ROM.1.1",
+        "id": "ROM.1.2",
+        "orgId": "ROM.1.2",
         "bookId": "ROM",
         "chapterId": "ROM.1",
         "bibleId": "bba9f40183526463-01",
-        "reference": "Romans 1:1",
-        "content": "1\nPaul Greets the Saints in Rome\n [1] Paul, a servant of Christ Jesus, called to be an apostle, and set apart for the gospel of God— \n",
+        "reference": "Romans 1:2",
+        "content": " [2] the gospel He promised beforehand through His prophets in the Holy Scriptures, \n",
         "verseCount": 1,
         "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
         "next": {
-            "id": "ROM.1.2",
-            "number": "2"
+            "id": "ROM.1.3",
+            "number": "3"
         },
         "previous": {
-            "id": "ROM.intro.0",
-            "number": "0"
-        }
+            "id": "ROM.1.1",
+            "number": "1"
+        },
+        "parallels": [
+            {
+                "id": "ROM.1.2",
+                "orgId": "ROM.1.2",
+                "bookId": "ROM",
+                "chapterId": "ROM.1",
+                "bibleId": "9879dbb7cfe39e4d-01",
+                "reference": "Romans 1:2",
+                "content": "     [2] which he promised before through his prophets in the holy Scriptures, \n",
+                "verseCount": 1,
+                "copyright": "\n          PUBLIC DOMAIN\n        "
+            }
+        ]
     },
     "400": {
         "statusCode": 400,

@@ -14,8 +14,9 @@ export const bible = {
   book: {
     id: 'ROM',
     chapterId: 'ROM.1',
-    verseId: 'ROM.1.1',
+    verseId: 'ROM.1.2',
     sectionId: 'ROM.S1',
+    parallelId: '9879dbb7cfe39e4d-01',
   },
 };
 /**

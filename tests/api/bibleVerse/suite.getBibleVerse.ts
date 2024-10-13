@@ -27,22 +27,19 @@ test.describe('/v1/bibles/bibleId/verses/verseId', async () => {
         params: {
           'content-type': 'html',
           'include-notes': true,
-          'include-titles': false,
           'include-chapter-numbers': true,
-          'include-verse-numbers': false,
           'include-verse-spans': true,
-          'use-org-id': false,
-          parallels: bible.id,
+          parallels: bible.book.parallelId,
         },
       });
     });
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);
-      await test.step('Compare response text', async () => {
-        // Attention, kludge. Come up with something normal here.
-        // Let's agree that we only need static data, rewriting dynamic data and discard meta.
-        helper.compareResponseText(expBody['200html'], (await response.json())['data']);
-      });
+    });
+    await test.step('Compare response text', async () => {
+      // Attention, kludge. Come up with something normal here.
+      // Let's agree that we only need static data, rewriting dynamic data and discard meta.
+      helper.compareResponseText(expBody['200html'], (await response.json())['data']);
     });
   });
 
@@ -51,11 +48,8 @@ test.describe('/v1/bibles/bibleId/verses/verseId', async () => {
       response = await request.get(apiPath + bible.book.verseId, {
         params: {
           'content-type': 'json',
-          'include-notes': false,
           'include-titles': true,
-          'include-chapter-numbers': false,
           'include-verse-numbers': true,
-          'include-verse-spans': false,
           'use-org-id': true,
         },
       });
@@ -81,6 +75,7 @@ test.describe('/v1/bibles/bibleId/verses/verseId', async () => {
           'include-verse-numbers': true,
           'include-verse-spans': true,
           'use-org-id': true,
+          parallels: bible.book.parallelId,
         },
       });
     });
