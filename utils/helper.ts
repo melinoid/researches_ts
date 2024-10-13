@@ -45,11 +45,9 @@ export default class Helper {
     for (let key in keys1) {
       if (keys1[key] === keys2[key]) {
         if (typeof object1[keys1[key]] === 'object' && object1[keys1[key]] !== null) {
-          if (Array.isArray(object1[keys1[key]]) && object1[keys1[key]].length > 0 && object2[keys2[key]].length) {
-            for (let i in object1[keys1[key]]) {
-              if (typeof object1[keys1[key]][i] === 'object' && object1[keys1[key]][i] !== null) {
-                this.compareObjectsKeys(object1[keys1[key]][i], object2[keys2[key]][i]);
-              }
+          if (Array.isArray(object1[keys1[key]]) && object1[keys1[key]].length > 0 && object2[keys2[key]].length > 0) {
+            if (typeof object1[keys1[key]][0] === 'object' && object1[keys1[key]][i] !== null) {
+              this.compareObjectsKeys(object1[keys1[key]][0], object2[keys2[key]][0]);
             }
           } else {
             this.compareObjectsKeys(object1[keys1[key]], object2[keys2[key]]);
