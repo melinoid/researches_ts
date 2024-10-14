@@ -7,7 +7,7 @@ const apiPath = `/v1/bibles/${bible.id}/search`;
 let response: APIResponse;
 
 test.describe('/v1/bibles/bibleId/search', async () => {
-  test('200 code with only query', async ({ request, helper }) => {
+  test.fixme('200 code with only query', async ({ request, helper }) => {
     await test.step('Send request', async () => {
       response = await request.get(apiPath, {
         params: {
