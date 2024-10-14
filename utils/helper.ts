@@ -31,6 +31,8 @@ export default class Helper {
 
   /**
    * Compare the keys of the expected object with the reference one.
+   *
+   * In the case of an array, the check is done only on the first element, based on the structure of the responses
    * @param object1 reference object.
    * @param object2 expected object
    */
@@ -46,7 +48,7 @@ export default class Helper {
       if (keys1[key] === keys2[key]) {
         if (typeof object1[keys1[key]] === 'object' && object1[keys1[key]] !== null) {
           if (Array.isArray(object1[keys1[key]]) && object1[keys1[key]].length > 0 && object2[keys2[key]].length > 0) {
-            if (typeof object1[keys1[key]][0] === 'object' && object1[keys1[key]][i] !== null) {
+            if (typeof object1[keys1[key]][0] === 'object' && object1[keys1[key]][0] !== null) {
               this.compareObjectsKeys(object1[keys1[key]][0], object2[keys2[key]][0]);
             }
           } else {
