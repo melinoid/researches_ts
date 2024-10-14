@@ -61,18 +61,11 @@ None
 
 </details>
 
-## Test Suite
+## Tests in suite
 
-Coming soon
-
-#### Test: 200 code
-
-| Action       | Expected result |
-| ------------ | --------------- |
-| Send request | get response    |
-
-#### Test: 400 code
-
-| Action       | Expected result |
-| ------------ | --------------- |
-| Send request | get response    |
+1. **/v1/audio-bibles/audioBibleId/chapters/chapterId 200 code**
+2. **/v1/audio-bibles/audioBibleId/chapters/chapterId 400 code (bad chapterId)**
+3. **/v1/audio-bibles/audioBibleId/chapters/chapterId 400 code (bad param)**
+4. **/v1/audio-bibles/audioBibleId/chapters/chapterId 401 code**
+5. **/v1/audio-bibles/audioBibleId/chapters/chapterId 403 code**
+6. **/v1/audio-bibles/audioBibleId/chapters/chapterId 404 code**

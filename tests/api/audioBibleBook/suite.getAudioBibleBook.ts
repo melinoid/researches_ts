@@ -26,7 +26,7 @@ test.describe('/v1/audio-bibles/audioBibleId/books/bookId', async () => {
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
-    await test.step('Compare response model', async () => {
+    await test.step('Compare response text', async () => {
       helper.compareResponseText(expBody['200wop'], await response.json());
     });
   });
