@@ -1,13 +1,17 @@
 {
     "200": {
-        "id": "ROM.S34",
-        "bibleId": "bba9f40183526463-01",
-        "bookId": "ROM",
-        "title": "Forgiveness",
-        "firstVerseId": "ROM.12.14",
-        "lastVerseId": "ROM.12.21",
-        "firstVerseOrgId": "ROM.12.14",
-        "lastVerseOrgId": "ROM.12.21"
+        "data": [
+            {
+                "id": "1CO.S1",
+                "bibleId": "bba9f40183526463-01",
+                "bookId": "1CO",
+                "title": "Greetings from Paul and Sosthenes",
+                "firstVerseId": "1CO.1.1",
+                "lastVerseId": "1CO.1.3",
+                "firstVerseOrgId": "1CO.1.1",
+                "lastVerseOrgId": "1CO.1.3"
+            }
+        ]
     },
     "400": {
         "statusCode": 400,

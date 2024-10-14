@@ -1,11 +1,15 @@
 {
     "200": {
-        "id": "ROM.4",
-        "bibleId": "bba9f40183526463-01",
-        "bookId": "ROM",
-        "number": "4",
-        "reference": "Romans 4"
-      },
+        "data": [
+            {
+                "id": "1CO.intro",
+                "bibleId": "bba9f40183526463-01",
+                "bookId": "1CO",
+                "number": "intro",
+                "reference": "1 Corinthians"
+            }
+        ]
+    },
     "400": {
         "statusCode": 400,
         "error": "Bad Request",
