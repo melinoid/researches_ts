@@ -40,7 +40,7 @@ test.describe('/v1/audio-bibles/audioBibleId/books/bookId', async () => {
     });
     // The responce is too big, so let's check just the model.
     await test.step('Compare response model', async () => {
-      helper.compareObjectsKeys(expBody['200wc'], await response.json());
+      helper.compareObjectsKeys(expBody['200wch'], await response.json());
     });
   });
 
