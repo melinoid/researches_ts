@@ -11,7 +11,7 @@ As you may have noticed, **TS/Playwright** was chosen to automate testing of the
 
 ### Test suites with documentation
 
-- [HTTP v1 API](tests/api/README.md) (Pre-ready)
+- [HTTP v1 API](tests/api/README.md) (Pre-ready) / Same in [Postman Collection](https://www.postman.com/mission-geologist-37537957/workspace/54bcd53c-258e-450e-a09d-c103a44d154f/collection/21631263-9d773c14-11ff-4df9-a324-d3bb6a687a11?action=share&source=collection_link&creator=21631263)
 - [End2end](tests/e2e/README.md) (Early on)
 
 ### Before you start using this on your machine

@@ -6,6 +6,8 @@ This project contains automated API tests.
 
 Documentation on api routs and methods is in [API.Bible Swagger](https://scripture.api.bible/livedocs).
 
+**Caution:** the standard key provides access to 5,000 requests per day. This collection contains 126 API requests, so you will have 39 full launches per day.
+
 ## File structure
 
 The file structure follows the standard:
