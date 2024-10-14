@@ -12,7 +12,7 @@ export const audioBible = {
 export const bible = {
   id: 'bba9f40183526463-01',
   book: {
-    id: 'ROM',
+    id: '1CO',
     chapterId: 'ROM.1',
     verseId: 'ROM.1.2',
     sectionId: 'ROM.S1',

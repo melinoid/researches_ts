@@ -1,19 +1,142 @@
 {
     "200wop": {
         "data": {
-            "id": "ROM",
+            "id": "1CO",
             "bibleId": "bba9f40183526463-01",
-            "abbreviation": "ROM",
-            "name": "Romans",
-            "nameLong": "Romans"
+            "abbreviation": "1CO",
+            "name": "1 Corinthians",
+            "nameLong": "1 Corinthians"
         }
     },
     "200wc": {
-        "id": "ROM.2",
-        "bibleId": "bba9f40183526463-01",
-        "bookId": "ROM",
-        "number": "2",
-        "position": 1092
+        "data": {
+            "id": "1CO",
+            "bibleId": "bba9f40183526463-01",
+            "abbreviation": "1CO",
+            "name": "1 Corinthians",
+            "nameLong": "1 Corinthians",
+            "chapters": [
+                {
+                    "id": "1CO.intro",
+                    "bibleId": "bba9f40183526463-01",
+                    "bookId": "1CO",
+                    "number": "intro",
+                    "position": 1107
+                },
+                {
+                    "id": "1CO.1",
+                    "bibleId": "bba9f40183526463-01",
+                    "bookId": "1CO",
+                    "number": "1",
+                    "position": 1108
+                },
+                {
+                    "id": "1CO.2",
+                    "bibleId": "bba9f40183526463-01",
+                    "bookId": "1CO",
+                    "number": "2",
+                    "position": 1109
+                },
+                {
+                    "id": "1CO.3",
+                    "bibleId": "bba9f40183526463-01",
+                    "bookId": "1CO",
+                    "number": "3",
+                    "position": 1110
+                },
+                {
+                    "id": "1CO.4",
+                    "bibleId": "bba9f40183526463-01",
+                    "bookId": "1CO",
+                    "number": "4",
+                    "position": 1111
+                },
+                {
+                    "id": "1CO.5",
+                    "bibleId": "bba9f40183526463-01",
+                    "bookId": "1CO",
+                    "number": "5",
+                    "position": 1112
+                },
+                {
+                    "id": "1CO.6",
+                    "bibleId": "bba9f40183526463-01",
+                    "bookId": "1CO",
+                    "number": "6",
+                    "position": 1113
+                },
+                {
+                    "id": "1CO.7",
+                    "bibleId": "bba9f40183526463-01",
+                    "bookId": "1CO",
+                    "number": "7",
+                    "position": 1114
+                },
+                {
+                    "id": "1CO.8",
+                    "bibleId": "bba9f40183526463-01",
+                    "bookId": "1CO",
+                    "number": "8",
+                    "position": 1115
+                },
+                {
+                    "id": "1CO.9",
+                    "bibleId": "bba9f40183526463-01",
+                    "bookId": "1CO",
+                    "number": "9",
+                    "position": 1116
+                },
+                {
+                    "id": "1CO.10",
+                    "bibleId": "bba9f40183526463-01",
+                    "bookId": "1CO",
+                    "number": "10",
+                    "position": 1117
+                },
+                {
+                    "id": "1CO.11",
+                    "bibleId": "bba9f40183526463-01",
+                    "bookId": "1CO",
+                    "number": "11",
+                    "position": 1118
+                },
+                {
+                    "id": "1CO.12",
+                    "bibleId": "bba9f40183526463-01",
+                    "bookId": "1CO",
+                    "number": "12",
+                    "position": 1119
+                },
+                {
+                    "id": "1CO.13",
+                    "bibleId": "bba9f40183526463-01",
+                    "bookId": "1CO",
+                    "number": "13",
+                    "position": 1120
+                },
+                {
+                    "id": "1CO.14",
+                    "bibleId": "bba9f40183526463-01",
+                    "bookId": "1CO",
+                    "number": "14",
+                    "position": 1121
+                },
+                {
+                    "id": "1CO.15",
+                    "bibleId": "bba9f40183526463-01",
+                    "bookId": "1CO",
+                    "number": "15",
+                    "position": 1122
+                },
+                {
+                    "id": "1CO.16",
+                    "bibleId": "bba9f40183526463-01",
+                    "bookId": "1CO",
+                    "number": "16",
+                    "position": 1123
+                }
+            ]
+        }
     },
     "400": {
         "statusCode": 400,

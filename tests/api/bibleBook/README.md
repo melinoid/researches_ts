@@ -47,18 +47,12 @@ Gets a single `Book` object for a given **bibleId** and **bookId**.
 
 </details>
 
-## Test Suite
+## Tests in suite
 
-Coming soon
-
-#### Test: 200 code
-
-| Action       | Expected result |
-| ------------ | --------------- |
-| Send request | get response    |
-
-#### Test: 400 code
-
-| Action       | Expected result |
-| ------------ | --------------- |
-| Send request | get response    |
+1. **/v1/bibles/bibleId/books/bookId 200 code (w/o params)**
+2. **/v1/bibles/bibleId/books/bookId 200 code (w/o chapters)**
+3. **/v1/bibles/bibleId/books/bookId 200 code (with chapters)**
+4. **/v1/bibles/bibleId/books/bookId 400 code**
+5. **/v1/bibles/bibleId/books/bookId 401 code**
+6. **/v1/bibles/bibleId/books/bookId 403 code**
+7. **/v1/bibles/bibleId/books/bookId 404 code**
