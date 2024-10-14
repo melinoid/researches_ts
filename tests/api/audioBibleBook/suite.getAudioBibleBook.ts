@@ -31,7 +31,7 @@ test.describe('/v1/audio-bibles/audioBibleId/books/bookId', async () => {
     });
   });
 
-  test.only('200 code (with chapters)', async ({ request, helper }) => {
+  test('200 code (with chapters)', async ({ request, helper }) => {
     await test.step('Send request', async () => {
       response = await request.get(apiPath + audioBible.book.id, { params: { 'include-chapters': true } });
     });
