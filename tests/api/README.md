@@ -8,6 +8,16 @@ Documentation on api routs and methods is in [API.Bible Swagger](https://scriptu
 
 **Caution:** the standard key provides access to 5,000 requests per day. This collection contains 126 API requests, so you will have 39 full launches per day.
 
+## About tests
+
+Taking into account the specifics of the API, all tests are written according to the same example, only the requests themselves and test data differ:
+
+| Step | Action                                                                                                                                                                                                                                                         | Expected result |
+| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
+| 1    | Send request. Curl can be taken in [Postman](https://www.postman.com/mission-geologist-37537957/workspace/54bcd53c-258e-450e-a09d-c103a44d154f/collection/21631263-9d773c14-11ff-4df9-a324-d3bb6a687a11?action=share&source=collection_link&creator=21631263). | Get response    |
+| 2    | Check the response matches the expected status code.                                                                                                                                                                                                           | Match           |
+| 3    | Check the response matches the response model.                                                                                                                                                                                                                 | Match           |
+
 ## File structure
 
 The file structure follows the standard:

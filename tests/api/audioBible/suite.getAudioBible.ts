@@ -7,7 +7,7 @@ const apiPath = '/v1/audio-bibles/';
 let response: APIResponse;
 
 test.describe('/v1/audio-bibles/audioBibleId', async () => {
-  test('Normal 200 code', async ({ request, helper }) => {
+  test('200 code', async ({ request, helper }) => {
     await test.step('Send request', async () => {
       response = await request.get(apiPath + audioBible.id, {});
     });
@@ -19,7 +19,7 @@ test.describe('/v1/audio-bibles/audioBibleId', async () => {
     });
   });
 
-  test('200 code with empty body', async ({ request, helper }) => {
+  test('200 code (instead 404, empty body)', async ({ request, helper }) => {
     await test.step('Send request', async () => {
       response = await request.get(apiPath + audioBible.id.substring(0, audioBible.id.length - 1) + '9', {});
     });
@@ -66,19 +66,6 @@ test.describe('/v1/audio-bibles/audioBibleId', async () => {
     });
     await test.step('Compare response text', async () => {
       helper.compareResponseText(expBody['403'], await response.json());
-    });
-  });
-
-  // Not found bible id for this case
-  test.fixme('404 code', async ({ request, helper }) => {
-    await test.step('Send request', async () => {
-      response = await request.get(apiPath + '105a06b6146d11e7-04', {});
-    });
-    await test.step('Compare status code', async () => {
-      helper.compareStatusCode(response.status(), 404);
-    });
-    await test.step('Compare response text', async () => {
-      helper.compareResponseText(expBody['404'], await response.json());
     });
   });
 });
