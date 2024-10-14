@@ -1,60 +1,183 @@
 {
-
-    "200wod": {
-        "id": "105a06b6146d11e7-01",
-        "dblId": "105a06b6146d11e7",
-        "relatedDbl": "9879dbb7cfe39e4d",
-        "name": "English - World English Bible 2013 (Drama NT)",
-        "nameLocal": "English - World English Bible 2013 (Drama NT)",
-        "abbreviation": "WEB13",
-        "abbreviationLocal": "WEB13",
-        "description": null,
-        "descriptionLocal": null,
-        "language": {
-            "id": "eng",
-            "name": "English",
-            "nameLocal": "English",
-            "script": "Latin",
-            "scriptDirection": "LTR"
-        },
-        "countries": [
+    "200wop": {
+        "data": [
             {
-                "id": "US",
-                "name": "United States",
-                "nameLocal": "United States"
+                "id": "52a82b80a85343c5-01",
+                "dblId": "52a82b80a85343c5",
+                "relatedDbl": "472735b48a27b402",
+                "name": "Ahirani - 2020 WFW (NT) Drama",
+                "nameLocal": "Ahirani - 2020 WFW (NT) Drama",
+                "abbreviation": null,
+                "abbreviationLocal": null,
+                "description": null,
+                "descriptionLocal": null,
+                "language": {
+                    "id": "ahr",
+                    "name": "Ahirani",
+                    "nameLocal": "Ahirani",
+                    "script": null,
+                    "scriptDirection": null
+                },
+                "countries": [
+                    {
+                        "id": "IN",
+                        "name": "India",
+                        "nameLocal": "India"
+                    }
+                ],
+                "type": "audio",
+                "updatedAt": "2024-07-01T22:29:57.000Z"
             }
-        ],
-        "type": "audio",
-        "updatedAt": ""
+        ]
     },
-    "200wd": {
-        "id": "105a06b6146d11e7-01",
-        "dblId": "105a06b6146d11e7",
-        "relatedDbl": "9879dbb7cfe39e4d",
-        "name": "English - World English Bible 2013 (Drama NT)",
-        "nameLocal": "English - World English Bible 2013 (Drama NT)",
-        "abbreviation": "WEB13",
-        "abbreviationLocal": "WEB13",
-        "description": null,
-        "descriptionLocal": null,
-        "language": {
-            "id": "eng",
-            "name": "English",
-            "nameLocal": "English",
-            "script": "Latin",
-            "scriptDirection": "LTR"
-        },
-        "countries": [
+    "200woid": {
+        "data": [
             {
-                "id": "US",
-                "name": "United States",
-                "nameLocal": "United States"
+                "id": "4bd4740816ed4a97-02",
+                "dblId": "4bd4740816ed4a97",
+                "relatedDbl": "2f293d3e4580fcec,9ab28a81b9c4587d",
+                "name": "Biblica® Open Kurdi Sorani Standard Version™ , Audio Version",
+                "nameLocal": "مافی بڵاوکردنەوەی دەنگدار لە لایەن ڕێکخراوی ببلیکا و داڤار پارتنەرسی نێودەوڵەتییەوە پارێزراوە، ٢٠٢٠‎",
+                "abbreviation": "KSS",
+                "abbreviationLocal": "KSS",
+                "description": null,
+                "descriptionLocal": null,
+                "language": {
+                    "id": "ckb",
+                    "name": "Central Kurdish",
+                    "nameLocal": "كوردی سۆرانی",
+                    "script": "Arabic",
+                    "scriptDirection": "RTL"
+                },
+                "countries": [
+                    {
+                        "id": "IQ",
+                        "name": "Iraq",
+                        "nameLocal": "Iraq"
+                    }
+                ],
+                "type": "audio",
+                "updatedAt": "2024-07-01T22:28:33.000Z"
+            },
+            {
+                "id": "4bd4740816ed4a97-01",
+                "dblId": "4bd4740816ed4a97",
+                "relatedDbl": "2f293d3e4580fcec,9ab28a81b9c4587d",
+                "name": "Kurdi Sorani Standard 2020, Audio Edition",
+                "nameLocal": "مافی بڵاوکردنەوەی دەنگدار لە لایەن ڕێکخراوی ببلیکا و داڤار پارتنەرسی نێودەوڵەتییەوە پارێزراوە، ٢٠٢٠‎",
+                "abbreviation": "KSS",
+                "abbreviationLocal": "KSS",
+                "description": null,
+                "descriptionLocal": null,
+                "language": {
+                    "id": "ckb",
+                    "name": "Central Kurdish",
+                    "nameLocal": "كوردی سۆرانی",
+                    "script": "Arabic",
+                    "scriptDirection": "RTL"
+                },
+                "countries": [
+                    {
+                        "id": "IQ",
+                        "name": "Iraq",
+                        "nameLocal": "Iraq"
+                    }
+                ],
+                "type": "audio",
+                "updatedAt": "2024-07-01T22:28:30.000Z"
             }
-        ],
-        "type": "audio",
-        "updatedAt": "",
-        "copyright": "℗ 2013 Hosanna",
-        "info": null
+        ]
+    },
+    "200mid": {
+        "data": [
+            {
+                "id": "2ae5a4c1795742c9-01",
+                "dblId": "2ae5a4c1795742c9",
+                "relatedDbl": "7f1784650c75ad61",
+                "name": "Chambeali Standard Version New Testament",
+                "nameLocal": "Chambeali Standard Version New Testament",
+                "abbreviation": null,
+                "abbreviationLocal": null,
+                "description": null,
+                "descriptionLocal": null,
+                "language": {
+                    "id": "cdh",
+                    "name": "Chambeali",
+                    "nameLocal": "Chambeali",
+                    "script": "Devanagari",
+                    "scriptDirection": "LTR"
+                },
+                "countries": [
+                    {
+                        "id": "IN",
+                        "name": "India",
+                        "nameLocal": "India"
+                    }
+                ],
+                "type": "audio",
+                "updatedAt": "2024-07-01T22:21:11.000Z"
+            },
+            {
+                "id": "105a06b6146d11e7-01",
+                "dblId": "105a06b6146d11e7",
+                "relatedDbl": "9879dbb7cfe39e4d",
+                "name": "English - World English Bible 2013 (Drama NT)",
+                "nameLocal": "English - World English Bible 2013 (Drama NT)",
+                "abbreviation": "WEB13",
+                "abbreviationLocal": "WEB13",
+                "description": null,
+                "descriptionLocal": null,
+                "language": {
+                    "id": "eng",
+                    "name": "English",
+                    "nameLocal": "English",
+                    "script": "Latin",
+                    "scriptDirection": "LTR"
+                },
+                "countries": [
+                    {
+                        "id": "US",
+                        "name": "United States",
+                        "nameLocal": "United States"
+                    }
+                ],
+                "type": "audio",
+                "updatedAt": "2024-07-01T22:16:16.000Z"
+            }
+        ]
+    },
+    "200ap": {
+        "data": [
+            {
+                "id": "105a06b6146d11e7-01",
+                "dblId": "105a06b6146d11e7",
+                "relatedDbl": "9879dbb7cfe39e4d",
+                "name": "English - World English Bible 2013 (Drama NT)",
+                "nameLocal": "English - World English Bible 2013 (Drama NT)",
+                "abbreviation": "WEB13",
+                "abbreviationLocal": "WEB13",
+                "description": null,
+                "descriptionLocal": null,
+                "language": {
+                    "id": "eng",
+                    "name": "English",
+                    "nameLocal": "English",
+                    "script": "Latin",
+                    "scriptDirection": "LTR"
+                },
+                "countries": [
+                    {
+                        "id": "US",
+                        "name": "United States",
+                        "nameLocal": "United States"
+                    }
+                ],
+                "type": "audio",
+                "updatedAt": "2024-07-01T22:16:16.000Z",
+                "copyright": "℗ 2013 Hosanna",
+                "info": null
+            }
+        ]
     },
     "400": {
         "statusCode": 400,
