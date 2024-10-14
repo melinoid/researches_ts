@@ -7,7 +7,7 @@ const apiPath = '/v1/bibles/';
 let response: APIResponse;
 
 test.describe('/v1/bibles/bibleId', async () => {
-  test.only(`200 code`, async ({ request, helper }, testInfo) => {
+  test(`200 code`, async ({ request, helper }, testInfo) => {
     await test.step('Send request', async () => {
       response = await request.get(apiPath + bible.id, {});
     });
