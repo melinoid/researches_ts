@@ -15,7 +15,7 @@ test.describe('/v1/bibles/bibleId/verses/verseId', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
-      // Attention, kludge. Come up with something normal here.
+      // Caution, kludge. Come up with something normal here.
       // Let's agree that we only need static data, rewriting dynamic data and discard meta.
       helper.compareResponseText(expBody['200wop'], (await response.json())['data']);
     });
@@ -37,7 +37,7 @@ test.describe('/v1/bibles/bibleId/verses/verseId', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
-      // Attention, kludge. Come up with something normal here.
+      // Caution, kludge. Come up with something normal here.
       // Let's agree that we only need static data, rewriting dynamic data and discard meta.
       helper.compareResponseText(expBody['200html'], (await response.json())['data']);
     });
@@ -58,7 +58,7 @@ test.describe('/v1/bibles/bibleId/verses/verseId', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
-      // Attention, kludge. Come up with something normal here.
+      // Caution, kludge. Come up with something normal here.
       // Let's agree that we only need static data, rewriting dynamic data and discard meta.
       helper.compareResponseText(expBody['200json'], (await response.json())['data']);
     });
@@ -83,7 +83,7 @@ test.describe('/v1/bibles/bibleId/verses/verseId', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
-      // Attention, kludge. Come up with something normal here.
+      // Caution, kludge. Come up with something normal here.
       // Let's agree that we only need static data, rewriting dynamic data and discard meta.
       helper.compareResponseText(expBody['200text'], (await response.json())['data']);
     });

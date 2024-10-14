@@ -16,7 +16,7 @@ test.describe('/v1/bibles/bibleId', async () => {
     });
 
     await test.step('Compare response text', async () => {
-      // Attention, kludge. Come up with something normal here.
+      // Caution, kludge. Come up with something normal here.
       // Let's agree that we only need static data, rewriting dynamic data and discard meta.
       response = await response.json();
       response['data']['updatedAt'] = '';

@@ -38,3 +38,16 @@ export function getMainUser() {
     throw Error('Check user credentials in autotests environment.');
   }
 }
+
+/**
+ * Function returns api key for api project from AT_API_KEY env variable.
+ * @returns api key.
+ */
+export function getApiKey() {
+  const apiKey = process.env.AT_API_KEY;
+  if (apiKey) {
+    return apiKey;
+  } else {
+    throw Error('AT_API_KEY env variable is empty.');
+  }
+}

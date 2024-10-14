@@ -22,15 +22,7 @@ As you may have noticed, **TS/Playwright** was chosen to automate testing of the
 git clone git@github.com:melinoid/bible_api_playwright.git
 ```
 
-#### 2. Prepare the environment
-
-> At the moment the project is configured only for chromium.
-
-```bash
-npm i && npx playwright install --with-deps chromium
-```
-
-#### 3. Create .env in project root
+#### 2. Create .env in project root
 
 ...and fill it with these variables
 
@@ -45,7 +37,23 @@ Credentials are required to pass tests from an authorized user.
 
 Also, you can get the api key [here](https://scripture.api.bible/admin/applications) after registration/login, in the credentials column.
 
-### Run tests
+#### 3. Run tests in docker
+
+If you don`t want to install dependencies into the project locally, but build an image and then run tests in it. Not suitable for development, but just playing around or running it in a separate environment is enough.
+
+```bash
+docker compose up
+```
+
+#### Another 3. Prepare the environment
+
+> At the moment the project is configured only for chromium.
+
+```bash
+npm i && npx playwright install --with-deps chromium
+```
+
+#### Run tests
 
 ```bash
 npx playwright test
