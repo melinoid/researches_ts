@@ -15,7 +15,7 @@ test.describe('/v1/audio-bibles/audioBibleId/books/bookId/chapters', async () =>
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
-      if ((testInfo.retry = 0)) {
+      if (testInfo.retry == 0) {
         helper.compareResponseText(expBody['200'], await response.json());
       } else {
         // Тhe response is too big, it may change over time, so we check the model on first retry.

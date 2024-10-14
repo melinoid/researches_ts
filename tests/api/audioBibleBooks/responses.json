@@ -1,17 +1,34 @@
 {
     "200wop": {
-        "id": "1TH",
-        "bibleId": "105a06b6146d11e7-01",
-        "abbreviation": "1 Thessalonians",
-        "name": "1 Thessalonians",
-        "nameLong": "Paul’s First Letter to the Thessalonians"
+        "data": [
+            {
+                "id": "1CO",
+                "bibleId": "105a06b6146d11e7-01",
+                "abbreviation": "1 Corinthians",
+                "name": "1 Corinthians",
+                "nameLong": "Paul’s First Letter to the Corinthians"
+            }
+        ]
     },
     "200wch": {
-        "id": "1TH.4",
-        "bibleId": "105a06b6146d11e7-01",
-        "bookId": "1TH",
-        "number": "4",
-        "position": 29
+        "data": [
+            {
+                "id": "1CO",
+                "bibleId": "105a06b6146d11e7-01",
+                "abbreviation": "1 Corinthians",
+                "name": "1 Corinthians",
+                "nameLong": "Paul’s First Letter to the Corinthians",
+                "chapters": [
+                    {
+                        "id": "1CO.1",
+                        "bibleId": "105a06b6146d11e7-01",
+                        "bookId": "1CO",
+                        "number": "1",
+                        "position": 0
+                    }
+                ]
+            }
+        ]
     },
     "400bp": {
         "statusCode": 400,
