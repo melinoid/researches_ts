@@ -1,17 +1,55 @@
 {
     "200wop": {
-        "id": "EXO",
-        "bibleId": "bba9f40183526463-01",
-        "abbreviation": "EXO",
-        "name": "Exodus",
-        "nameLong": "Exodus"
+        "data": [
+            {
+                "id": "GEN",
+                "bibleId": "bba9f40183526463-01",
+                "abbreviation": "GEN",
+                "name": "Genesis",
+                "nameLong": "Genesis"
+            }
+        ]
     },
     "200wch": {
-        "id": "GEN.1",
-        "bibleId": "bba9f40183526463-01",
-        "bookId": "GEN",
-        "number": "1",
-        "position": 1
+        "data": [
+            {
+                "id": "GEN",
+                "bibleId": "bba9f40183526463-01",
+                "abbreviation": "GEN",
+                "name": "Genesis",
+                "nameLong": "Genesis",
+                "chapters": [
+                    {
+                        "id": "GEN.intro",
+                        "bibleId": "bba9f40183526463-01",
+                        "bookId": "GEN",
+                        "number": "intro",
+                        "position": 0
+                    }
+                ]
+            }
+        ]
+    },
+    "200wchs": {
+        "data": [
+            {
+                "id": "GEN",
+                "bibleId": "bba9f40183526463-01",
+                "abbreviation": "GEN",
+                "name": "Genesis",
+                "nameLong": "Genesis",
+                "chapters": [
+                    {
+                        "id": "GEN.intro",
+                        "bibleId": "bba9f40183526463-01",
+                        "bookId": "GEN",
+                        "number": "intro",
+                        "position": 0,
+                        "sections": []
+                    }
+                ]
+            }
+        ]
     },
     "200pp": {
         "id": "GEN.1",

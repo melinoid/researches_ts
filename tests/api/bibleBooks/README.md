@@ -61,18 +61,12 @@ Gets an array of `Book` objects for a given **bibleId**.
 
 </details>
 
-## Test Suite
+## Tests in suite
 
-Coming soon
-
-#### Test: 200 code
-
-| Action       | Expected result |
-| ------------ | --------------- |
-| Send request | get response    |
-
-#### Test: 400 code
-
-| Action       | Expected result |
-| ------------ | --------------- |
-| Send request | get response    |
+1. **/v1/bibles/bibleId/books 200 code (w/o params)**
+2. **/v1/bibles/bibleId/books 200 code (with chapters)**
+3. **/v1/bibles/bibleId/books 200 code (with chapters & sections)**
+4. **/v1/bibles/bibleId/books 200 code (all params)**
+5. **/v1/bibles/bibleId/books 400 code**
+6. **/v1/bibles/bibleId/books 401 code**
+7. **/v1/bibles/bibleId/books 403 code**

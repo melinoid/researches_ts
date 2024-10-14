@@ -36,6 +36,7 @@ test.describe('/v1/audio-bibles/audioBibleId/books', async () => {
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
+    // The responce is too big, so let's check just the model.
     await test.step('Compare response model', async () => {
       helper.compareObjectsKeys(expBody['200wch'], await response.json());
     });
