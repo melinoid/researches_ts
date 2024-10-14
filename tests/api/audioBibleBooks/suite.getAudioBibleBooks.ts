@@ -15,7 +15,7 @@ test.describe('/v1/audio-bibles/audioBibleId/books', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
-      // Attention, kludge. Come up with something normal here.
+      // Caution, kludge. Come up with something normal here.
       // There is too much data in the answer, we will limit ourselves to a separate block.
       helper.compareResponseText(expBody['200wop'], (await response.json())['data'][3]);
     });
@@ -33,7 +33,7 @@ test.describe('/v1/audio-bibles/audioBibleId/books', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
-      // Attention, kludge. Come up with something normal here.
+      // Caution, kludge. Come up with something normal here.
       // There is too much data in the answer, we will limit ourselves to a separate block.
       helper.compareResponseText(expBody['200wop'], (await response.json())['data'][3]);
     });
@@ -51,7 +51,7 @@ test.describe('/v1/audio-bibles/audioBibleId/books', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
-      // Attention, kludge. Come up with something normal here.
+      // Caution, kludge. Come up with something normal here.
       // There is too much data in the answer, we will limit ourselves to a separate block.
       helper.compareResponseText(expBody['200wch'], (await response.json())['data'][3]['chapters'][3]);
     });
@@ -70,7 +70,7 @@ test.describe('/v1/audio-bibles/audioBibleId/books', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
-      // Attention, kludge. Come up with something normal here.
+      // Caution, kludge. Come up with something normal here.
       // There is too much data in the answer, we will limit ourselves to a separate block.
       helper.compareResponseText(expBody['200wch'], (await response.json())['data'][3]['sections'][3]);
     });

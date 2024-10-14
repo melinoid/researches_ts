@@ -1,0 +1,8 @@
+services:
+  autotests:
+    image: api_bible_tests:latest
+    build:
+      dockerfile: .tools/Dockerfile
+    volumes:
+      - .:/autotests
+    command: npx playwright test | ln s /node_modulse ./node_modules && npx playwright test

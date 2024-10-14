@@ -39,7 +39,7 @@ test.describe('/v1/bibles/bibleId/books/bookId', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
-      // Attention, kludge. Come up with something normal here.
+      // Caution, kludge. Come up with something normal here.
       // There is too much data in the answer, we will limit ourselves to a separate block.
       helper.compareResponseText(expBody['200wc'], (await response.json())['data']['chapters'][2]);
     });
