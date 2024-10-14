@@ -62,18 +62,10 @@ None
 
 </details>
 
-## Test Suite
+## Tests in suite
 
-Coming soon
-
-#### Test: 200 code
-
-| Action       | Expected result |
-| ------------ | --------------- |
-| Send request | get response    |
-
-#### Test: 400 code
-
-| Action       | Expected result |
-| ------------ | --------------- |
-| Send request | get response    |
+1. **/v1/bibles/bibleId 200 code**
+2. **/v1/bibles/bibleId 400 code**
+3. **/v1/bibles/bibleId 401 code**
+4. **/v1/bibles/bibleId 403 code**
+5. **/v1/bibles/bibleId 404 code**
