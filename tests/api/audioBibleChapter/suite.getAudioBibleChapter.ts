@@ -7,25 +7,36 @@ const apiPath = `/v1/audio-bibles/${audioBible.id}/chapters/`;
 let response: APIResponse;
 
 test.describe('/v1/audio-bibles/audioBibleId/chapters/chapterId', async () => {
-  test(`200 code`, async ({ request, helper }) => {
+  test(`200 code`, async ({ request, helper }, testInfo) => {
     await test.step('Send request', async () => {
       response = await request.get(apiPath + audioBible.book.chapterId, {});
     });
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
-    await test.step('Compare response text', async () => {
-      // Caution, kludge. Come up with something normal here.
-      // Let's agree that we only need static data, rewriting dynamic data and discard meta.
-      response = await response.json();
-      response['data']['expiresAt'] = '';
-      response['data']['resourceUrl'] = '';
-
-      helper.compareResponseText(expBody['200']['data'], response['data']);
+    // The responce contains a lot of dynamic data, so let's check just the model.
+    await test.step('Compare response model', async () => {
+      helper.compareObjectsKeys(expBody['200'], await response.json());
     });
   });
 
-  test('400 code', async ({ request, helper }) => {
+  test('400 code (bad chapterId)', async ({ request, helper }) => {
+    await test.step('Send request', async () => {
+      response = await request.get(apiPath + audioBible.book.chapterId, {
+        params: {
+          param: true,
+        },
+      });
+    });
+    await test.step('Compare status code', async () => {
+      helper.compareStatusCode(response.status(), 400);
+    });
+    await test.step('Compare response text', async () => {
+      helper.compareResponseText(expBody['400bq'], await response.json());
+    });
+  });
+
+  test('400 code (bad param)', async ({ request, helper }) => {
     await test.step('Send request', async () => {
       response = await request.get(apiPath + '1', {});
     });
@@ -33,7 +44,7 @@ test.describe('/v1/audio-bibles/audioBibleId/chapters/chapterId', async () => {
       helper.compareStatusCode(response.status(), 400);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(expBody['400'], await response.json());
+      helper.compareResponseText(expBody['400bp'], await response.json());
     });
   });
 

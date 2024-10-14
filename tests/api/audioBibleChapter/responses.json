@@ -2,7 +2,7 @@
     "200": {
         "data": {
             "expiresAt": "",
-            "resourceUrl": "",
+            "resourceUrl": "https://api-bible-audio-assets-prod.s3.amazonaws.com/105a06b6146d11e7-01/release/audio/1CO/1CO_001.mp3?AWSAccessKeyId=ASIAW3FERPLDIA3B3JWF&Expires=1728913796&Signature=TBzU0yssBiUYSL1QS%2FMhiSIanvU%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEHoaCXVzLWVhc3QtMSJHMEUCIF3X1FPHPU6OTEWR86xUi8qAOoBVjNsSueJcZqb9zNHSAiEArQDrwL3xOj9Zb79YcAVk%2FKfnJIZs6IeqoFpRF%2F8qclEqwwUI0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw0NzA2NDM5OTczODIiDEMSnJlYsmPSeVXbqiqXBX%2FL8jOfu%2FaVUIz2bFZCvDqvfQxl%2F%2BmA%2FkUvFAvwBGuegaY%2Fe2dyCliutArHHJ%2B8AFUg5ZcnE4jgr%2FDZPWtEweD1G5YAxDdGx%2BynPgj4GoITlQwQXwz2Ikqh3GYGjasnfgXIZEpRapBJdrUwCU4CWrLzdmQ8rqKKEQvk3cmNKvVends1%2FxYol1sPYcPWdFDa2lXqzbQ2xtBwXav7yEo4%2FutFOpHDCZIde8CYTtO8KNA8BPlZTqGcRflEMC8QiXV%2FqToKqEc2ZiLvrmTOnK%2F14EYBbBKQRnb4F2keDyagdSnRX0ZhvcgbjnNLkuVILj2TKLxMhvMFCn2rMBwZfDccVI9JB5Sf46lZpu2K1LV6BvyFYdVbQr1FG2F8yHStvHoVC94cZGQcMs44%2BP9898Zn0aXyRAyKcwxPqO5SY5jRzYpUVEEWuF3IUsgFRf220GG2KCRO6DzwXpz8u1nDRQ2D%2BntialPSHGjsrDTFg2NSLVHA35tZjscD7RzFAn0mIR8JI7ALvzXtdnASirZGGyUcdKhuLs%2F8797g%2BVPe7Y7ZztzDbsdc%2FYksZmSq6mzbEzpvcPHLmA%2BIIzqIJaNOG4ht%2BZ%2BKFlT8flfPMnRJk3jO%2BW7LDDybKJo7u5V9aqqKaiuU%2BPc7Ek%2Bda8uha%2B2THp0%2BtvK8mw6955N%2BnOl7fbW8JmZDGTdmUBgKSX%2Fqizimu%2BUvmf5%2FC7W34Rdq4kxuACfIhqCNajdDXa%2FCtEIQnyUapoUmLoMcs5JyKB9pyzOC1v7NJvMWszwzB5dJf5p2V%2FLxcX5mhbSJqos9AdJyl9BkiG7jFx%2FDtjSyrbkswkDH%2FYrbRxWL85q3gIqxajE%2BgdpDR7xW5VXiXX27i4oVNAHRobYLk%2FUGweafnzD1xbO4BjqxAVZ%2FWZWBcanRAHAcQGSifW3KVAhFz8vcRxUuXBdYe57pSwMR330ssbM7CwuQiHYqrjudifv6jw3NdhopmvfG9VIGHFg%2F6hkem%2BjfzO2k%2FlNhI9XU4fZFgy72JaPgM8T5l7rLDEvq7LDMOfgKfmjNMaqAD72StDooIsBENMCsY0w2FXEb60U39hkXY5ctl5AdU2KgRt19nAOZ%2FS731VemmSi9U6bteSFTv9P3Iovuo9bxjQ%3D%3D",
             "id": "1CO.1",
             "bibleId": "105a06b6146d11e7-01",
             "number": "1",
@@ -23,10 +23,15 @@
             "fumsNoScript": ""
         }
     },
-    "400": {
+    "400bp": {
         "statusCode": 400,
         "error": "Bad Request",
         "message": "Invalid request params input"
+    },
+    "400bq": {
+        "statusCode": 400,
+        "error": "Bad Request",
+        "message": "Invalid request query input"
     },
     "401": {
         "statusCode": 401,

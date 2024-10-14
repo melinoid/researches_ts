@@ -16,7 +16,7 @@ test.describe('/v1/bibles/bibleId/books', async () => {
     });
     await test.step('Compare response text', async () => {
       // Caution, kludge. Come up with something normal here.
-      // There is too much data in the answer, we will limit ourselves to a separate block.
+      // There is too much data in the response, we will limit ourselves to a separate block.
       helper.compareResponseText(expBody['200wop'], (await response.json())['data'][1]);
     });
   });
@@ -34,7 +34,7 @@ test.describe('/v1/bibles/bibleId/books', async () => {
     });
     await test.step('Compare response text', async () => {
       // Caution, kludge. Come up with something normal here.
-      // There is too much data in the answer, we will limit ourselves to a separate block.
+      // There is too much data in the response, we will limit ourselves to a separate block.
       helper.compareResponseText(expBody['200wop'], (await response.json())['data'][1]);
     });
   });
@@ -52,7 +52,7 @@ test.describe('/v1/bibles/bibleId/books', async () => {
     });
     await test.step('Compare response text', async () => {
       // Caution, kludge. Come up with something normal here.
-      // There is too much data in the answer, we will limit ourselves to a separate block.
+      // There is too much data in the response, we will limit ourselves to a separate block.
       helper.compareResponseText(expBody['200wch'], (await response.json())['data'][0]['chapters'][1]);
     });
   });
@@ -71,7 +71,7 @@ test.describe('/v1/bibles/bibleId/books', async () => {
     });
     await test.step('Compare response text', async () => {
       // Caution, kludge. Come up with something normal here.
-      // There is too much data in the answer, we will limit ourselves to a separate block.
+      // There is too much data in the response, we will limit ourselves to a separate block.
       helper.compareResponseText(expBody['200pp'], (await response.json())['data'][0]['chapters'][1]);
     });
   });
@@ -91,7 +91,7 @@ test.describe('/v1/bibles/bibleId/books', async () => {
     });
     await test.step('Compare response text', async () => {
       // Caution, kludge. Come up with something normal here.
-      // There is too much data in the answer, we will limit ourselves to a separate block.
+      // There is too much data in the response, we will limit ourselves to a separate block.
       helper.compareResponseText(expBody['200pp'], (await response.json())['data'][0]['chapters'][1]);
     });
   });
