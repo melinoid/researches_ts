@@ -74,18 +74,11 @@ Gets an array of `audio Bible` objects.
 
 </details>
 
-## Test Suite
+## Tests in suite
 
-Coming soon
-
-#### Test: 200 code
-
-| Action       | Expected result |
-| ------------ | --------------- |
-| Send request | get response    |
-
-#### Test: 400 code
-
-| Action       | Expected result |
-| ------------ | --------------- |
-| Send request | get response    |
+1. **/v1/audio-bibles 200 code (w/o params)**
+2. **/v1/audio-bibles 200 code (params w/o id)**
+3. **/v1/audio-bibles 200 code (multiple ids)**
+4. **/v1/audio-bibles 200 code (all params)**
+5. **/v1/audio-bibles 400 code**
+6. **/v1/audio-bibles 401 code**
