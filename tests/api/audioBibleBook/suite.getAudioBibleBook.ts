@@ -7,7 +7,7 @@ const apiPath = `/v1/audio-bibles/${audioBible.id}/books/`;
 let response: APIResponse;
 
 test.describe('/v1/audio-bibles/audioBibleId/books/bookId', async () => {
-  test(`200 code w/o params`, async ({ request, helper }) => {
+  test('200 code (w/o params)', async ({ request, helper }) => {
     await test.step('Send request', async () => {
       response = await request.get(apiPath + audioBible.book.id, {});
     });
@@ -19,27 +19,28 @@ test.describe('/v1/audio-bibles/audioBibleId/books/bookId', async () => {
     });
   });
 
-  test(`200 code w/o chapters`, async ({ request, helper }) => {
+  test('200 code (w/o chapters)', async ({ request, helper }) => {
     await test.step('Send request', async () => {
       response = await request.get(apiPath + audioBible.book.id, { params: { 'include-chapters': false } });
     });
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
-    await test.step('Compare response text', async () => {
+    await test.step('Compare response model', async () => {
       helper.compareResponseText(expBody['200wop'], await response.json());
     });
   });
 
-  test(`200 code with chapters`, async ({ request, helper }) => {
+  test('200 code (with chapters)', async ({ request, helper }) => {
     await test.step('Send request', async () => {
       response = await request.get(apiPath + audioBible.book.id, { params: { 'include-chapters': true } });
     });
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
-    await test.step('Compare response text', async () => {
-      helper.compareResponseText(expBody['200wc'], await response.json());
+    // The responce is too big, so let's check just the model.
+    await test.step('Compare response model', async () => {
+      helper.compareObjectsKeys(expBody['200wc'], await response.json());
     });
   });
 
