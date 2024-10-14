@@ -7,7 +7,7 @@ const apiPath = `/v1/audio-bibles/${audioBible.id}/books/`;
 let response: APIResponse;
 
 test.describe('/v1/audio-bibles/audioBibleId/books/bookId/chapters', async () => {
-  test.only(`200 code`, async ({ request, helper }, testInfo) => {
+  test(`200 code`, async ({ request, helper }, testInfo) => {
     await test.step('Send request', async () => {
       response = await request.get(apiPath + audioBible.book.id + '/chapters', {});
     });
