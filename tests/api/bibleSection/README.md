@@ -78,18 +78,15 @@ object also includes an content property with all verses for the `Section`.
 
 </details>
 
-## Test Suite
+## Tests in suite
 
-Coming soon
-
-#### Test: 200 code
-
-| Action       | Expected result |
-| ------------ | --------------- |
-| Send request | get response    |
-
-#### Test: 400 code
-
-| Action       | Expected result |
-| ------------ | --------------- |
-| Send request | get response    |
+1. **/v1/bibles/bibleId/sections/sectionId 200 code (w/o params)**
+2. **/v1/bibles/bibleId/sections/sectionId 200 code (html & alternate params)**
+3. **/v1/bibles/bibleId/sections/sectionId 200 code (json & reverse alternate params)**
+4. **/v1/bibles/bibleId/sections/sectionId 200 code (text & all params)**
+5. **/v1/bibles/bibleId/sections/sectionId 400 code (bad sectionId)**
+6. **/v1/bibles/bibleId/sections/sectionId 400 code (bad param)**
+7. **/v1/bibles/bibleId/sections/sectionId 401 code**
+8. **/v1/bibles/bibleId/sections/sectionId 403 code (bad bibleId)**
+9. **/v1/bibles/bibleId/sections/sectionId 403 code (bad parallels)**
+10. **/v1/bibles/bibleId/sections/sectionId 404 code**
