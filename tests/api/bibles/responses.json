@@ -1,156 +1,231 @@
 {
     "200wop": {
-        "id": "bba9f40183526463-01",
-        "dblId": "bba9f40183526463",
-        "relatedDbl": null,
-        "name": "Berean Standard Bible",
-        "nameLocal": "English: Berean Standard Bible",
-        "abbreviation": "BSB",
-        "abbreviationLocal": "BSB",
-        "description": "Berean Standard Bible",
-        "descriptionLocal": "English: Berean Standard Bible",
-        "language": {
-            "id": "eng",
-            "name": "English",
-            "nameLocal": "English",
-            "script": "Latin",
-            "scriptDirection": "LTR"
-        },
-        "countries": [
+        "data": [
             {
-                "id": "US",
-                "name": "United States of America",
-                "nameLocal": "United States of America"
-            },
-            {
-                "id": "GB",
-                "name": "United Kingdom of Great Britain and Northern Ireland",
-                "nameLocal": "United Kingdom of Great Britain and Northern Ireland"
-            },
-            {
-                "id": "AU",
-                "name": "Australia",
-                "nameLocal": "Australia"
-            },
-            {
-                "id": "CA",
-                "name": "Canada",
-                "nameLocal": "Canada"
-            },
-            {
-                "id": "AG",
-                "name": "Antigua and Barbuda",
-                "nameLocal": "Antigua and Barbuda"
-            },
-            {
-                "id": "BS",
-                "name": "Bahamas",
-                "nameLocal": "Bahamas"
-            },
-            {
-                "id": "BB",
-                "name": "Barbados",
-                "nameLocal": "Barbados"
-            },
-            {
-                "id": "BZ",
-                "name": "Belize",
-                "nameLocal": "Belize"
-            },
-            {
-                "id": "DM",
-                "name": "Dominica",
-                "nameLocal": "Dominica"
-            },
-            {
-                "id": "DO",
-                "name": "Dominican Republic",
-                "nameLocal": "Dominican Republic"
-            },
-            {
-                "id": "AS",
-                "name": "American Samoa",
-                "nameLocal": "American Samoa"
-            },
-            {
-                "id": "GU",
-                "name": "Guam",
-                "nameLocal": "Guam"
-            },
-            {
-                "id": "HT",
-                "name": "Haiti",
-                "nameLocal": "Haiti"
-            },
-            {
-                "id": "GY",
-                "name": "Guyana",
-                "nameLocal": "Guyana"
-            },
-            {
-                "id": "IL",
-                "name": "Israel",
-                "nameLocal": "Israel"
-            },
-            {
-                "id": "IE",
-                "name": "Ireland",
-                "nameLocal": "Ireland"
-            },
-            {
-                "id": "JM",
-                "name": "Jamaica",
-                "nameLocal": "Jamaica"
-            },
-            {
-                "id": "MT",
-                "name": "Malta",
-                "nameLocal": "Malta"
-            },
-            {
-                "id": "NZ",
-                "name": "New Zealand",
-                "nameLocal": "New Zealand"
-            },
-            {
-                "id": "PH",
-                "name": "Philippines",
-                "nameLocal": "Philippines"
-            },
-            {
-                "id": "KN",
-                "name": "Saint Kitts and Nevis",
-                "nameLocal": "Saint Kitts and Nevis"
-            },
-            {
-                "id": "LC",
-                "name": "Saint Lucia",
-                "nameLocal": "Saint Lucia"
-            },
-            {
-                "id": "VC",
-                "name": "Saint Vincent and the Grenadines",
-                "nameLocal": "Saint Vincent and the Grenadines"
-            },
-            {
-                "id": "TT",
-                "name": "Trinidad and Tobago",
-                "nameLocal": "Trinidad and Tobago"
-            },
-            {
-                "id": "NG",
-                "name": "Nigeria",
-                "nameLocal": "Nigeria"
-            },
-            {
-                "id": "ZA",
-                "name": "South Africa",
-                "nameLocal": "South Africa"
+                "id": "472735b48a27b402-01",
+                "dblId": "472735b48a27b402",
+                "relatedDbl": null,
+                "name": "The New Testament in Ahirani language",
+                "nameLocal": "प्रेम संदेश",
+                "abbreviation": "NTAii20",
+                "abbreviationLocal": "NTAii20",
+                "description": "The New Testament in Ahirani language, 2020",
+                "descriptionLocal": "प्रेम संदेश, नवा करार, 2020",
+                "language": {
+                    "id": "ahr",
+                    "name": "Ahirani",
+                    "nameLocal": "Ahirani",
+                    "script": "Devanagari",
+                    "scriptDirection": "LTR"
+                },
+                "countries": [
+                    {
+                        "id": "IN",
+                        "name": "India",
+                        "nameLocal": "India"
+                    }
+                ],
+                "type": "text",
+                "updatedAt": "2024-06-28T17:04:08.000Z",
+                "audioBibles": [
+                    {
+                        "id": "52a82b80a85343c5-01",
+                        "name": "Ahirani - 2020 WFW (NT) Drama",
+                        "nameLocal": "Ahirani - 2020 WFW (NT) Drama",
+                        "dblId": "52a82b80a85343c5"
+                    },
+                    {
+                        "id": "e0fc5ffec81546f5-01",
+                        "name": "Ahirani - 2020 WFW (NT) NonDrama",
+                        "nameLocal": "Ahirani - 2020 WFW (NT) NonDrama",
+                        "dblId": "e0fc5ffec81546f5"
+                    }
+                ]
             }
-        ],
-        "type": "text",
-        "updatedAt": "",
-        "audioBibles": []
+        ]
+    },
+    "200woid": {
+        "data": [
+            {
+                "id": "7142879509583d59-01",
+                "dblId": "7142879509583d59",
+                "relatedDbl": null,
+                "name": "World English Bible British Edition",
+                "nameLocal": "World English Bible British Edition",
+                "abbreviation": "WEBBE",
+                "abbreviationLocal": "WEBBE",
+                "description": "Ecumenical",
+                "descriptionLocal": "Ecumenical",
+                "language": {
+                    "id": "eng",
+                    "name": "English",
+                    "nameLocal": "English",
+                    "script": "Latin",
+                    "scriptDirection": "LTR"
+                },
+                "countries": [
+                    {
+                        "id": "GB",
+                        "name": "United Kingdom",
+                        "nameLocal": "United Kingdom"
+                    }
+                ],
+                "type": "text",
+                "updatedAt": "2024-06-28T19:31:15.000Z",
+                "audioBibles": []
+            },
+            {
+                "id": "7142879509583d59-02",
+                "dblId": "7142879509583d59",
+                "relatedDbl": null,
+                "name": "World English Bible British Edition",
+                "nameLocal": "World English Bible British Edition",
+                "abbreviation": "WEBBE",
+                "abbreviationLocal": "WEBBE",
+                "description": "Catholic",
+                "descriptionLocal": "Catholic",
+                "language": {
+                    "id": "eng",
+                    "name": "English",
+                    "nameLocal": "English",
+                    "script": "Latin",
+                    "scriptDirection": "LTR"
+                },
+                "countries": [
+                    {
+                        "id": "GB",
+                        "name": "United Kingdom",
+                        "nameLocal": "United Kingdom"
+                    }
+                ],
+                "type": "text",
+                "updatedAt": "2024-06-28T19:31:43.000Z",
+                "audioBibles": []
+            },
+            {
+                "id": "7142879509583d59-03",
+                "dblId": "7142879509583d59",
+                "relatedDbl": null,
+                "name": "World English Bible British Edition",
+                "nameLocal": "World English Bible British Edition",
+                "abbreviation": "WEBBE",
+                "abbreviationLocal": "WEBBE",
+                "description": "Orthodox",
+                "descriptionLocal": "Orthodox",
+                "language": {
+                    "id": "eng",
+                    "name": "English",
+                    "nameLocal": "English",
+                    "script": "Latin",
+                    "scriptDirection": "LTR"
+                },
+                "countries": [
+                    {
+                        "id": "GB",
+                        "name": "United Kingdom",
+                        "nameLocal": "United Kingdom"
+                    }
+                ],
+                "type": "text",
+                "updatedAt": "2024-06-28T19:32:10.000Z",
+                "audioBibles": []
+            },
+            {
+                "id": "7142879509583d59-04",
+                "dblId": "7142879509583d59",
+                "relatedDbl": null,
+                "name": "World English Bible British Edition",
+                "nameLocal": "World English Bible British Edition",
+                "abbreviation": "WEBBE",
+                "abbreviationLocal": "WEBBE",
+                "description": "Protestant",
+                "descriptionLocal": "Protestant",
+                "language": {
+                    "id": "eng",
+                    "name": "English",
+                    "nameLocal": "English",
+                    "script": "Latin",
+                    "scriptDirection": "LTR"
+                },
+                "countries": [
+                    {
+                        "id": "GB",
+                        "name": "United Kingdom",
+                        "nameLocal": "United Kingdom"
+                    }
+                ],
+                "type": "text",
+                "updatedAt": "2024-06-28T19:32:36.000Z",
+                "audioBibles": []
+            }
+        ]
+    },
+    "200mid": {
+        "data": [
+            {
+                "id": "6bab4d6c61b31b80-01",
+                "dblId": "6bab4d6c61b31b80",
+                "relatedDbl": null,
+                "name": "Brenton English Septuagint (Updated Spelling and Formatting)",
+                "nameLocal": "Brenton English Septuagint (Updated Spelling and Formatting)",
+                "abbreviation": "engLXXup",
+                "abbreviationLocal": "LXXup",
+                "description": "common",
+                "descriptionLocal": "common",
+                "language": {
+                    "id": "eng",
+                    "name": "English",
+                    "nameLocal": "English",
+                    "script": "Latin",
+                    "scriptDirection": "LTR"
+                },
+                "countries": [
+                    {
+                        "id": "ZZ",
+                        "name": "Unspecific",
+                        "nameLocal": "Unspecific"
+                    }
+                ],
+                "type": "text",
+                "updatedAt": "2024-06-28T19:11:26.000Z",
+                "audioBibles": []
+            },
+            {
+                "id": "9879dbb7cfe39e4d-01",
+                "dblId": "9879dbb7cfe39e4d",
+                "relatedDbl": null,
+                "name": "World English Bible",
+                "nameLocal": "World English Bible",
+                "abbreviation": "WEB",
+                "abbreviationLocal": "WEB",
+                "description": "Ecumenical",
+                "descriptionLocal": "Ecumenical",
+                "language": {
+                    "id": "eng",
+                    "name": "English",
+                    "nameLocal": "English",
+                    "script": "Latin",
+                    "scriptDirection": "LTR"
+                },
+                "countries": [
+                    {
+                        "id": "US",
+                        "name": "United States of America",
+                        "nameLocal": "United States of America"
+                    }
+                ],
+                "type": "text",
+                "updatedAt": "2024-06-28T21:52:13.000Z",
+                "audioBibles": [
+                    {
+                        "id": "105a06b6146d11e7-01",
+                        "name": "English - World English Bible 2013 (Drama NT)",
+                        "nameLocal": "English - World English Bible 2013 (Drama NT)",
+                        "dblId": "105a06b6146d11e7"
+                    }
+                ]
+            }
+        ]
     },
     "200wap": {
         "data": [
@@ -304,7 +379,7 @@
                     }
                 ],
                 "type": "text",
-                "updatedAt": "",
+                "updatedAt": "2024-06-29T00:44:58.000Z",
                 "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
                 "info": "<p>https://berean.bible/</p>",
                 "audioBibles": []
