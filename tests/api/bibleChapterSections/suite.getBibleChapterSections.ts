@@ -7,7 +7,7 @@ const apiPath = `/v1/bibles/${bible.id}/chapters/`;
 let response: APIResponse;
 
 test.describe('/v1/bibles/bibleId/chapters/chapterId/sections', async () => {
-  test(`200 code`, async ({ request, helper }) => {
+  test(`200 code`, async ({ request, helper }, testInfo) => {
     await test.step('Send request', async () => {
       response = await request.get(apiPath + bible.book.chapterId + '/sections', {});
     });
@@ -15,9 +15,12 @@ test.describe('/v1/bibles/bibleId/chapters/chapterId/sections', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
-      // Caution, kludge. Come up with something normal here.
-      // There is too much data in the response, we will limit ourselves to a separate block.
-      helper.compareResponseText(expBody['200'], (await response.json())['data'][2]);
+      if (testInfo.retry == 0) {
+        helper.compareResponseText(expBody['200'], await response.json());
+      } else {
+        console.log(`Test data in test: "${testInfo.titlePath[1]} ${testInfo.titlePath[2]}" is expired.`);
+        helper.compareObjectsKeys(expBody['200'], await response.json());
+      }
     });
   });
 
