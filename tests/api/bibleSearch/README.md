@@ -74,18 +74,12 @@ contain footnote references. However, those can be queried directly using the
 
 </details>
 
-## Test Suite
+## Tests in suite
 
-Coming soon
-
-#### Test: 200 code
-
-| Action       | Expected result |
-| ------------ | --------------- |
-| Send request | get response    |
-
-#### Test: 400 code
-
-| Action       | Expected result |
-| ------------ | --------------- |
-| Send request | get response    |
+1. **/v1/bibles/bibleId/search 200 code (only query)**
+2. **/v1/bibles/bibleId/search 200 code (bad query)**
+3. **/v1/bibles/bibleId/search 200 code (all params)**
+4. **/v1/bibles/bibleId/search 400 code**
+5. **/v1/bibles/bibleId/search 401 code**
+6. **/v1/bibles/bibleId/search 403 code**
+7. **/v1/bibles/bibleId/search 404 code** _test data for test not found_

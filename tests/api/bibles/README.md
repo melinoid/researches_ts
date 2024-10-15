@@ -77,7 +77,7 @@ Gets an array of `Bible` objects.
 
 1. **/v1/bibles 200 code (w/o params)**
 2. **/v1/bibles 200 code (params w/o id)**
-3. **/v1/bibles 200 code (multiple ids)**
+3. **/v1/bibles 200 code (multiple ids)** _ids parameter working unstable_
 4. **/v1/bibles 200 code (all params)**
 5. **/v1/bibles 400 code**
 6. **/v1/bibles 401 code**
