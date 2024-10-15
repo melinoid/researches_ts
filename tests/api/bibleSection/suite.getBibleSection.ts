@@ -159,7 +159,7 @@ test.describe('/v1/bibles/bibleId/sections/sectionId', async () => {
     });
   });
 
-  test.only('403 code (bad parallels)', async ({ request, helper }) => {
+  test('403 code (bad parallels)', async ({ request, helper }) => {
     await test.step('Send request', async () => {
       response = await request.get(apiPath + bible.book.sectionId, {
         params: {
