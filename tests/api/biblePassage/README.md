@@ -72,18 +72,14 @@ The `passageId` parameter can represent a chapter, verse, or range of verses.
 
 </details>
 
-## Test Suite
+## Tests in suite
 
-Coming soon
-
-#### Test: 200 code
-
-| Action       | Expected result |
-| ------------ | --------------- |
-| Send request | get response    |
-
-#### Test: 400 code
-
-| Action       | Expected result |
-| ------------ | --------------- |
-| Send request | get response    |
+1. **/v1/bibles/bibleId/passages/passageId 200 code (w/o params)**
+2. **/v1/bibles/bibleId/passages/passageId 200 code (html & alternate params)**
+3. **/v1/bibles/bibleId/passages/passageId 200 code (json & reverse alternate params)**
+4. **/v1/bibles/bibleId/passages/passageId 200 code (text & all params)**
+5. **/v1/bibles/bibleId/passages/passageId 400 code**
+6. **/v1/bibles/bibleId/passages/passageId 401 code**
+7. **/v1/bibles/bibleId/passages/passageId 403 code (bad bibleId)**
+8. **/v1/bibles/bibleId/passages/passageId 403 code (bad parallels)**
+9. **/v1/bibles/bibleId/passages/passageId 404 code**
