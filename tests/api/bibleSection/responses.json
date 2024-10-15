@@ -1,385 +1,435 @@
 {
     "200wop": {
-        "id": "ROM.S1",
-        "bibleId": "bba9f40183526463-01",
-        "bookId": "ROM",
-        "chapterId": "ROM.1",
-        "title": "Paul Greets the Saints in Rome",
-        "firstVerseId": "ROM.1.1",
-        "lastVerseId": "ROM.1.7",
-        "firstVerseOrgId": "ROM.1.1",
-        "lastVerseOrgId": "ROM.1.7",
-        "content": "<p class=\"s1\">Paul Greets the Saints in Rome</p><p class=\"m\"><span data-number=\"1\" data-sid=\"ROM 1:1\" class=\"v\">1</span>Paul, a servant of Christ Jesus, called to be an apostle, and set apart for the gospel of God— <span data-number=\"2\" data-sid=\"ROM 1:2\" class=\"v\">2</span>the gospel He promised beforehand through His prophets in the Holy Scriptures, <span data-number=\"3\" data-sid=\"ROM 1:3\" class=\"v\">3</span>regarding His Son, who was a descendant of David according to the flesh, <span data-number=\"4\" data-sid=\"ROM 1:4\" class=\"v\">4</span>and who through the Spirit of holiness was declared with power to be the Son of God by His resurrection from the dead: Jesus Christ our Lord.</p><p class=\"b\"></p><p class=\"m\"><span data-number=\"5\" data-sid=\"ROM 1:5\" class=\"v\">5</span>Through Him and on behalf of His name, we received grace and apostleship to call all those among the Gentiles to the obedience that comes from faith. <span data-number=\"6\" data-sid=\"ROM 1:6\" class=\"v\">6</span>And you also are among those who are called to belong to Jesus Christ.</p><p class=\"b\"></p><p class=\"m\"><span data-number=\"7\" data-sid=\"ROM 1:7\" class=\"v\">7</span>To all in Rome who are loved by God and called to be saints:</p><p data-vid=\"ROM 1:7\" class=\"b\"></p><p data-vid=\"ROM 1:7\" class=\"m\">Grace and peace to you from God our Father and the Lord Jesus Christ.</p>",
-        "verseCount": 7,
-        "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
-        "next": {
-            "id": "ROM.S2",
-            "title": "Unashamed of the Gospel"
+        "data": {
+            "id": "ROM.S1",
+            "bibleId": "bba9f40183526463-01",
+            "bookId": "ROM",
+            "chapterId": "ROM.1",
+            "title": "Paul Greets the Saints in Rome",
+            "firstVerseId": "ROM.1.1",
+            "lastVerseId": "ROM.1.7",
+            "firstVerseOrgId": "ROM.1.1",
+            "lastVerseOrgId": "ROM.1.7",
+            "content": "<p class=\"s1\">Paul Greets the Saints in Rome</p><p class=\"m\"><span data-number=\"1\" data-sid=\"ROM 1:1\" class=\"v\">1</span>Paul, a servant of Christ Jesus, called to be an apostle, and set apart for the gospel of God— <span data-number=\"2\" data-sid=\"ROM 1:2\" class=\"v\">2</span>the gospel He promised beforehand through His prophets in the Holy Scriptures, <span data-number=\"3\" data-sid=\"ROM 1:3\" class=\"v\">3</span>regarding His Son, who was a descendant of David according to the flesh, <span data-number=\"4\" data-sid=\"ROM 1:4\" class=\"v\">4</span>and who through the Spirit of holiness was declared with power to be the Son of God by His resurrection from the dead: Jesus Christ our Lord.</p><p class=\"b\"></p><p class=\"m\"><span data-number=\"5\" data-sid=\"ROM 1:5\" class=\"v\">5</span>Through Him and on behalf of His name, we received grace and apostleship to call all those among the Gentiles to the obedience that comes from faith. <span data-number=\"6\" data-sid=\"ROM 1:6\" class=\"v\">6</span>And you also are among those who are called to belong to Jesus Christ.</p><p class=\"b\"></p><p class=\"m\"><span data-number=\"7\" data-sid=\"ROM 1:7\" class=\"v\">7</span>To all in Rome who are loved by God and called to be saints:</p><p data-vid=\"ROM 1:7\" class=\"b\"></p><p data-vid=\"ROM 1:7\" class=\"m\">Grace and peace to you from God our Father and the Lord Jesus Christ.</p>",
+            "verseCount": 7,
+            "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
+            "next": {
+                "id": "ROM.S2",
+                "title": "Unashamed of the Gospel"
+            },
+            "previous": {
+                "id": "ACT.S110",
+                "title": "Paul Preaches at Rome"
+            }
         },
-        "previous": {
-            "id": "ACT.S110",
-            "title": "Paul Preaches at Rome"
+        "meta": {
+            "fums": "",
+            "fumsId": "",
+            "fumsJsInclude": "",
+            "fumsJs": "",
+            "fumsNoScript": ""
         }
     },
     "200html": {
-        "id": "ROM.S1",
-        "bibleId": "bba9f40183526463-01",
-        "bookId": "ROM",
-        "chapterId": "ROM.1",
-        "title": "Paul Greets the Saints in Rome",
-        "firstVerseId": "ROM.1.1",
-        "lastVerseId": "ROM.1.7",
-        "firstVerseOrgId": "ROM.1.1",
-        "lastVerseOrgId": "ROM.1.7",
-        "content": "<h2 data-number=\"1\" data-sid=\"ROM 1\" class=\"c\">1</h2><p class=\"m\"><span class=\"verse-span\" data-verse-id=\"ROM.S1\" data-verse-org-ids=\"ROM.1.1\">Paul, a servant of Christ Jesus, called to be an apostle, and set apart for the gospel of God— </span><span class=\"verse-span\" data-verse-id=\"ROM.S1\" data-verse-org-ids=\"ROM.1.2\">the gospel He promised beforehand through His prophets in the Holy Scriptures, </span><span class=\"verse-span\" data-verse-id=\"ROM.S1\" data-verse-org-ids=\"ROM.1.3\">regarding His Son, who was a descendant of David according to the flesh, </span><span class=\"verse-span\" data-verse-id=\"ROM.S1\" data-verse-org-ids=\"ROM.1.4\">and who through the Spirit of holiness was declared with power to be the Son of God by His resurrection from the dead: Jesus Christ our Lord.</span></p><p class=\"b\"></p><p class=\"m\"><span class=\"verse-span\" data-verse-id=\"ROM.S1\" data-verse-org-ids=\"ROM.1.5\">Through Him and on behalf of His name, we received grace and apostleship to call all those among the Gentiles to the obedience that comes from faith. </span><span class=\"verse-span\" data-verse-id=\"ROM.S1\" data-verse-org-ids=\"ROM.1.6\">And you also are among those who are called to belong to Jesus Christ.</span></p><p class=\"b\"></p><p class=\"m\"><span class=\"verse-span\" data-verse-id=\"ROM.S1\" data-verse-org-ids=\"ROM.1.7\">To all in Rome who are loved by God and called to be saints:</span></p><p data-vid=\"ROM 1:7\" class=\"b\"></p><p data-vid=\"ROM 1:7\" class=\"m\"><span class=\"verse-span\" data-verse-id=\"ROM.S1\" data-verse-org-ids=\"ROM.1.7\">Grace and peace to you from God our Father and the Lord Jesus Christ.</span></p>",
-        "verseCount": 7,
-        "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
-        "next": {
-            "id": "ROM.S2",
-            "title": "Unashamed of the Gospel"
+        "data": {
+            "id": "ROM.S1",
+            "bibleId": "bba9f40183526463-01",
+            "bookId": "ROM",
+            "chapterId": "ROM.1",
+            "title": "Paul Greets the Saints in Rome",
+            "firstVerseId": "ROM.1.1",
+            "lastVerseId": "ROM.1.7",
+            "firstVerseOrgId": "ROM.1.1",
+            "lastVerseOrgId": "ROM.1.7",
+            "content": "<h2 data-number=\"1\" data-sid=\"ROM 1\" class=\"c\">1</h2><p class=\"m\"><span class=\"verse-span\" data-verse-id=\"ROM.S1\" data-verse-org-ids=\"ROM.1.1\">Paul, a servant of Christ Jesus, called to be an apostle, and set apart for the gospel of God— </span><span class=\"verse-span\" data-verse-id=\"ROM.S1\" data-verse-org-ids=\"ROM.1.2\">the gospel He promised beforehand through His prophets in the Holy Scriptures, </span><span class=\"verse-span\" data-verse-id=\"ROM.S1\" data-verse-org-ids=\"ROM.1.3\">regarding His Son, who was a descendant of David according to the flesh, </span><span class=\"verse-span\" data-verse-id=\"ROM.S1\" data-verse-org-ids=\"ROM.1.4\">and who through the Spirit of holiness was declared with power to be the Son of God by His resurrection from the dead: Jesus Christ our Lord.</span></p><p class=\"b\"></p><p class=\"m\"><span class=\"verse-span\" data-verse-id=\"ROM.S1\" data-verse-org-ids=\"ROM.1.5\">Through Him and on behalf of His name, we received grace and apostleship to call all those among the Gentiles to the obedience that comes from faith. </span><span class=\"verse-span\" data-verse-id=\"ROM.S1\" data-verse-org-ids=\"ROM.1.6\">And you also are among those who are called to belong to Jesus Christ.</span></p><p class=\"b\"></p><p class=\"m\"><span class=\"verse-span\" data-verse-id=\"ROM.S1\" data-verse-org-ids=\"ROM.1.7\">To all in Rome who are loved by God and called to be saints:</span></p><p data-vid=\"ROM 1:7\" class=\"b\"></p><p data-vid=\"ROM 1:7\" class=\"m\"><span class=\"verse-span\" data-verse-id=\"ROM.S1\" data-verse-org-ids=\"ROM.1.7\">Grace and peace to you from God our Father and the Lord Jesus Christ.</span></p>",
+            "verseCount": 7,
+            "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
+            "next": {
+                "id": "ROM.S2",
+                "title": "Unashamed of the Gospel"
+            },
+            "previous": {
+                "id": "ACT.S110",
+                "title": "Paul Preaches at Rome"
+            },
+            "parallels": [
+                {
+                    "id": "ROM.1.1",
+                    "bibleId": "9879dbb7cfe39e4d-01",
+                    "bookId": "ROM",
+                    "chapterId": "ROM.1",
+                    "content": "<h2 data-number=\"1\" data-sid=\"ROM 1\" class=\"c\">1</h2><p class=\"p\"><span class=\"verse-span\" data-verse-id=\"ROM.1.1\" data-verse-org-ids=\"ROM.1.1\">Paul, a servant of Jesus Christ,</span><span data-caller=\"+\" id=\"ROM.1.1!f.1\" data-verse-id=\"ROM.1.1\" class=\"f\"><span class=\"fr\">1:1 </span><span class=\"ft\">“Christ” means “Anointed One”.</span></span><span class=\"verse-span\" data-verse-id=\"ROM.1.1\" data-verse-org-ids=\"ROM.1.1\"> called to be an apostle, set apart for the Good News of God, </span><span class=\"verse-span\" data-verse-id=\"ROM.1.2\" data-verse-org-ids=\"ROM.1.2\">which he promised before through his prophets in the holy Scriptures, </span><span class=\"verse-span\" data-verse-id=\"ROM.1.3\" data-verse-org-ids=\"ROM.1.3\">concerning his Son, who was born of the offspring</span><span data-caller=\"+\" id=\"ROM.1.3!f.1\" data-verse-id=\"ROM.1.3\" class=\"f\"><span class=\"fr\">1:3 </span><span class=\"ft\">or, seed</span></span><span class=\"verse-span\" data-verse-id=\"ROM.1.3\" data-verse-org-ids=\"ROM.1.3\"> of David according to the flesh, </span><span class=\"verse-span\" data-verse-id=\"ROM.1.4\" data-verse-org-ids=\"ROM.1.4\">who was declared to be the Son of God with power according to the Spirit of holiness, by the resurrection from the dead, Jesus Christ our Lord, </span><span class=\"verse-span\" data-verse-id=\"ROM.1.5\" data-verse-org-ids=\"ROM.1.5\">through whom we received grace and apostleship for obedience of faith among all the nations for his name’s sake; </span><span class=\"verse-span\" data-verse-id=\"ROM.1.6\" data-verse-org-ids=\"ROM.1.6\">among whom you are also called to belong to Jesus Christ; </span><span class=\"verse-span\" data-verse-id=\"ROM.1.7\" data-verse-org-ids=\"ROM.1.7\">to all who are in Rome, beloved of God, called to be saints: Grace to you and peace from God our Father and the Lord Jesus Christ.</span></p>",
+                    "verseCount": 7,
+                    "copyright": "\n          PUBLIC DOMAIN\n        "
+                }
+            ]
         },
-        "previous": {
-            "id": "ACT.S110",
-            "title": "Paul Preaches at Rome"
+        "meta": {
+            "fums": "",
+            "fumsId": "",
+            "fumsJsInclude": "",
+            "fumsJs": "",
+            "fumsNoScript": ""
         }
     },
     "200json": {
-        "id": "ROM.S1",
-        "bibleId": "bba9f40183526463-01",
-        "bookId": "ROM",
-        "chapterId": "ROM.1",
-        "title": "Paul Greets the Saints in Rome",
-        "firstVerseId": "ROM.1.1",
-        "lastVerseId": "ROM.1.7",
-        "firstVerseOrgId": "ROM.1.1",
-        "lastVerseOrgId": "ROM.1.7",
-        "content": [
-            {
-                "name": "para",
-                "type": "tag",
-                "attrs": {
-                    "style": "s1"
+        "data": {
+            "id": "ROM.S1",
+            "bibleId": "bba9f40183526463-01",
+            "bookId": "ROM",
+            "chapterId": "ROM.1",
+            "title": "Paul Greets the Saints in Rome",
+            "firstVerseId": "ROM.1.1",
+            "lastVerseId": "ROM.1.7",
+            "firstVerseOrgId": "ROM.1.1",
+            "lastVerseOrgId": "ROM.1.7",
+            "content": [
+                {
+                    "name": "para",
+                    "type": "tag",
+                    "attrs": {
+                        "style": "s1"
+                    },
+                    "items": [
+                        {
+                            "text": "Paul Greets the Saints in Rome",
+                            "type": "text"
+                        }
+                    ]
                 },
-                "items": [
-                    {
-                        "text": "Paul Greets the Saints in Rome",
-                        "type": "text"
-                    }
-                ]
-            },
-            {
-                "name": "para",
-                "type": "tag",
-                "attrs": {
-                    "style": "m"
-                },
-                "items": [
-                    {
-                        "name": "verse",
-                        "type": "tag",
-                        "attrs": {
-                            "number": "1",
-                            "style": "v",
-                            "sid": "ROM 1:1"
+                {
+                    "name": "para",
+                    "type": "tag",
+                    "attrs": {
+                        "style": "m"
+                    },
+                    "items": [
+                        {
+                            "name": "verse",
+                            "type": "tag",
+                            "attrs": {
+                                "number": "1",
+                                "style": "v",
+                                "sid": "ROM 1:1"
+                            },
+                            "items": [
+                                {
+                                    "text": "1",
+                                    "type": "text"
+                                }
+                            ]
                         },
-                        "items": [
-                            {
-                                "text": "1",
-                                "type": "text"
+                        {
+                            "text": "Paul, a servant of Christ Jesus, called to be an apostle, and set apart for the gospel of God— ",
+                            "type": "text",
+                            "attrs": {
+                                "verseId": "ROM.S1",
+                                "verseOrgIds": [
+                                    "ROM.1.1"
+                                ]
                             }
-                        ]
-                    },
-                    {
-                        "text": "Paul, a servant of Christ Jesus, called to be an apostle, and set apart for the gospel of God— ",
-                        "type": "text",
-                        "attrs": {
-                            "verseId": "ROM.S1",
-                            "verseOrgIds": [
-                                "ROM.1.1"
-                            ]
-                        }
-                    },
-                    {
-                        "name": "verse",
-                        "type": "tag",
-                        "attrs": {
-                            "number": "2",
-                            "style": "v",
-                            "sid": "ROM 1:2"
                         },
-                        "items": [
-                            {
-                                "text": "2",
-                                "type": "text"
-                            }
-                        ]
-                    },
-                    {
-                        "text": "the gospel He promised beforehand through His prophets in the Holy Scriptures, ",
-                        "type": "text",
-                        "attrs": {
-                            "verseId": "ROM.S1",
-                            "verseOrgIds": [
-                                "ROM.1.2"
+                        {
+                            "name": "verse",
+                            "type": "tag",
+                            "attrs": {
+                                "number": "2",
+                                "style": "v",
+                                "sid": "ROM 1:2"
+                            },
+                            "items": [
+                                {
+                                    "text": "2",
+                                    "type": "text"
+                                }
                             ]
-                        }
-                    },
-                    {
-                        "name": "verse",
-                        "type": "tag",
-                        "attrs": {
-                            "number": "3",
-                            "style": "v",
-                            "sid": "ROM 1:3"
                         },
-                        "items": [
-                            {
-                                "text": "3",
-                                "type": "text"
+                        {
+                            "text": "the gospel He promised beforehand through His prophets in the Holy Scriptures, ",
+                            "type": "text",
+                            "attrs": {
+                                "verseId": "ROM.S1",
+                                "verseOrgIds": [
+                                    "ROM.1.2"
+                                ]
                             }
-                        ]
-                    },
-                    {
-                        "text": "regarding His Son, who was a descendant of David according to the flesh, ",
-                        "type": "text",
-                        "attrs": {
-                            "verseId": "ROM.S1",
-                            "verseOrgIds": [
-                                "ROM.1.3"
-                            ]
-                        }
-                    },
-                    {
-                        "name": "verse",
-                        "type": "tag",
-                        "attrs": {
-                            "number": "4",
-                            "style": "v",
-                            "sid": "ROM 1:4"
                         },
-                        "items": [
-                            {
-                                "text": "4",
-                                "type": "text"
-                            }
-                        ]
-                    },
-                    {
-                        "text": "and who through the Spirit of holiness was declared with power to be the Son of God by His resurrection from the dead: Jesus Christ our Lord.",
-                        "type": "text",
-                        "attrs": {
-                            "verseId": "ROM.S1",
-                            "verseOrgIds": [
-                                "ROM.1.4"
+                        {
+                            "name": "verse",
+                            "type": "tag",
+                            "attrs": {
+                                "number": "3",
+                                "style": "v",
+                                "sid": "ROM 1:3"
+                            },
+                            "items": [
+                                {
+                                    "text": "3",
+                                    "type": "text"
+                                }
                             ]
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "para",
-                "type": "tag",
-                "attrs": {
-                    "style": "b"
-                },
-                "items": []
-            },
-            {
-                "name": "para",
-                "type": "tag",
-                "attrs": {
-                    "style": "m"
-                },
-                "items": [
-                    {
-                        "name": "verse",
-                        "type": "tag",
-                        "attrs": {
-                            "number": "5",
-                            "style": "v",
-                            "sid": "ROM 1:5"
                         },
-                        "items": [
-                            {
-                                "text": "5",
-                                "type": "text"
+                        {
+                            "text": "regarding His Son, who was a descendant of David according to the flesh, ",
+                            "type": "text",
+                            "attrs": {
+                                "verseId": "ROM.S1",
+                                "verseOrgIds": [
+                                    "ROM.1.3"
+                                ]
                             }
-                        ]
-                    },
-                    {
-                        "text": "Through Him and on behalf of His name, we received grace and apostleship to call all those among the Gentiles to the obedience that comes from faith. ",
-                        "type": "text",
-                        "attrs": {
-                            "verseId": "ROM.S1",
-                            "verseOrgIds": [
-                                "ROM.1.5"
-                            ]
-                        }
-                    },
-                    {
-                        "name": "verse",
-                        "type": "tag",
-                        "attrs": {
-                            "number": "6",
-                            "style": "v",
-                            "sid": "ROM 1:6"
                         },
-                        "items": [
-                            {
-                                "text": "6",
-                                "type": "text"
-                            }
-                        ]
-                    },
-                    {
-                        "text": "And you also are among those who are called to belong to Jesus Christ.",
-                        "type": "text",
-                        "attrs": {
-                            "verseId": "ROM.S1",
-                            "verseOrgIds": [
-                                "ROM.1.6"
+                        {
+                            "name": "verse",
+                            "type": "tag",
+                            "attrs": {
+                                "number": "4",
+                                "style": "v",
+                                "sid": "ROM 1:4"
+                            },
+                            "items": [
+                                {
+                                    "text": "4",
+                                    "type": "text"
+                                }
                             ]
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "para",
-                "type": "tag",
-                "attrs": {
-                    "style": "b"
-                },
-                "items": []
-            },
-            {
-                "name": "para",
-                "type": "tag",
-                "attrs": {
-                    "style": "m"
-                },
-                "items": [
-                    {
-                        "name": "verse",
-                        "type": "tag",
-                        "attrs": {
-                            "number": "7",
-                            "style": "v",
-                            "sid": "ROM 1:7"
                         },
-                        "items": [
-                            {
-                                "text": "7",
-                                "type": "text"
+                        {
+                            "text": "and who through the Spirit of holiness was declared with power to be the Son of God by His resurrection from the dead: Jesus Christ our Lord.",
+                            "type": "text",
+                            "attrs": {
+                                "verseId": "ROM.S1",
+                                "verseOrgIds": [
+                                    "ROM.1.4"
+                                ]
                             }
-                        ]
+                        }
+                    ]
+                },
+                {
+                    "name": "para",
+                    "type": "tag",
+                    "attrs": {
+                        "style": "b"
                     },
-                    {
-                        "text": "To all in Rome who are loved by God and called to be saints:",
-                        "type": "text",
-                        "attrs": {
-                            "verseId": "ROM.S1",
-                            "verseOrgIds": [
-                                "ROM.1.7"
-                            ]
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "para",
-                "type": "tag",
-                "attrs": {
-                    "style": "b",
-                    "vid": "ROM 1:7"
+                    "items": []
                 },
-                "items": []
-            },
-            {
-                "name": "para",
-                "type": "tag",
-                "attrs": {
-                    "style": "m",
-                    "vid": "ROM 1:7"
-                },
-                "items": [
-                    {
-                        "text": "Grace and peace to you from God our Father and the Lord Jesus Christ.",
-                        "type": "text",
-                        "attrs": {
-                            "verseId": "ROM.S1",
-                            "verseOrgIds": [
-                                "ROM.1.7"
+                {
+                    "name": "para",
+                    "type": "tag",
+                    "attrs": {
+                        "style": "m"
+                    },
+                    "items": [
+                        {
+                            "name": "verse",
+                            "type": "tag",
+                            "attrs": {
+                                "number": "5",
+                                "style": "v",
+                                "sid": "ROM 1:5"
+                            },
+                            "items": [
+                                {
+                                    "text": "5",
+                                    "type": "text"
+                                }
                             ]
+                        },
+                        {
+                            "text": "Through Him and on behalf of His name, we received grace and apostleship to call all those among the Gentiles to the obedience that comes from faith. ",
+                            "type": "text",
+                            "attrs": {
+                                "verseId": "ROM.S1",
+                                "verseOrgIds": [
+                                    "ROM.1.5"
+                                ]
+                            }
+                        },
+                        {
+                            "name": "verse",
+                            "type": "tag",
+                            "attrs": {
+                                "number": "6",
+                                "style": "v",
+                                "sid": "ROM 1:6"
+                            },
+                            "items": [
+                                {
+                                    "text": "6",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "And you also are among those who are called to belong to Jesus Christ.",
+                            "type": "text",
+                            "attrs": {
+                                "verseId": "ROM.S1",
+                                "verseOrgIds": [
+                                    "ROM.1.6"
+                                ]
+                            }
                         }
-                    }
-                ]
+                    ]
+                },
+                {
+                    "name": "para",
+                    "type": "tag",
+                    "attrs": {
+                        "style": "b"
+                    },
+                    "items": []
+                },
+                {
+                    "name": "para",
+                    "type": "tag",
+                    "attrs": {
+                        "style": "m"
+                    },
+                    "items": [
+                        {
+                            "name": "verse",
+                            "type": "tag",
+                            "attrs": {
+                                "number": "7",
+                                "style": "v",
+                                "sid": "ROM 1:7"
+                            },
+                            "items": [
+                                {
+                                    "text": "7",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "To all in Rome who are loved by God and called to be saints:",
+                            "type": "text",
+                            "attrs": {
+                                "verseId": "ROM.S1",
+                                "verseOrgIds": [
+                                    "ROM.1.7"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "para",
+                    "type": "tag",
+                    "attrs": {
+                        "style": "b",
+                        "vid": "ROM 1:7"
+                    },
+                    "items": []
+                },
+                {
+                    "name": "para",
+                    "type": "tag",
+                    "attrs": {
+                        "style": "m",
+                        "vid": "ROM 1:7"
+                    },
+                    "items": [
+                        {
+                            "text": "Grace and peace to you from God our Father and the Lord Jesus Christ.",
+                            "type": "text",
+                            "attrs": {
+                                "verseId": "ROM.S1",
+                                "verseOrgIds": [
+                                    "ROM.1.7"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "verseCount": 7,
+            "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
+            "next": {
+                "id": "ROM.S2",
+                "title": "Unashamed of the Gospel"
+            },
+            "previous": {
+                "id": "ACT.S110",
+                "title": "Paul Preaches at Rome"
             }
-        ],
-        "verseCount": 7,
-        "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
-        "next": {
-            "id": "ROM.S2",
-            "title": "Unashamed of the Gospel"
         },
-        "previous": {
-            "id": "ACT.S110",
-            "title": "Paul Preaches at Rome"
+        "meta": {
+            "fums": "",
+            "fumsId": "",
+            "fumsJsInclude": "",
+            "fumsJs": "",
+            "fumsNoScript": ""
         }
     },
     "200text": {
-        "id": "ROM.S1",
-        "bibleId": "bba9f40183526463-01",
-        "bookId": "ROM",
-        "chapterId": "ROM.1",
-        "title": "Paul Greets the Saints in Rome",
-        "firstVerseId": "ROM.1.1",
-        "lastVerseId": "ROM.1.7",
-        "firstVerseOrgId": "ROM.1.1",
-        "lastVerseOrgId": "ROM.1.7",
-        "content": "1\nPaul Greets the Saints in Rome\n [1] Paul, a servant of Christ Jesus, called to be an apostle, and set apart for the gospel of God—  [2] the gospel He promised beforehand through His prophets in the Holy Scriptures,  [3] regarding His Son, who was a descendant of David according to the flesh,  [4] and who through the Spirit of holiness was declared with power to be the Son of God by His resurrection from the dead: Jesus Christ our Lord.\n    \n [5] Through Him and on behalf of His name, we received grace and apostleship to call all those among the Gentiles to the obedience that comes from faith.  [6] And you also are among those who are called to belong to Jesus Christ.\n    \n [7] To all in Rome who are loved by God and called to be saints:\n    \nGrace and peace to you from God our Father and the Lord Jesus Christ.\n",
-        "verseCount": 7,
-        "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
-        "next": {
-            "id": "ROM.S2",
-            "title": "Unashamed of the Gospel"
+        "data": {
+            "id": "ROM.S1",
+            "bibleId": "bba9f40183526463-01",
+            "bookId": "ROM",
+            "chapterId": "ROM.1",
+            "title": "Paul Greets the Saints in Rome",
+            "firstVerseId": "ROM.1.1",
+            "lastVerseId": "ROM.1.7",
+            "firstVerseOrgId": "ROM.1.1",
+            "lastVerseOrgId": "ROM.1.7",
+            "content": "1\nPaul Greets the Saints in Rome\n [1] Paul, a servant of Christ Jesus, called to be an apostle, and set apart for the gospel of God—  [2] the gospel He promised beforehand through His prophets in the Holy Scriptures,  [3] regarding His Son, who was a descendant of David according to the flesh,  [4] and who through the Spirit of holiness was declared with power to be the Son of God by His resurrection from the dead: Jesus Christ our Lord.\n    \n [5] Through Him and on behalf of His name, we received grace and apostleship to call all those among the Gentiles to the obedience that comes from faith.  [6] And you also are among those who are called to belong to Jesus Christ.\n    \n [7] To all in Rome who are loved by God and called to be saints:\n    \nGrace and peace to you from God our Father and the Lord Jesus Christ.\n",
+            "verseCount": 7,
+            "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
+            "next": {
+                "id": "ROM.S2",
+                "title": "Unashamed of the Gospel"
+            },
+            "previous": {
+                "id": "ACT.S110",
+                "title": "Paul Preaches at Rome"
+            },
+            "parallels": [
+                {
+                    "id": "ROM.1.1",
+                    "bibleId": "bba9f40183526463-01",
+                    "bookId": "ROM",
+                    "chapterId": "ROM.1",
+                    "content": "1\nPaul Greets the Saints in Rome\n [1] Paul, a servant of Christ Jesus, called to be an apostle, and set apart for the gospel of God—  [2] the gospel He promised beforehand through His prophets in the Holy Scriptures,  [3] regarding His Son, who was a descendant of David according to the flesh,  [4] and who through the Spirit of holiness was declared with power to be the Son of God by His resurrection from the dead: Jesus Christ our Lord.\n    \n [5] Through Him and on behalf of His name, we received grace and apostleship to call all those among the Gentiles to the obedience that comes from faith.  [6] And you also are among those who are called to belong to Jesus Christ.\n    \n [7] To all in Rome who are loved by God and called to be saints:\n    \nGrace and peace to you from God our Father and the Lord Jesus Christ.\n",
+                    "verseCount": 7,
+                    "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain"
+                }
+            ]
         },
-        "previous": {
-            "id": "ACT.S110",
-            "title": "Paul Preaches at Rome"
-        },
-        "parallels": [
-            {
-                "id": "ROM.1.1",
-                "bibleId": "bba9f40183526463-01",
-                "bookId": "ROM",
-                "chapterId": "ROM.1",
-                "content": "1\nPaul Greets the Saints in Rome\n [1] Paul, a servant of Christ Jesus, called to be an apostle, and set apart for the gospel of God—  [2] the gospel He promised beforehand through His prophets in the Holy Scriptures,  [3] regarding His Son, who was a descendant of David according to the flesh,  [4] and who through the Spirit of holiness was declared with power to be the Son of God by His resurrection from the dead: Jesus Christ our Lord.\n    \n [5] Through Him and on behalf of His name, we received grace and apostleship to call all those among the Gentiles to the obedience that comes from faith.  [6] And you also are among those who are called to belong to Jesus Christ.\n    \n [7] To all in Rome who are loved by God and called to be saints:\n    \nGrace and peace to you from God our Father and the Lord Jesus Christ.\n",
-                "verseCount": 7,
-                "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain"
-            }
-        ]
+        "meta": {
+            "fums": "",
+            "fumsId": "",
+            "fumsJsInclude": "",
+            "fumsJs": "",
+            "fumsNoScript": ""
+        }
     },
-    "meta": {
-        "fums": "<script>\nvar _BAPI=_BAPI||{};\nif(typeof(_BAPI.t)==='undefined'){\ndocument.write('\\x3Cscript src=\"'+document.location.protocol+'//cdn.scripture.api.bible/fums/fumsv2.min.js\"\\x3E\\x3C/script\\x3E');}\ndocument.write(\"\\x3Cscript\\x3E_BAPI.t('62a5a0ac-f558-45de-b193-4df0464eeb00');\\x3C/script\\x3E\");\n</script><noscript><img src=\"https://d3a2okcloueqyx.cloudfront.net/nf1?t='62a5a0ac-f558-45de-b193-4df0464eeb00'\" height=\"1\" width=\"1\" border=\"0\" alt=\"\" style=\"height: 0; width: 0;\" /></noscript>",
-        "fumsId": "62a5a0ac-f558-45de-b193-4df0464eeb00",
-        "fumsJsInclude": "cdn.scripture.api.bible/fums/fumsv2.min.js",
-        "fumsJs": "var _BAPI=_BAPI||{};if(typeof(_BAPI.t)!='undefined'){ _BAPI.t('62a5a0ac-f558-45de-b193-4df0464eeb00'); }",
-        "fumsNoScript": "<img src=\"https://d3btgtzu3ctdwx.cloudfront.net/nf1?t=62a5a0ac-f558-45de-b193-4df0464eeb00\" height=\"1\" width=\"1\" border=\"0\" alt=\"\" style=\"height: 0; width: 0;\" />"
-    },
-    "400": {
+    "400bp": {
         "statusCode": 400,
         "error": "Bad Request",
         "message": "Invalid request params input"
+    },
+    "400bq": {
+        "statusCode": 400,
+        "error": "Bad Request",
+        "message": "Invalid request query input"
     },
     "401": {
         "statusCode": 401,
         "error": "Unauthorized",
         "message": "missing key"
     },
-    "403": {
+    "403bid": {
         "statusCode": 403,
         "error": "Forbidden",
         "message": "You are not authorized to access that bible"
+    },
+    "403bp": {
+        "statusCode": 403,
+        "error": "Forbidden",
+        "message": "You have specified parallel ids that you are not authorized to use"
     },
     "404": {
         "statusCode": 404,
