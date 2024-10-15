@@ -1,155 +1,201 @@
 {
     "200wop": {
-        "id": "ROM.1.2",
-        "orgId": "ROM.1.2",
-        "bookId": "ROM",
-        "chapterId": "ROM.1",
-        "bibleId": "bba9f40183526463-01",
-        "reference": "Romans 1:2",
-        "content": "<p class=\"m\"><span data-number=\"2\" data-sid=\"ROM 1:2\" class=\"v\">2</span>the gospel He promised beforehand through His prophets in the Holy Scriptures, </p>",
-        "verseCount": 1,
-        "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
-        "next": {
-            "id": "ROM.1.3",
-            "number": "3"
+        "data": {
+            "id": "ROM.1.2",
+            "orgId": "ROM.1.2",
+            "bookId": "ROM",
+            "chapterId": "ROM.1",
+            "bibleId": "bba9f40183526463-01",
+            "reference": "Romans 1:2",
+            "content": "<p class=\"m\"><span data-number=\"2\" data-sid=\"ROM 1:2\" class=\"v\">2</span>the gospel He promised beforehand through His prophets in the Holy Scriptures, </p>",
+            "verseCount": 1,
+            "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
+            "next": {
+                "id": "ROM.1.3",
+                "number": "3"
+            },
+            "previous": {
+                "id": "ROM.1.1",
+                "number": "1"
+            }
         },
-        "previous": {
-            "id": "ROM.1.1",
-            "number": "1"
+        "meta": {
+            "fums": "",
+            "fumsId": "",
+            "fumsJsInclude": "",
+            "fumsJs": "",
+            "fumsNoScript": ""
         }
     },
     "200html": {
-        "id": "ROM.1.2",
-        "orgId": "ROM.1.2",
-        "bookId": "ROM",
-        "chapterId": "ROM.1",
-        "bibleId": "bba9f40183526463-01",
-        "reference": "Romans 1:2",
-        "content": "<p class=\"m\"><span class=\"verse-span\" data-verse-id=\"ROM.1.2\" data-verse-org-ids=\"ROM.1.2\"><span data-number=\"2\" data-sid=\"ROM 1:2\" class=\"v\">2</span></span><span class=\"verse-span\" data-verse-id=\"ROM.1.2\" data-verse-org-ids=\"ROM.1.2\">the gospel He promised beforehand through His prophets in the Holy Scriptures, </span></p>",
-        "verseCount": 1,
-        "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
-        "next": {
-            "id": "ROM.1.3",
-            "number": "3"
+        "data": {
+            "id": "ROM.1.2",
+            "orgId": "ROM.1.2",
+            "bookId": "ROM",
+            "chapterId": "ROM.1",
+            "bibleId": "bba9f40183526463-01",
+            "reference": "Romans 1:2",
+            "content": "<p class=\"m\"><span class=\"verse-span\" data-verse-id=\"ROM.1.2\" data-verse-org-ids=\"ROM.1.2\">the gospel He promised beforehand through His prophets in the Holy Scriptures, </span></p>",
+            "verseCount": 1,
+            "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
+            "next": {
+                "id": "ROM.1.3",
+                "number": "3"
+            },
+            "previous": {
+                "id": "ROM.1.1",
+                "number": "1"
+            },
+            "parallels": [
+                {
+                    "id": "ROM.1.2",
+                    "orgId": "ROM.1.2",
+                    "bookId": "ROM",
+                    "chapterId": "ROM.1",
+                    "bibleId": "9879dbb7cfe39e4d-01",
+                    "reference": "Romans 1:2",
+                    "content": "<p class=\"p\"><span class=\"verse-span\" data-verse-id=\"ROM.1.2\" data-verse-org-ids=\"ROM.1.2\">which he promised before through his prophets in the holy Scriptures, </span></p>",
+                    "verseCount": 1,
+                    "copyright": "\n          PUBLIC DOMAIN\n        "
+                }
+            ]
         },
-        "previous": {
-            "id": "ROM.1.1",
-            "number": "1"
-        },
-        "parallels": [
-            {
-                "id": "ROM.1.2",
-                "orgId": "ROM.1.2",
-                "bookId": "ROM",
-                "chapterId": "ROM.1",
-                "bibleId": "9879dbb7cfe39e4d-01",
-                "reference": "Romans 1:2",
-                "content": "<p class=\"p\"><span class=\"verse-span\" data-verse-id=\"ROM.1.2\" data-verse-org-ids=\"ROM.1.2\"><span data-number=\"2\" data-sid=\"ROM 1:2\" class=\"v\">2</span></span><span class=\"verse-span\" data-verse-id=\"ROM.1.2\" data-verse-org-ids=\"ROM.1.2\">which he promised before through his prophets in the holy Scriptures, </span></p>",
-                "verseCount": 1,
-                "copyright": "\n          PUBLIC DOMAIN\n        "
-            }
-        ]
+        "meta": {
+            "fums": "",
+            "fumsId": "",
+            "fumsJsInclude": "",
+            "fumsJs": "",
+            "fumsNoScript": ""
+        }
     },
     "200json": {
-        "id": "ROM.1.2",
-        "orgId": "ROM.1.2",
-        "bookId": "ROM",
-        "chapterId": "ROM.1",
-        "bibleId": "bba9f40183526463-01",
-        "reference": "Romans 1:2",
-        "content": [
-            {
-                "name": "para",
-                "type": "tag",
-                "attrs": {
-                    "style": "m"
-                },
-                "items": [
-                    {
-                        "name": "verse",
-                        "type": "tag",
-                        "attrs": {
-                            "number": "2",
-                            "style": "v",
-                            "sid": "ROM 1:2"
-                        },
-                        "items": [
-                            {
-                                "text": "2",
-                                "type": "text"
-                            }
-                        ]
+        "data": {
+            "id": "ROM.1.2",
+            "orgId": "ROM.1.2",
+            "bookId": "ROM",
+            "chapterId": "ROM.1",
+            "bibleId": "bba9f40183526463-01",
+            "reference": "Romans 1:2",
+            "content": [
+                {
+                    "name": "para",
+                    "type": "tag",
+                    "attrs": {
+                        "style": "m"
                     },
-                    {
-                        "text": "the gospel He promised beforehand through His prophets in the Holy Scriptures, ",
-                        "type": "text",
-                        "attrs": {
-                            "verseId": "ROM.1.2",
-                            "verseOrgIds": [
-                                "ROM.1.2"
+                    "items": [
+                        {
+                            "name": "verse",
+                            "type": "tag",
+                            "attrs": {
+                                "number": "2",
+                                "style": "v",
+                                "sid": "ROM 1:2"
+                            },
+                            "items": [
+                                {
+                                    "text": "2",
+                                    "type": "text"
+                                }
                             ]
+                        },
+                        {
+                            "text": "the gospel He promised beforehand through His prophets in the Holy Scriptures, ",
+                            "type": "text",
+                            "attrs": {
+                                "verseId": "ROM.1.2",
+                                "verseOrgIds": [
+                                    "ROM.1.2"
+                                ]
+                            }
                         }
-                    }
-                ]
+                    ]
+                }
+            ],
+            "verseCount": 1,
+            "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
+            "next": {
+                "id": "ROM.1.3",
+                "number": "3"
+            },
+            "previous": {
+                "id": "ROM.1.1",
+                "number": "1"
             }
-        ],
-        "verseCount": 1,
-        "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
-        "next": {
-            "id": "ROM.1.3",
-            "number": "3"
         },
-        "previous": {
-            "id": "ROM.1.1",
-            "number": "1"
+        "meta": {
+            "fums": "",
+            "fumsId": "",
+            "fumsJsInclude": "",
+            "fumsJs": "",
+            "fumsNoScript": ""
         }
     },
     "200text": {
-        "id": "ROM.1.2",
-        "orgId": "ROM.1.2",
-        "bookId": "ROM",
-        "chapterId": "ROM.1",
-        "bibleId": "bba9f40183526463-01",
-        "reference": "Romans 1:2",
-        "content": " [2] the gospel He promised beforehand through His prophets in the Holy Scriptures, \n",
-        "verseCount": 1,
-        "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
-        "next": {
-            "id": "ROM.1.3",
-            "number": "3"
+        "data": {
+            "id": "ROM.1.2",
+            "orgId": "ROM.1.2",
+            "bookId": "ROM",
+            "chapterId": "ROM.1",
+            "bibleId": "bba9f40183526463-01",
+            "reference": "Romans 1:2",
+            "content": " [2] the gospel He promised beforehand through His prophets in the Holy Scriptures, \n",
+            "verseCount": 1,
+            "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain",
+            "next": {
+                "id": "ROM.1.3",
+                "number": "3"
+            },
+            "previous": {
+                "id": "ROM.1.1",
+                "number": "1"
+            },
+            "parallels": [
+                {
+                    "id": "ROM.1.2",
+                    "orgId": "ROM.1.2",
+                    "bookId": "ROM",
+                    "chapterId": "ROM.1",
+                    "bibleId": "9879dbb7cfe39e4d-01",
+                    "reference": "Romans 1:2",
+                    "content": "     [2] which he promised before through his prophets in the holy Scriptures, \n",
+                    "verseCount": 1,
+                    "copyright": "\n          PUBLIC DOMAIN\n        "
+                }
+            ]
         },
-        "previous": {
-            "id": "ROM.1.1",
-            "number": "1"
-        },
-        "parallels": [
-            {
-                "id": "ROM.1.2",
-                "orgId": "ROM.1.2",
-                "bookId": "ROM",
-                "chapterId": "ROM.1",
-                "bibleId": "9879dbb7cfe39e4d-01",
-                "reference": "Romans 1:2",
-                "content": "     [2] which he promised before through his prophets in the holy Scriptures, \n",
-                "verseCount": 1,
-                "copyright": "\n          PUBLIC DOMAIN\n        "
-            }
-        ]
+        "meta": {
+            "fums": "",
+            "fumsId": "",
+            "fumsJsInclude": "",
+            "fumsJs": "",
+            "fumsNoScript": ""
+        }
     },
-    "400": {
+    "400bp": {
         "statusCode": 400,
         "error": "Bad Request",
         "message": "Invalid request params input"
+    },
+    "400bq": {
+        "statusCode": 400,
+        "error": "Bad Request",
+        "message": "Invalid request query input"
     },
     "401": {
         "statusCode": 401,
         "error": "Unauthorized",
         "message": "missing key"
     },
-    "403": {
+    "403bid": {
         "statusCode": 403,
         "error": "Forbidden",
         "message": "You are not authorized to access that bible"
+    },
+    "403bp": {
+        "statusCode": 403,
+        "error": "Forbidden",
+        "message": "You have specified parallel ids that you are not authorized to use"
     },
     "404": {
         "statusCode": 404,

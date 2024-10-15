@@ -1,6 +1,6 @@
 {
   "name": "researches",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "description": "TS playwright playgrount",
   "scripts": {
     "prepare": "husky install"
