@@ -155,7 +155,7 @@ test.describe('/v1/bibles/bibleId/sections/sectionId', async () => {
       helper.compareStatusCode(response.status(), 403);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(expBody['403'], await response.json());
+      helper.compareResponseText(expBody['403bq'], await response.json());
     });
   });
 
