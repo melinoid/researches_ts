@@ -35,18 +35,10 @@ None
 
 </details>
 
-## Test Suite
+## Tests in suite
 
-Coming soon
-
-#### Test: 200 code
-
-| Action       | Expected result |
-| ------------ | --------------- |
-| Send request | get response    |
-
-#### Test: 400 code
-
-| Action       | Expected result |
-| ------------ | --------------- |
-| Send request | get response    |
+1. **/v1/bibles/bibleId/chapters/chapterId/sections 200 code**
+2. **/v1/bibles/bibleId/chapters/chapterId/sections 400 code**
+3. **/v1/bibles/bibleId/chapters/chapterId/sections 401 code**
+4. **/v1/bibles/bibleId/chapters/chapterId/sections 403 code**
+5. **/v1/bibles/bibleId/chapters/chapterId/sections 404 code**

@@ -1,13 +1,37 @@
 {
     "200": {
-        "id": "ROM.S3",
-        "bibleId": "bba9f40183526463-01",
-        "bookId": "ROM",
-        "title": "God’s Wrath against Sin",
-        "firstVerseId": "ROM.1.18",
-        "lastVerseId": "ROM.1.32",
-        "firstVerseOrgId": "ROM.1.18",
-        "lastVerseOrgId": "ROM.1.32"
+        "data": [
+            {
+                "id": "ROM.S1",
+                "bibleId": "bba9f40183526463-01",
+                "bookId": "ROM",
+                "title": "Paul Greets the Saints in Rome",
+                "firstVerseId": "ROM.1.1",
+                "lastVerseId": "ROM.1.7",
+                "firstVerseOrgId": "ROM.1.1",
+                "lastVerseOrgId": "ROM.1.7"
+            },
+            {
+                "id": "ROM.S2",
+                "bibleId": "bba9f40183526463-01",
+                "bookId": "ROM",
+                "title": "Unashamed of the Gospel",
+                "firstVerseId": "ROM.1.8",
+                "lastVerseId": "ROM.1.17",
+                "firstVerseOrgId": "ROM.1.8",
+                "lastVerseOrgId": "ROM.1.17"
+            },
+            {
+                "id": "ROM.S3",
+                "bibleId": "bba9f40183526463-01",
+                "bookId": "ROM",
+                "title": "God’s Wrath against Sin",
+                "firstVerseId": "ROM.1.18",
+                "lastVerseId": "ROM.1.32",
+                "firstVerseOrgId": "ROM.1.18",
+                "lastVerseOrgId": "ROM.1.32"
+            }
+        ]
     },
     "400": {
         "statusCode": 400,
