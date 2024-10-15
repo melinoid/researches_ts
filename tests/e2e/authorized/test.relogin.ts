@@ -1,6 +1,6 @@
 import { test } from '../../../utils/fixtures';
 
-test('Login', async ({ page, loginPage }) => {
+test('Relogin', async ({ page, loginPage }) => {
   await page.goto('/');
 
   await page.getByRole('link', { name: 'Logout' }).click();
