@@ -39,7 +39,7 @@ Also, you can get the api key [here](https://scripture.api.bible/admin/applicati
 
 #### 3. Run tests in docker
 
-If you don`t want to install dependencies into the project locally, but build an image and then run tests in it. Not suitable for development, but just playing around or running it in a separate environment is enough.
+If you don`t want to install dependencies into the project locally, you can build an image and then run tests in it. Not suitable for development, but just playing around or running it in a separate environment is enough.
 
 ```bash
 docker compose up
