@@ -74,7 +74,7 @@ test.describe('/v1/bibles/bibleId/passages/passageId', async () => {
     });
   });
 
-  test.only('200 code (text & all params)', async ({ request, helper }, testInfo) => {
+  test('200 code (text & all params)', async ({ request, helper }, testInfo) => {
     await test.step('Send request', async () => {
       response = await request.get(apiPath + bible.book.chapterId, {
         params: {
