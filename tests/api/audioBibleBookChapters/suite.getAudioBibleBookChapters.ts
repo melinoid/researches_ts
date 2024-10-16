@@ -7,7 +7,7 @@ const apiPath = `/v1/audio-bibles/${audioBible.id}/books/`;
 let response: APIResponse;
 
 test.describe('/v1/audio-bibles/audioBibleId/books/bookId/chapters', async () => {
-  test(`200 code`, async ({ request, helper }, testInfo) => {
+  test('200 code', async ({ request, helper }, testInfo) => {
     await test.step('Send request', async () => {
       response = await request.get(apiPath + audioBible.book.id + '/chapters', {});
     });
@@ -15,13 +15,7 @@ test.describe('/v1/audio-bibles/audioBibleId/books/bookId/chapters', async () =>
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
-      if (testInfo.retry == 0) {
-        helper.compareResponseText(expBody['200'], await response.json());
-      } else {
-        // Тhe response is too big, it may change over time, so we check the model on first retry.
-        console.log(`Test data in test: "${testInfo.titlePath[1]} ${testInfo.titlePath[2]}" is expired.`);
-        helper.compareObjectsKeys(expBody['200'], await response.json());
-      }
+      helper.compareResponseTextWithModel(expBody['200'], await response.json(), testInfo);
     });
   });
 

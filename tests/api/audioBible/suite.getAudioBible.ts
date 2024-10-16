@@ -45,7 +45,7 @@ test.describe('/v1/audio-bibles/audioBibleId', async () => {
 
   test('401 code', async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + '1', {
+      response = await request.get(apiPath + 1, {
         headers: { 'api-key': '' },
       });
     });
@@ -59,7 +59,7 @@ test.describe('/v1/audio-bibles/audioBibleId', async () => {
 
   test('403 code', async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + '1', {});
+      response = await request.get(apiPath + 1, {});
     });
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 403);

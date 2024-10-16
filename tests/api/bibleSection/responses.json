@@ -21,13 +21,6 @@
                 "id": "ACT.S110",
                 "title": "Paul Preaches at Rome"
             }
-        },
-        "meta": {
-            "fums": "",
-            "fumsId": "",
-            "fumsJsInclude": "",
-            "fumsJs": "",
-            "fumsNoScript": ""
         }
     },
     "200html": {
@@ -63,13 +56,6 @@
                     "copyright": "\n          PUBLIC DOMAIN\n        "
                 }
             ]
-        },
-        "meta": {
-            "fums": "",
-            "fumsId": "",
-            "fumsJsInclude": "",
-            "fumsJs": "",
-            "fumsNoScript": ""
         }
     },
     "200json": {
@@ -355,13 +341,6 @@
                 "id": "ACT.S110",
                 "title": "Paul Preaches at Rome"
             }
-        },
-        "meta": {
-            "fums": "",
-            "fumsId": "",
-            "fumsJsInclude": "",
-            "fumsJs": "",
-            "fumsNoScript": ""
         }
     },
     "200text": {
@@ -397,13 +376,6 @@
                     "copyright": "The Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain"
                 }
             ]
-        },
-        "meta": {
-            "fums": "",
-            "fumsId": "",
-            "fumsJsInclude": "",
-            "fumsJs": "",
-            "fumsNoScript": ""
         }
     },
     "400bp": {

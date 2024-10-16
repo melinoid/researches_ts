@@ -46,7 +46,7 @@ test.describe('/v1/audio-bibles/audioBibleId/books/bookId', async () => {
 
   test('400 code', async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + '1', {});
+      response = await request.get(apiPath + 1, {});
     });
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 400);

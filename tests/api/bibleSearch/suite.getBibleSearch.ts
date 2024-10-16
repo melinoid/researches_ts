@@ -19,13 +19,7 @@ test.describe('/v1/bibles/bibleId/search', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
-      if (testInfo.retry == 0) {
-        helper.compareResponseText(expBody['200woq']['data'], (await response.json())['data']);
-      } else {
-        // Тhe response is too big, it may change over time, so we check the model on first retry.
-        console.log(`Test data in test: "${testInfo.titlePath[1]} ${testInfo.titlePath[2]}" is expired.`);
-        helper.compareObjectsKeys(expBody['200woq'], await response.json());
-      }
+      helper.compareResponseTextWithModel(expBody['200woq'], await response.json(), testInfo, true);
     });
   });
 
@@ -41,14 +35,11 @@ test.describe('/v1/bibles/bibleId/search', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
-      helper.compareResponseText(expBody['200wbq']['data'], (await response.json())['data']);
-    });
-    await test.step('Compare response model', async () => {
-      helper.compareObjectsKeys(expBody['200wbq'], await response.json());
+      helper.compareResponseTextWithModel(expBody['200wbq'], await response.json(), testInfo, true);
     });
   });
 
-  test('200 code (all params)', async ({ request, helper }) => {
+  test('200 code (all params)', async ({ request, helper }, testInfo) => {
     await test.step('Send request', async () => {
       response = await request.get(apiPath, {
         params: {
@@ -67,8 +58,8 @@ test.describe('/v1/bibles/bibleId/search', async () => {
     await test.step('Compare response text', async () => {
       helper.compareResponseText(expBody['200wap']['data'], (await response.json())['data']);
     });
-    await test.step('Compare response model', async () => {
-      helper.compareObjectsKeys(expBody['200wap'], await response.json());
+    await test.step('Compare response text', async () => {
+      helper.compareResponseTextWithModel(expBody['200wap'], await response.json(), testInfo, true);
     });
   });
 

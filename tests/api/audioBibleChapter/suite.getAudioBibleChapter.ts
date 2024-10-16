@@ -7,7 +7,7 @@ const apiPath = `/v1/audio-bibles/${audioBible.id}/chapters/`;
 let response: APIResponse;
 
 test.describe('/v1/audio-bibles/audioBibleId/chapters/chapterId', async () => {
-  test(`200 code`, async ({ request, helper }, testInfo) => {
+  test('200 code', async ({ request, helper }, testInfo) => {
     await test.step('Send request', async () => {
       response = await request.get(apiPath + audioBible.book.chapterId, {});
     });
@@ -38,7 +38,7 @@ test.describe('/v1/audio-bibles/audioBibleId/chapters/chapterId', async () => {
 
   test('400 code (bad param)', async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + '1', {});
+      response = await request.get(apiPath + 1, {});
     });
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 400);

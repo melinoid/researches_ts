@@ -34,13 +34,7 @@ test.describe('/v1/bibles', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
-      if (testInfo.retry == 0) {
-        helper.compareResponseText(expBody['200woid'], await response.json());
-      } else {
-        // Тhe response is too big, it may change over time, so we check the model on first retry.
-        console.log(`Test data in test: "${testInfo.titlePath[1]} ${testInfo.titlePath[2]}" is expired.`);
-        helper.compareObjectsKeys(expBody['200woid'], await response.json());
-      }
+      helper.compareResponseTextWithModel(expBody['200woid'], await response.json(), testInfo);
     });
   });
 
@@ -58,13 +52,7 @@ test.describe('/v1/bibles', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
-      if (testInfo.retry == 0) {
-        helper.compareResponseText(expBody['200mid'], await response.json());
-      } else {
-        // Тhe response is too big, it may change over time, so we check the model on first retry.
-        console.log(`Test data in test: "${testInfo.titlePath[1]} ${testInfo.titlePath[2]}" is expired.`);
-        helper.compareObjectsKeys(expBody['200mid'], await response.json());
-      }
+      helper.compareResponseTextWithModel(expBody['200mid'], await response.json(), testInfo);
     });
   });
 
@@ -84,13 +72,7 @@ test.describe('/v1/bibles', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
-      if (testInfo.retry == 0) {
-        helper.compareResponseText(expBody['200wap'], await response.json());
-      } else {
-        // Тhe response is too big, it may change over time, so we check the model on first retry.
-        console.log(`Test data in test: "${testInfo.titlePath[1]} ${testInfo.titlePath[2]}" is expired.`);
-        helper.compareObjectsKeys(expBody['200wap'], await response.json());
-      }
+      helper.compareResponseTextWithModel(expBody['200wap'], await response.json(), testInfo);
     });
   });
 
