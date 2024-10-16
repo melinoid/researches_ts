@@ -39,13 +39,7 @@ test.describe('/v1/bibles/bibleId/books/bookId', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
-      if (testInfo.retry == 0) {
-        helper.compareResponseText(expBody['200wc'], await response.json());
-      } else {
-        // Тhe response is too big, it may change over time, so we check the model on first retry.
-        console.log(`Test data in test: "${testInfo.titlePath[1]} ${testInfo.titlePath[2]}" is expired.`);
-        helper.compareObjectsKeys(expBody['200wc'], await response.json());
-      }
+      helper.compareResponseTextWithModel(expBody['200wch'], await response.json(), testInfo);
     });
   });
 

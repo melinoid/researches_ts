@@ -15,13 +15,7 @@ test.describe('/v1/bibles/bibleId/chapters/chapterId', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
-      if (testInfo.retry == 0) {
-        helper.compareResponseText(expBody['200wop']['data'], (await response.json())['data']);
-      } else {
-        // Тhe response is too big, it may change over time, so we check the model on first retry.
-        console.log(`Test data in test: "${testInfo.titlePath[1]} ${testInfo.titlePath[2]}" is expired.`);
-        helper.compareObjectsKeys(expBody['200wop'], await response.json());
-      }
+      helper.compareResponseTextWithModel(expBody['200wop'], await response.json(), testInfo, true);
     });
   });
 
@@ -43,13 +37,7 @@ test.describe('/v1/bibles/bibleId/chapters/chapterId', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
     await test.step('Compare response text', async () => {
-      if (testInfo.retry == 0) {
-        helper.compareResponseText(expBody['200html']['data'], (await response.json())['data']);
-      } else {
-        // Тhe response is too big, it may change over time, so we check the model on first retry.
-        console.log(`Test data in test: "${testInfo.titlePath[1]} ${testInfo.titlePath[2]}" is expired.`);
-        helper.compareObjectsKeys(expBody['200html'], await response.json());
-      }
+      helper.compareResponseTextWithModel(expBody['200html'], await response.json(), testInfo, true);
     });
   });
 
@@ -69,13 +57,9 @@ test.describe('/v1/bibles/bibleId/chapters/chapterId', async () => {
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
-    if (testInfo.retry == 0) {
-      helper.compareResponseText(expBody['200json']['data'], (await response.json())['data']);
-    } else {
-      // Тhe response is too big, it may change over time, so we check the model on first retry.
-      console.log(`Test data in test: "${testInfo.titlePath[1]} ${testInfo.titlePath[2]}" is expired.`);
-      helper.compareObjectsKeys(expBody['200json'], await response.json());
-    }
+    await test.step('Compare response text', async () => {
+      helper.compareResponseTextWithModel(expBody['200json'], await response.json(), testInfo, true);
+    });
   });
 
   test('200 code (text & all params)', async ({ request, helper }, testInfo) => {
@@ -95,18 +79,14 @@ test.describe('/v1/bibles/bibleId/chapters/chapterId', async () => {
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 200);
     });
-    if (testInfo.retry == 0) {
-      helper.compareResponseText(expBody['200text']['data'], (await response.json())['data']);
-    } else {
-      // Тhe response is too big, it may change over time, so we check the model on first retry.
-      console.log(`Test data in test: "${testInfo.titlePath[1]} ${testInfo.titlePath[2]}" is expired.`);
-      helper.compareObjectsKeys(expBody['200text'], await response.json());
-    }
+    await test.step('Compare response text', async () => {
+      helper.compareResponseTextWithModel(expBody['200text'], await response.json(), testInfo, true);
+    });
   });
 
   test('400 code (bad chapterId)', async ({ request, helper }) => {
     await test.step('Send request', async () => {
-      response = await request.get(apiPath + 'G', {});
+      response = await request.get(apiPath + 1, {});
     });
     await test.step('Compare status code', async () => {
       helper.compareStatusCode(response.status(), 400);
